@@ -1,0 +1,8 @@
+name: direct_mail
+version: "1.0.0"
+config-version: 2
+profile: direct_mail
+model-paths: ["models"]
+models:
+  direct_mail:
+    +materialized: table

@@ -1,0 +1,41 @@
+# Roles, their tool scopes, and who may give which direction. The agent cannot write this file.
+
+[roles.agent]
+scopes = ["results.read", "memory.read", "memory.note", "plan.propose", "file.build", "approval.request",
+          "person_task.open", "inbox.read"]
+
+[roles.planner_code]
+scopes = ["results.read", "memory.read", "memory.fact", "plan.propose", "file.build", "file.check",
+          "approval.request", "printer.release", "person_task.open"]
+
+[roles.head_of_direct_acquisition]
+scopes = ["approval.mail_file", "direction.give"]
+
+[roles.compliance]
+scopes = ["approval.creative"]
+
+[roles.operations]
+scopes = ["suppression.write"]
+
+[roles.finance]
+scopes = ["direction.give"]
+
+# Who may give which direction. A direction from anyone else, or from a sender the mail system could not
+# authenticate, is not applied; it becomes a question for the Head of Direct Acquisition.
+[authority]
+set_budget = ["head_of_direct_acquisition", "finance"]
+budget_above_cap = ["finance"]
+exclude_sector = ["head_of_direct_acquisition"]
+creative_min_share = ["head_of_direct_acquisition"]
+pause_round = ["head_of_direct_acquisition"]
+# never a direction: changing suppressions goes through operations, volume through the plan
+override_suppression = []
+set_volume = []
+
+[owners]
+tracking_break = "acquisition_tech"
+feed_incomplete = "data_platform"
+model_shift = "data_science"
+response_drop = "head_of_direct_acquisition"
+objection = "operations"
+unauthorised_direction = "head_of_direct_acquisition"

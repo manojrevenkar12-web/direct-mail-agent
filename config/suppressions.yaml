@@ -1,0 +1,59 @@
+# Who never receives a letter. One definition, two executors: mailagent.rules compiles these to numpy for the
+# agent and to SQL for the warehouse model (warehouse/models/mail_universe.sql). tests/test_rules.py proves they agree.
+# Only the operations role changes this file; the agent has no tool that writes it.
+rules:
+  - id: not_corporate
+    field: company_type
+    op: not_in
+    value: [ltd, llp]
+    why: The Flexi-Loan is for limited companies and LLPs; sole traders and partnerships are out of scope.
+  - id: not_active
+    field: status
+    op: ne
+    value: active
+    why: Dissolved, dormant or in liquidation (Companies House status).
+  - id: too_young
+    field: age_months
+    op: lt
+    value: 6
+    why: Trading history below the lending minimum.
+  - id: existing_customer
+    field: existing_customer
+    op: is_true
+    why: Customers are served by account management, not acquisition mail.
+  - id: open_application
+    field: open_application
+    op: is_true
+    why: An application is being decided.
+  - id: recent_decline
+    field: days_since_decline
+    op: lt
+    value: 90
+    why: Declined in the last 90 days.
+  - id: objected
+    field: objected
+    op: is_true
+    why: Objected to direct marketing (UK GDPR Article 21); permanent.
+  - id: gone_away
+    field: gone_away
+    op: is_true
+    why: Mail returned as gone away.
+  - id: mps_director
+    field: mps_director
+    op: is_true
+    why: The named director is registered with the Mailing Preference Service.
+  - id: contact_gap
+    field: days_since_last_letter
+    op: lt
+    value: 56
+    why: At most one letter every eight weeks.
+  - id: recent_holdout
+    field: days_since_holdout
+    op: lt
+    value: 60
+    why: Held out of a round in the last 60 days; a letter now would contaminate that round's measurement.
+  - id: yearly_cap
+    field: letters_last_365
+    op: ge
+    value: 6
+    why: At most six letters a year.

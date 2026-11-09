@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: companies
+        description: Companies House data joined with the lender's customer, application, objection and mail history.

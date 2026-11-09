@@ -1,0 +1,19 @@
+# Model prices and the person-time assumptions used to report "how often the agent needs a person".
+# Prices: Anthropic list price for Claude Sonnet 4.5, USD per million tokens; set your contract price here.
+[model]
+name = "claude-sonnet-4-5"
+input_per_mtok = 3.00
+output_per_mtok = 15.00
+cache_read_per_mtok = 0.30
+usd_to_gbp = 0.79
+
+# Assumptions (minutes of a person's time), the same for every policy compared. Illustrative, not measured.
+[people_minutes]
+manual_file_build = 240         # today: pull the file, apply suppressions with the agency, check it
+approve_with_brief = 10
+approve_without_brief = 30
+enter_direction_form = 5        # a person turns an email into a form the for-loop can read
+confirm_direction = 3           # a person confirms a direction the agent could not verify
+investigate_with_diagnosis = 15
+investigate_without_diagnosis = 45
+rework_after_rejection = 30

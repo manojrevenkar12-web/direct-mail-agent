@@ -1,0 +1,9 @@
+# DuckDB for tests and local runs. Production points the same models at Snowflake (target: snowflake), with the
+# credentials from the environment; nothing in the models is DuckDB-specific.
+direct_mail:
+  target: duckdb
+  outputs:
+    duckdb:
+      type: duckdb
+      path: "{{ env_var('DMA_DUCKDB_PATH', 'warehouse.duckdb') }}"
+      schema: main

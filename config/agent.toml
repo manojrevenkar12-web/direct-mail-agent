@@ -1,0 +1,62 @@
+# Settings for the direct-mail round agent. Money in GBP. Every value the code uses lives here or in the
+# other files in config/. Values marked "assumption" are illustrative, not iwoca's numbers.
+
+[economics]
+cost_per_letter = 0.55            # assumption: print + Advertising Mail postage per letter
+
+[limits]
+default_budget = 110000           # monthly round budget unless the Head of Direct Acquisition sets another
+hard_budget_cap = 150000          # above this only finance can approve
+max_letters = 300000              # print-house capacity per round
+min_holdout_share = 0.08          # every mailed cell keeps a random holdout of at least this share
+max_holdout_share = 0.20
+holdout_share = 0.10
+new_model_holdout_share = 0.15    # the first round on a new model version holds out more
+approval_lead_days = 2            # the file is approved at least this long before the print slot
+min_creative_share = 0.10         # every approved creative keeps at least this share while it is being learned
+
+[round]
+first_drop = "2026-01-26"         # drop date of round 1; later rounds every 28 days
+cadence_days = 28
+plan_days_before_drop = 9
+house_creative = "FLEXI-A"        # the letter today's process sends         # results are read and the round planned this many days before the drop
+print_days_before_drop = 3
+attribution_window_days = 60
+
+[cells]
+response_bands = 5                # quantiles of the response model score
+value_tiers = 2                   # split at the median of the value model score
+min_cell_letters = 1000           # keep learning in every cell, even ones that look unprofitable
+
+[learning]
+prior_mail = [4.0, 400.0]         # Beta prior on the 60-day application rate of a mailed cell (about 1%)
+prior_holdout = [2.0, 400.0]      # and of its holdout (about 0.5%): mail has paid before, by how much is unknown
+prior_fund_a = 4.0                # Beta prior on the share of applications that fund
+prior_fund_b = 6.0
+prior_value = 1200.0              # prior mean funded value; pseudo-count below
+prior_value_weight = 20.0
+half_life_rounds = 6              # older rounds count for less: the market and the models move
+delay_prior_median_days = 14.0
+delay_prior_sigma = 0.7
+min_complete_rounds_for_delay = 2
+
+[anomaly]
+tracking_share_drop = 0.5         # mail-code applications fall below this share of what the same cells used to show
+feed_completeness_min = 0.90      # rows received / rows expected
+score_psi_alert = 0.05            # population stability of the response score against the last round
+response_ratio_alert = 0.75       # early applications from the last round below this share of the same cells' history
+response_z_alert = -3.0           # and this many standard errors below it
+
+[sectors]                         # words in an email that name a sector; a direction must quote one of them
+construction = ["construction", "builders", "trades"]
+retail = ["retail", "retailers", "shops"]
+hospitality = ["hospitality", "restaurants", "pubs", "cafes"]
+wholesale = ["wholesale", "wholesalers", "distributors"]
+professional_services = ["professional services", "agencies", "consultancies"]
+manufacturing = ["manufacturing", "manufacturers"]
+transport = ["transport", "haulage", "logistics"]
+health_care = ["health", "care homes", "clinics"]
+
+[brief]
+number_tolerance = 0.005          # relative tolerance when checking the numbers in the brief
+max_attempts = 2

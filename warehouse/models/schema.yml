@@ -1,0 +1,18 @@
+version: 2
+models:
+  - name: stg_companies
+    columns:
+      - name: company_id
+        data_tests: [unique, not_null]
+      - name: company_type
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ["ltd", "llp", "sole", "partnership"]
+  - name: mail_universe
+    description: One row per company with a bitmask of the suppression rules that apply (0 = mailable).
+    columns:
+      - name: company_id
+        data_tests: [unique, not_null]
+      - name: suppression_mask
+        data_tests: [not_null]
