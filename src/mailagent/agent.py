@@ -29,10 +29,11 @@ class Mode:
 
     name: str = "agent"
     selection: str = "optimiser"  # "optimiser" or "top_score" (today's process)
-    learner: str = "holdout"  # "holdout", "no_delay", "matchback", "none"
+    learner: str = "response"  # "response", "response_no_delay", "incremental", "none"
     reader: bool = True  # the model reads the inbox, triages anomalies and writes the brief
     guarded: bool = True  # directions validated, file checked; False only to show what goes wrong
     holdout: bool = True
+    holdout_share: float | None = None  # None: from config
 
 
 @dataclass
@@ -109,16 +110,28 @@ class RoundAgent:
         cfg = settings.agent()
         usage = Usage()
 
-        # 1. results and learning
+        # 1. universe, scores, suppressions
+        uni = self.warehouse.universe(at)
+        response, value, version = self.models.scores(uni["company_id"], at)
+        mask = rules.evaluate(uni)
+        eligible0 = mask == 0
+        scope_bits = sum(
+            1 << i for i, rl in enumerate(settings.suppressions()) if rl["id"] in ("not_corporate", "not_active")
+        )
+        in_scope = (mask & scope_bits) == 0  # the population the model scores, whoever is mailable this round
+        edges, vedge = optimise.cell_edges(response, value, eligible0)
+        priors = learning.model_priors(response, value, optimise.assign_cells(response, value, edges, vedge), eligible0)
+
+        # 2. results and learning, starting from what the existing models predict
         snap = self.results.snapshot(at)
         complete = len(snap["rows"]) / max(snap["expected_rows"], 1) >= cfg["anomaly"]["feed_completeness_min"]
         if self.mode.learner == "none":
             posts = {"cells": {}, "creatives": {}}
         elif complete:
-            posts = learning.posteriors(snap["rows"], r, self.mode.learner)
+            posts = learning.posteriors(snap["rows"], r, self.mode.learner, priors)
             self.memory.put("facts/posteriors", posts, provenance="results", run=run, at=at)
         else:
-            posts = self.memory.get("facts/posteriors") or {"cells": {}, "creatives": {}}
+            posts = self.memory.get("facts/posteriors") or {"cells": priors, "creatives": {}}
             self.ledger.record(
                 at=at,
                 run=run,
@@ -128,16 +141,7 @@ class RoundAgent:
                 decision={"rows": len(snap["rows"]), "expected": snap["expected_rows"]},
                 reason="results feed incomplete; planning on the last complete posteriors",
             )
-
-        # 2. universe, scores, suppressions
-        uni = self.warehouse.universe(at)
-        response, value, version = self.models.scores(uni["company_id"], at)
-        mask = rules.evaluate(uni)
-        eligible0 = mask == 0
-        scope_bits = sum(
-            1 << i for i, rl in enumerate(settings.suppressions()) if rl["id"] in ("not_corporate", "not_active")
-        )
-        in_scope = (mask & scope_bits) == 0  # the population the model scores, whoever is mailable this round
+        self._priors = priors
 
         # 3. anomalies: code detects, the model triages, a person looks
         q_last = self.memory.get("facts/score_quantiles")
@@ -208,9 +212,9 @@ class RoundAgent:
         last_version = self.memory.get("facts/model_version")
         hshare = 0.0
         if self.mode.holdout:
-            hshare = cfg["limits"]["holdout_share"]
+            hshare = self.mode.holdout_share if self.mode.holdout_share is not None else cfg["limits"]["holdout_share"]
             if last_version and last_version != version:
-                hshare = cfg["limits"]["new_model_holdout_share"]
+                hshare = max(hshare, cfg["limits"]["new_model_holdout_share"])
         plan_dict = self.steps.run(
             run,
             "plan",
@@ -544,7 +548,15 @@ class RoundAgent:
                 for c in sorted(available)
             ]
         else:
-            cells = optimise.allocate(cells_post, available, budget=budget, holdout_share=hshare, rng=rng)
+            cells = optimise.allocate(
+                cells_post,
+                available,
+                budget=budget,
+                holdout_share=hshare,
+                rng=rng,
+                priors=self._priors,
+                explore_holdout=self.mode.learner == "incremental",
+            )
         shares = optimise.creative_shares(posts.get("creatives", {}), approved, min_shares, rng)
         if self.mode.selection == "top_score":
             # today: one house letter, plus whatever share the Head of Direct Acquisition asks for
@@ -586,7 +598,8 @@ class RoundAgent:
             reason=(
                 "paused by direction"
                 if paused
-                else f"Thompson sampling over {len(cells)} cells, holdout {hshare:.0%}, budget £{budget:,.0f}"
+                else f"{len(cells)} cells ranked by expected value per letter, holdout {hshare:.0%},"
+                f" budget £{budget:,.0f}"
             ),
             inputs={"posts": posts.get("cells", {}), "available": available},
         )

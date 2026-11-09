@@ -340,7 +340,7 @@ class Market:
         self.pending_suppression.append((row, at + 2))
 
     # -- results tables -----------------------------------------------------------------------------------------
-    def snapshot(self, as_of: str, outage: bool = False) -> dict:
+    def snapshot(self, as_of: str, outage: bool = False, lookback_days: int = 200) -> dict:
         d = day(as_of)
         a = self.apps.arrays()
         rows_out = []
@@ -348,7 +348,7 @@ class Market:
         comp = a["company"].astype(int) if a["company"].size else np.zeros(0, int)
         for r, f in sorted(self.files.items()):
             d0 = day(settings.iso(settings.drop_date(r)))
-            if d0 > d or d - d0 > 200:
+            if d0 > d or d - d0 > lookback_days:
                 continue
             age = min(d - d0, window)
             obs = (a["day"] >= d0) & (a["day"] < d0 + age) & (a["day"] <= d) if comp.size else np.zeros(0, bool)

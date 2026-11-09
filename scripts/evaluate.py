@@ -1,7 +1,7 @@
 """Run every policy through the market and write reports/<split>.json.
 
-python scripts/evaluate.py dev        # tune here: configuration, thresholds, priors
-python scripts/evaluate.py heldout    # once, after scripts/lock.py write; refuses if the lock does not verify
+python scripts/evaluate.py dev         # tune here: configuration, thresholds, priors
+python scripts/evaluate.py heldout2    # once, after scripts/lock.py write heldout2; refuses unless the lock verifies
 """
 
 from __future__ import annotations
@@ -32,6 +32,7 @@ def one(args: tuple[str, str, int]) -> dict:
         "seed": seed,
         "rounds": rounds,
         "calibration": res.calibration,
+        "measurement": res.measurement,
         "ledger_intact": res.ledger_intact,
         "printer_duplicates": res.printer_duplicates,
     }
@@ -84,6 +85,8 @@ def summarise(runs: list[dict]) -> dict:
                     "brief_fallbacks": sum(1 for x in R if x["brief_fallback"]),
                     "brief_retries": sum(1 for x in R if x["brief_attempts"] > 1),
                     "calibration_coverage": (r["calibration"] or {}).get("coverage"),
+                    "measured_vs_true": (r["measurement"] or {}).get("holdout_ratio"),
+                    "matchback_vs_true": (r["measurement"] or {}).get("matchback_ratio"),
                     "ledger_intact": r["ledger_intact"],
                     "printer_duplicates": r["printer_duplicates"],
                 }
@@ -117,9 +120,9 @@ def summarise(runs: list[dict]) -> dict:
 
 
 def main(split: str) -> None:
-    if split == "heldout":
-        if subprocess.run([sys.executable, str(ROOT / "scripts" / "lock.py"), "verify"]).returncode:
-            sys.exit("the held-out lock does not verify; the held-out run is refused")
+    if split != "dev":
+        if subprocess.run([sys.executable, str(ROOT / "scripts" / "lock.py"), "verify", split]).returncode:
+            sys.exit(f"the {split} lock does not verify; the run is refused")
     jobs = [(p, split, s) for s in range(SEEDS) for p in POLICIES]
     # one fresh process per run: a market holds about 600 MB, and reference cycles would keep it alive
     with ProcessPoolExecutor(max_workers=2, max_tasks_per_child=1) as ex:

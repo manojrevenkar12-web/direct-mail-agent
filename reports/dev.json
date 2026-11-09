@@ -1,98 +1,21 @@
 {
  "agent_seed0": {
-  "calibration": {
-   "cells": [
-    {
-     "cell": "b1v1",
-     "covered": true,
-     "hi": 0.0035932704766165635,
-     "lo": -0.0024273994140591648,
-     "mean": 0.0010111092620357386,
-     "truth": 0.0016719700173108178
-    },
-    {
-     "cell": "b1v2",
-     "covered": true,
-     "hi": 0.002128623216538209,
-     "lo": 0.0004099376837923139,
-     "mean": 0.0013178784642263665,
-     "truth": 0.001605710046616949
-    },
-    {
-     "cell": "b2v1",
-     "covered": true,
-     "hi": 0.00451956683965051,
-     "lo": 0.0004248583073259294,
-     "mean": 0.0025968022282005384,
-     "truth": 0.003412655762358534
-    },
-    {
-     "cell": "b2v2",
-     "covered": true,
-     "hi": 0.003243590776413897,
-     "lo": 0.001512624064215975,
-     "mean": 0.0024146936355659066,
-     "truth": 0.002386052103638625
-    },
-    {
-     "cell": "b3v1",
-     "covered": true,
-     "hi": 0.005202694908235272,
-     "lo": 0.00171059141546001,
-     "mean": 0.003516147233949968,
-     "truth": 0.003639231563974995
-    },
-    {
-     "cell": "b3v2",
-     "covered": true,
-     "hi": 0.004683411388018195,
-     "lo": 0.002069962190741611,
-     "mean": 0.003404059911036141,
-     "truth": 0.0039262364812509215
-    },
-    {
-     "cell": "b4v1",
-     "covered": true,
-     "hi": 0.005426056727049707,
-     "lo": 0.0008605907816469588,
-     "mean": 0.0031770247044444156,
-     "truth": 0.005387899150246109
-    },
-    {
-     "cell": "b4v2",
-     "covered": false,
-     "hi": 0.004460510036983294,
-     "lo": 0.0010939550481852865,
-     "mean": 0.002798488240233875,
-     "truth": 0.00498684635435031
-    },
-    {
-     "cell": "b5v1",
-     "covered": true,
-     "hi": 0.009373105091830472,
-     "lo": -0.007485390196201298,
-     "mean": 0.0010252073978209155,
-     "truth": 0.00429885783152948
-    },
-    {
-     "cell": "b5v2",
-     "covered": true,
-     "hi": 0.0051020522082199544,
-     "lo": -0.0023807172346709494,
-     "mean": 0.001377670214951835,
-     "truth": 0.00411349507076953
-    }
-   ],
-   "coverage": 0.9
-  },
+  "calibration": {},
   "ledger_intact": true,
+  "measurement": {
+   "holdout_estimate": 10259.78371083551,
+   "holdout_ratio": 1.059153592734126,
+   "matchback_apps": 58884,
+   "matchback_ratio": 6.0788026251166825,
+   "true_incremental_apps": 9686.776102369293
+  },
   "policy": "agent",
   "printer_duplicates": 0,
   "rounds": [
    {
     "anomalies": [],
     "approved": true,
-    "attributed_funded": 322,
+    "attributed_funded": 2771,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -105,20 +28,20 @@
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "FLEXI-A": 0.493,
-     "FLEXI-B": 0.507
+     "FLEXI-A": 0.4935,
+     "FLEXI-B": 0.5065
     },
     "directions": [],
     "drop_date": "2026-01-26",
     "eligible": 842106,
     "excluded_sectors": [],
-    "exp_incremental_value": 116365.23,
-    "holdout": 22221,
+    "exp_incremental_value": 408437.76,
+    "holdout": 10529,
     "letters": 199999,
-    "llm_gbp": 0.0075,
+    "llm_gbp": 0.0076,
     "llm_tokens_in": 4294,
-    "llm_tokens_out": 102,
-    "mail_caused_funded": 204,
+    "llm_tokens_out": 103,
+    "mail_caused_funded": 627,
     "missed_events": [],
     "paused": false,
     "person_minutes": 10.0,
@@ -127,95 +50,95 @@
      {
       "available": 75546,
       "cell": "b1v1",
-      "holdout": 7555,
-      "letters": 67991,
-      "p_profitable": 0.714,
-      "sampled_net": 1.0707,
-      "value_per_letter": 2.3644
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.082,
+      "sampled_net": -0.6918,
+      "value_per_letter": 0.1092
      },
      {
       "available": 92875,
       "cell": "b1v2",
-      "holdout": 9287,
-      "letters": 83587,
-      "p_profitable": 0.712,
-      "sampled_net": 1.6593,
-      "value_per_letter": 2.3644
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.34,
+      "sampled_net": -1.1749,
+      "value_per_letter": 0.5203
      },
      {
       "available": 81340,
       "cell": "b2v1",
-      "holdout": 4602,
-      "letters": 41421,
-      "p_profitable": 0.724,
-      "sampled_net": 2.4288,
-      "value_per_letter": 2.3644
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.217,
+      "sampled_net": -0.4792,
+      "value_per_letter": 0.2747
      },
      {
       "available": 87081,
       "cell": "b2v2",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.716,
-      "sampled_net": -0.2808,
-      "value_per_letter": 2.3644
+      "p_profitable": 0.53,
+      "sampled_net": 0.5796,
+      "value_per_letter": 1.3508
      },
      {
       "available": 84334,
       "cell": "b3v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.725,
-      "sampled_net": -0.4134,
-      "value_per_letter": 2.3644
+      "p_profitable": 0.398,
+      "sampled_net": -0.0314,
+      "value_per_letter": 0.5153
      },
      {
       "available": 84088,
       "cell": "b3v2",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.736,
-      "sampled_net": 2.4326,
-      "value_per_letter": 2.3644
+      "p_profitable": 0.682,
+      "sampled_net": 2.1358,
+      "value_per_letter": 2.5303
      },
      {
       "available": 87624,
       "cell": "b4v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.731,
-      "sampled_net": 7.1211,
-      "value_per_letter": 2.3644
+      "p_profitable": 0.631,
+      "sampled_net": 0.5716,
+      "value_per_letter": 1.0048
      },
      {
       "available": 80796,
       "cell": "b4v2",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.72,
-      "sampled_net": 2.1298,
-      "value_per_letter": 2.3644
+      "holdout": 4040,
+      "letters": 76756,
+      "p_profitable": 0.823,
+      "sampled_net": 4.7587,
+      "value_per_letter": 4.9655
      },
      {
       "available": 92209,
       "cell": "b5v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.712,
-      "sampled_net": 1.9154,
-      "value_per_letter": 2.3644
+      "holdout": 2307,
+      "letters": 43841,
+      "p_profitable": 0.99,
+      "sampled_net": 3.8598,
+      "value_per_letter": 4.5854
      },
      {
       "available": 76213,
       "cell": "b5v2",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.735,
-      "sampled_net": -5.133,
-      "value_per_letter": 2.3644
+      "holdout": 3811,
+      "letters": 72402,
+      "p_profitable": 0.994,
+      "sampled_net": 36.8637,
+      "value_per_letter": 21.7761
      }
     ],
-    "realised_incremental_value": 113254.45,
+    "realised_incremental_value": 450024.04,
     "round": 1,
     "spend": 109999.45,
     "withdrawn": 0
@@ -223,7 +146,7 @@
    {
     "anomalies": [],
     "approved": true,
-    "attributed_funded": 2989,
+    "attributed_funded": 1320,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -236,8 +159,8 @@
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "FLEXI-A": 0.1265,
-     "FLEXI-B": 0.8735
+     "FLEXI-A": 0.108,
+     "FLEXI-B": 0.892
     },
     "directions": [
      {
@@ -347,123 +270,139 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
      }
     ],
     "drop_date": "2026-02-23",
-    "eligible": 617203,
+    "eligible": 631660,
     "excluded_sectors": [
      "hospitality"
     ],
-    "exp_incremental_value": 342905.6,
-    "holdout": 22221,
-    "letters": 198936,
-    "llm_gbp": 0.0221,
-    "llm_tokens_in": 7492,
-    "llm_tokens_out": 1016,
-    "mail_caused_funded": 573,
+    "exp_incremental_value": 379042.2,
+    "holdout": 10528,
+    "letters": 199713,
+    "llm_gbp": 0.0238,
+    "llm_tokens_in": 7752,
+    "llm_tokens_out": 1106,
+    "mail_caused_funded": 661,
     "missed_events": [],
     "paused": false,
     "person_minutes": 10.0,
     "person_tasks": 0,
     "plan_cells": [
      {
-      "available": 36283,
+      "available": 43087,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.318,
-      "sampled_net": 0.4289,
-      "value_per_letter": 0.3267
+      "p_profitable": 0.15,
+      "sampled_net": -0.2258,
+      "value_per_letter": 0.3219
      },
      {
-      "available": 76065,
+      "available": 73971,
       "cell": "b1v2",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.612,
-      "sampled_net": -0.0983,
-      "value_per_letter": 0.7163
+      "p_profitable": 0.281,
+      "sampled_net": -0.4337,
+      "value_per_letter": 0.4711
      },
      {
-      "available": 57699,
+      "available": 46108,
       "cell": "b2v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.937,
-      "sampled_net": 3.2377,
-      "value_per_letter": 1.8886
+      "p_profitable": 0.414,
+      "sampled_net": 0.1015,
+      "value_per_letter": 0.5513
      },
      {
-      "available": 53620,
+      "available": 69262,
       "cell": "b2v2",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.391,
-      "sampled_net": -1.5284,
-      "value_per_letter": 0.053
-     },
-     {
-      "available": 58985,
-      "cell": "b3v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.426,
-      "sampled_net": 1.5631,
-      "value_per_letter": 0.0767
-     },
-     {
-      "available": 51614,
-      "cell": "b3v2",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.696,
-      "sampled_net": 3.4776,
-      "value_per_letter": 1.5688
-     },
-     {
-      "available": 59973,
-      "cell": "b4v1",
-      "holdout": 5816,
-      "letters": 52342,
-      "p_profitable": 0.928,
-      "sampled_net": 8.0153,
-      "value_per_letter": 4.6239
-     },
-     {
-      "available": 49643,
-      "cell": "b4v2",
-      "holdout": 4964,
-      "letters": 44678,
-      "p_profitable": 0.975,
-      "sampled_net": 9.8164,
-      "value_per_letter": 6.1161
-     },
-     {
-      "available": 61705,
-      "cell": "b5v1",
-      "holdout": 6170,
-      "letters": 55534,
-      "p_profitable": 0.952,
-      "sampled_net": 10.4875,
-      "value_per_letter": 8.3024
-     },
-     {
-      "available": 46050,
-      "cell": "b5v2",
-      "holdout": 4605,
-      "letters": 41445,
       "p_profitable": 0.996,
-      "sampled_net": 7.9702,
-      "value_per_letter": 9.6765
+      "sampled_net": 2.0229,
+      "value_per_letter": 4.0649
+     },
+     {
+      "available": 47825,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.902,
+      "sampled_net": 0.4002,
+      "value_per_letter": 1.2507
+     },
+     {
+      "available": 66552,
+      "cell": "b3v2",
+      "holdout": 3328,
+      "letters": 63224,
+      "p_profitable": 0.998,
+      "sampled_net": 2.8922,
+      "value_per_letter": 5.4126
+     },
+     {
+      "available": 51072,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.919,
+      "sampled_net": -0.2014,
+      "value_per_letter": 1.3511
+     },
+     {
+      "available": 62426,
+      "cell": "b4v2",
+      "holdout": 3121,
+      "letters": 59304,
+      "p_profitable": 1.0,
+      "sampled_net": 11.926,
+      "value_per_letter": 9.2161
+     },
+     {
+      "available": 96042,
+      "cell": "b5v1",
+      "holdout": 2980,
+      "letters": 56625,
+      "p_profitable": 1.0,
+      "sampled_net": 5.9122,
+      "value_per_letter": 5.2993
+     },
+     {
+      "available": 15628,
+      "cell": "b5v2",
+      "holdout": 781,
+      "letters": 14846,
+      "p_profitable": 1.0,
+      "sampled_net": 13.6808,
+      "value_per_letter": 10.6795
      }
     ],
-    "realised_incremental_value": 327584.7,
+    "realised_incremental_value": 418168.75,
     "round": 2,
-    "spend": 109414.8,
-    "withdrawn": 1063
+    "spend": 109842.15,
+    "withdrawn": 286
    },
    {
     "anomalies": [
+     {
+      "anomaly": "applications_below_expected",
+      "cause": "noise",
+      "correct": true,
+      "owner": "head_of_direct_acquisition",
+      "truth": "noise"
+     },
      {
       "anomaly": "mail_code_share_fell",
       "cause": "tracking_break",
@@ -473,7 +412,7 @@
      }
     ],
     "approved": true,
-    "attributed_funded": 1101,
+    "attributed_funded": 1028,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -486,8 +425,8 @@
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "FLEXI-A": 0.0909,
-     "FLEXI-B": 0.9091
+     "FLEXI-A": 0.9091,
+     "FLEXI-B": 0.0909
     },
     "directions": [
      {
@@ -660,123 +599,149 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
      }
     ],
     "drop_date": "2026-03-23",
-    "eligible": 394470,
+    "eligible": 421068,
     "excluded_sectors": [],
-    "exp_incremental_value": 484942.68,
-    "holdout": 22221,
-    "letters": 199869,
-    "llm_gbp": 0.0362,
-    "llm_tokens_in": 11577,
-    "llm_tokens_out": 1710,
-    "mail_caused_funded": 748,
+    "exp_incremental_value": 254682.0,
+    "holdout": 10528,
+    "letters": 199745,
+    "llm_gbp": 0.04,
+    "llm_tokens_in": 12125,
+    "llm_tokens_out": 1920,
+    "mail_caused_funded": 481,
     "missed_events": [],
     "paused": false,
     "person_minutes": 28.0,
     "person_tasks": 2,
     "plan_cells": [
      {
-      "available": 28016,
+      "available": 24696,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.023,
-      "sampled_net": -0.1607,
-      "value_per_letter": 0.2612
+      "p_profitable": 0.101,
+      "sampled_net": -0.1412,
+      "value_per_letter": 0.3007
      },
      {
-      "available": 50878,
+      "available": 59518,
       "cell": "b1v2",
-      "holdout": 2448,
-      "letters": 22034,
-      "p_profitable": 0.585,
-      "sampled_net": 0.3542,
-      "value_per_letter": 0.5963
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.965,
+      "sampled_net": 0.8445,
+      "value_per_letter": 1.9486
      },
      {
-      "available": 35309,
+      "available": 27173,
       "cell": "b2v1",
-      "holdout": 3531,
-      "letters": 31778,
-      "p_profitable": 0.916,
-      "sampled_net": 0.4537,
-      "value_per_letter": 0.8757
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.73,
+      "sampled_net": 0.5707,
+      "value_per_letter": 0.7781
      },
      {
-      "available": 43585,
+      "available": 57040,
       "cell": "b2v2",
-      "holdout": 4358,
-      "letters": 39226,
-      "p_profitable": 0.652,
-      "sampled_net": -1.0095,
-      "value_per_letter": 1.1487
+      "holdout": 2234,
+      "letters": 42445,
+      "p_profitable": 0.992,
+      "sampled_net": 1.0918,
+      "value_per_letter": 2.4316
      },
      {
-      "available": 43386,
+      "available": 29919,
       "cell": "b3v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.407,
-      "sampled_net": 2.175,
-      "value_per_letter": 0.1755
+      "p_profitable": 0.787,
+      "sampled_net": -0.1548,
+      "value_per_letter": 0.8157
      },
      {
-      "available": 35508,
+      "available": 54295,
       "cell": "b3v2",
-      "holdout": 3551,
-      "letters": 31957,
-      "p_profitable": 0.814,
-      "sampled_net": 6.4221,
-      "value_per_letter": 2.5021
+      "holdout": 2715,
+      "letters": 51580,
+      "p_profitable": 1.0,
+      "sampled_net": 5.009,
+      "value_per_letter": 6.3815
      },
      {
-      "available": 44210,
+      "available": 62137,
       "cell": "b4v1",
-      "holdout": 4421,
-      "letters": 39789,
-      "p_profitable": 0.997,
-      "sampled_net": 5.8381,
-      "value_per_letter": 4.2735
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.857,
+      "sampled_net": 0.3528,
+      "value_per_letter": 0.9119
      },
      {
-      "available": 34684,
+      "available": 22076,
       "cell": "b4v2",
-      "holdout": 3468,
-      "letters": 31215,
-      "p_profitable": 0.998,
-      "sampled_net": 3.8156,
-      "value_per_letter": 5.8104
+      "holdout": 1104,
+      "letters": 20972,
+      "p_profitable": 1.0,
+      "sampled_net": 6.8657,
+      "value_per_letter": 7.4178
      },
      {
-      "available": 46314,
+      "available": 66609,
       "cell": "b5v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.0,
-      "sampled_net": -4.9329,
-      "value_per_letter": -5.8645
+      "holdout": 3330,
+      "letters": 63278,
+      "p_profitable": 1.0,
+      "sampled_net": 5.8052,
+      "value_per_letter": 6.2312
      },
      {
-      "available": 32580,
+      "available": 17605,
       "cell": "b5v2",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.299,
-      "sampled_net": 2.2147,
-      "value_per_letter": -0.9768
+      "holdout": 880,
+      "letters": 16724,
+      "p_profitable": 1.0,
+      "sampled_net": 24.9659,
+      "value_per_letter": 26.3772
      }
     ],
-    "realised_incremental_value": 504277.33,
+    "realised_incremental_value": 263793.33,
     "round": 3,
-    "spend": 109927.95,
-    "withdrawn": 130
+    "spend": 109859.75,
+    "withdrawn": 254
    },
    {
-    "anomalies": [],
+    "anomalies": [
+     {
+      "anomaly": "applications_below_expected",
+      "cause": "feed_incomplete",
+      "correct": false,
+      "owner": "data_platform",
+      "truth": "noise"
+     }
+    ],
     "approved": true,
-    "attributed_funded": 954,
+    "attributed_funded": 2690,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -789,8 +754,8 @@
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "FLEXI-A": 0.0909,
-     "FLEXI-B": 0.9091
+     "FLEXI-A": 0.0918,
+     "FLEXI-B": 0.9082
     },
     "directions": [
      {
@@ -918,167 +883,123 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
      }
     ],
     "drop_date": "2026-04-20",
-    "eligible": 392734,
+    "eligible": 408354,
     "excluded_sectors": [],
-    "exp_incremental_value": 290050.95,
-    "holdout": 22222,
-    "letters": 199777,
-    "llm_gbp": 0.0312,
-    "llm_tokens_in": 9052,
-    "llm_tokens_out": 1467,
-    "mail_caused_funded": 531,
+    "exp_incremental_value": 404736.56,
+    "holdout": 10527,
+    "letters": 198997,
+    "llm_gbp": 0.0291,
+    "llm_tokens_in": 10308,
+    "llm_tokens_out": 1366,
+    "mail_caused_funded": 569,
     "missed_events": [],
     "paused": false,
-    "person_minutes": 10.0,
-    "person_tasks": 0,
+    "person_minutes": 55.0,
+    "person_tasks": 1,
     "plan_cells": [
      {
-      "available": 28920,
+      "available": 35629,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.045,
-      "sampled_net": -0.1888,
-      "value_per_letter": 0.3061
+      "p_profitable": 0.08,
+      "sampled_net": -0.3776,
+      "value_per_letter": 0.3022
      },
      {
-      "available": 49627,
+      "available": 46042,
       "cell": "b1v2",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.835,
-      "sampled_net": 0.126,
-      "value_per_letter": 0.851
+      "holdout": 797,
+      "letters": 15151,
+      "p_profitable": 0.988,
+      "sampled_net": 1.7172,
+      "value_per_letter": 2.175
      },
      {
-      "available": 31563,
+      "available": 70087,
       "cell": "b2v1",
-      "holdout": 1293,
-      "letters": 11637,
-      "p_profitable": 0.972,
-      "sampled_net": 0.6205,
-      "value_per_letter": 1.0273
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.442,
+      "sampled_net": -0.1319,
+      "value_per_letter": 0.5443
      },
      {
-      "available": 46984,
+      "available": 11584,
       "cell": "b2v2",
-      "holdout": 4698,
-      "letters": 42285,
-      "p_profitable": 0.997,
-      "sampled_net": 2.0588,
-      "value_per_letter": 4.1055
-     },
-     {
-      "available": 40400,
-      "cell": "b3v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.61,
-      "sampled_net": -2.2544,
-      "value_per_letter": 0.8815
-     },
-     {
-      "available": 38146,
-      "cell": "b3v2",
-      "holdout": 3815,
-      "letters": 34331,
-      "p_profitable": 0.998,
-      "sampled_net": 4.5687,
-      "value_per_letter": 4.4273
-     },
-     {
-      "available": 58109,
-      "cell": "b4v1",
-      "holdout": 5811,
-      "letters": 52298,
-      "p_profitable": 0.983,
-      "sampled_net": 1.0484,
-      "value_per_letter": 1.1546
-     },
-     {
-      "available": 20438,
-      "cell": "b4v2",
-      "holdout": 2044,
-      "letters": 18394,
+      "holdout": 579,
+      "letters": 11004,
       "p_profitable": 1.0,
-      "sampled_net": 3.5406,
-      "value_per_letter": 4.9253
+      "sampled_net": 1.7812,
+      "value_per_letter": 3.1733
      },
      {
-      "available": 37375,
-      "cell": "b5v1",
-      "holdout": 111,
+      "available": 53205,
+      "cell": "b3v1",
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.049,
-      "sampled_net": -0.4857,
-      "value_per_letter": -0.4343
+      "p_profitable": 0.946,
+      "sampled_net": 0.4415,
+      "value_per_letter": 1.0202
      },
      {
-      "available": 41172,
+      "available": 28465,
+      "cell": "b3v2",
+      "holdout": 1423,
+      "letters": 27041,
+      "p_profitable": 1.0,
+      "sampled_net": 3.9586,
+      "value_per_letter": 4.7439
+     },
+     {
+      "available": 13022,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 1.1544,
+      "value_per_letter": 2.0824
+     },
+     {
+      "available": 68649,
+      "cell": "b4v2",
+      "holdout": 3432,
+      "letters": 65216,
+      "p_profitable": 1.0,
+      "sampled_net": 7.3107,
+      "value_per_letter": 7.7825
+     },
+     {
+      "available": 32234,
+      "cell": "b5v1",
+      "holdout": 1612,
+      "letters": 30622,
+      "p_profitable": 1.0,
+      "sampled_net": 5.2957,
+      "value_per_letter": 6.2982
+     },
+     {
+      "available": 49437,
       "cell": "b5v2",
-      "holdout": 4117,
-      "letters": 37054,
-      "p_profitable": 0.817,
-      "sampled_net": 4.3934,
-      "value_per_letter": 2.4317
+      "holdout": 2472,
+      "letters": 46965,
+      "p_profitable": 1.0,
+      "sampled_net": 28.7213,
+      "value_per_letter": 28.9113
      }
     ],
-    "realised_incremental_value": 331896.58,
+    "realised_incremental_value": 441302.51,
     "round": 4,
-    "spend": 109877.35,
-    "withdrawn": 222
+    "spend": 109448.35,
+    "withdrawn": 1002
    },
    {
-    "anomalies": [
-     {
-      "anomaly": "applications_below_expected",
-      "cause": "noise",
-      "correct": true,
-      "owner": "head_of_direct_acquisition",
-      "truth": "noise"
-     }
-    ],
+    "anomalies": [],
     "approved": true,
-    "attributed_funded": 2226,
+    "attributed_funded": 1107,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -1092,8 +1013,8 @@
     "checks_passed": true,
     "creative_shares": {
      "CARD-1": 0.3,
-     "FLEXI-A": 0.064,
-     "FLEXI-B": 0.636
+     "FLEXI-A": 0.0637,
+     "FLEXI-B": 0.6363
     },
     "directions": [
      {
@@ -1230,118 +1151,136 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
      }
     ],
     "drop_date": "2026-05-18",
-    "eligible": 376281,
+    "eligible": 403332,
     "excluded_sectors": [],
-    "exp_incremental_value": 299859.55,
-    "holdout": 19192,
-    "letters": 171982,
-    "llm_gbp": 0.0308,
-    "llm_tokens_in": 10596,
-    "llm_tokens_out": 1449,
-    "mail_caused_funded": 523,
+    "exp_incremental_value": 281698.53,
+    "holdout": 9093,
+    "letters": 172376,
+    "llm_gbp": 0.0307,
+    "llm_tokens_in": 8819,
+    "llm_tokens_out": 1479,
+    "mail_caused_funded": 499,
     "missed_events": [],
     "paused": false,
     "person_minutes": 10.0,
     "person_tasks": 0,
     "plan_cells": [
      {
-      "available": 22982,
+      "available": 36951,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.052,
-      "sampled_net": -0.8178,
-      "value_per_letter": 0.2868
+      "p_profitable": 0.011,
+      "sampled_net": -0.4636,
+      "value_per_letter": 0.2099
      },
      {
-      "available": 52274,
+      "available": 43716,
       "cell": "b1v2",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.766,
-      "sampled_net": -0.1376,
-      "value_per_letter": 0.7774
+      "p_profitable": 1.0,
+      "sampled_net": 0.8973,
+      "value_per_letter": 2.2353
      },
      {
-      "available": 60403,
+      "available": 55444,
       "cell": "b2v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.955,
-      "sampled_net": 0.7283,
-      "value_per_letter": 0.9165
+      "p_profitable": 0.492,
+      "sampled_net": 0.0173,
+      "value_per_letter": 0.5796
      },
      {
-      "available": 14853,
+      "available": 25222,
       "cell": "b2v2",
-      "holdout": 1485,
-      "letters": 13367,
-      "p_profitable": 1.0,
-      "sampled_net": 2.7492,
-      "value_per_letter": 3.3048
-     },
-     {
-      "available": 36710,
-      "cell": "b3v1",
-      "holdout": 1849,
-      "letters": 16645,
-      "p_profitable": 0.75,
-      "sampled_net": 1.3055,
-      "value_per_letter": 1.4078
-     },
-     {
-      "available": 38546,
-      "cell": "b3v2",
-      "holdout": 3855,
-      "letters": 34691,
-      "p_profitable": 1.0,
-      "sampled_net": 5.0743,
-      "value_per_letter": 4.8365
-     },
-     {
-      "available": 33116,
-      "cell": "b4v1",
-      "holdout": 3312,
-      "letters": 29804,
-      "p_profitable": 1.0,
-      "sampled_net": 1.0785,
-      "value_per_letter": 1.4432
-     },
-     {
-      "available": 42140,
-      "cell": "b4v2",
-      "holdout": 4214,
-      "letters": 37926,
-      "p_profitable": 1.0,
-      "sampled_net": 5.7768,
-      "value_per_letter": 4.5737
-     },
-     {
-      "available": 34930,
-      "cell": "b5v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.542,
-      "sampled_net": 0.0295,
-      "value_per_letter": 0.5868
+      "p_profitable": 1.0,
+      "sampled_net": 2.394,
+      "value_per_letter": 2.7123
      },
      {
-      "available": 40327,
+      "available": 32010,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.905,
+      "sampled_net": 0.4017,
+      "value_per_letter": 0.8786
+     },
+     {
+      "available": 48656,
+      "cell": "b3v2",
+      "holdout": 1812,
+      "letters": 34429,
+      "p_profitable": 1.0,
+      "sampled_net": 4.3817,
+      "value_per_letter": 4.9105
+     },
+     {
+      "available": 22071,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.998,
+      "sampled_net": 0.8616,
+      "value_per_letter": 1.3652
+     },
+     {
+      "available": 58595,
+      "cell": "b4v2",
+      "holdout": 2930,
+      "letters": 55665,
+      "p_profitable": 1.0,
+      "sampled_net": 8.7229,
+      "value_per_letter": 8.4568
+     },
+     {
+      "available": 55190,
+      "cell": "b5v1",
+      "holdout": 2759,
+      "letters": 52430,
+      "p_profitable": 1.0,
+      "sampled_net": 6.0489,
+      "value_per_letter": 6.5284
+     },
+     {
+      "available": 25477,
       "cell": "b5v2",
-      "holdout": 4033,
-      "letters": 36294,
-      "p_profitable": 0.958,
-      "sampled_net": 5.093,
-      "value_per_letter": 3.9999
+      "holdout": 1274,
+      "letters": 24203,
+      "p_profitable": 1.0,
+      "sampled_net": 27.7096,
+      "value_per_letter": 28.143
      }
     ],
-    "realised_incremental_value": 316061.39,
+    "realised_incremental_value": 302662.12,
     "round": 5,
-    "spend": 94590.1,
-    "withdrawn": 745
+    "spend": 94806.8,
+    "withdrawn": 351
    },
    {
     "anomalies": [
@@ -1354,7 +1293,7 @@
      }
     ],
     "approved": true,
-    "attributed_funded": 815,
+    "attributed_funded": 916,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -1362,14 +1301,14 @@
      "not_corporate": 0,
      "objected": 0
     },
-    "brief_attempts": 1,
+    "brief_attempts": 2,
     "brief_fallback": false,
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "CARD-1": 0.0836,
-     "FLEXI-A": 0.0836,
-     "FLEXI-B": 0.8327
+     "CARD-1": 0.0834,
+     "FLEXI-A": 0.0834,
+     "FLEXI-B": 0.8332
     },
     "directions": [
      {
@@ -1506,149 +1445,131 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
      }
     ],
     "drop_date": "2026-06-15",
-    "eligible": 405309,
+    "eligible": 431260,
     "excluded_sectors": [],
-    "exp_incremental_value": 340762.7,
-    "holdout": 22221,
-    "letters": 199848,
-    "llm_gbp": 0.0353,
-    "llm_tokens_in": 11056,
-    "llm_tokens_out": 1736,
-    "mail_caused_funded": 520,
+    "exp_incremental_value": 222605.3,
+    "holdout": 10529,
+    "letters": 199741,
+    "llm_gbp": 0.0352,
+    "llm_tokens_in": 13009,
+    "llm_tokens_out": 1664,
+    "mail_caused_funded": 426,
     "missed_events": [],
     "paused": false,
     "person_minutes": 28.0,
     "person_tasks": 2,
     "plan_cells": [
      {
-      "available": 34430,
+      "available": 31706,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.058,
-      "sampled_net": -0.3617,
-      "value_per_letter": 0.2868
+      "p_profitable": 0.015,
+      "sampled_net": -0.2535,
+      "value_per_letter": 0.2099
      },
      {
-      "available": 46632,
+      "available": 54546,
       "cell": "b1v2",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.776,
-      "sampled_net": 0.4718,
-      "value_per_letter": 0.7774
+      "p_profitable": 1.0,
+      "sampled_net": 0.817,
+      "value_per_letter": 2.2353
      },
      {
-      "available": 45818,
+      "available": 30996,
       "cell": "b2v1",
-      "holdout": 999,
-      "letters": 8993,
-      "p_profitable": 0.954,
-      "sampled_net": 0.43,
-      "value_per_letter": 0.9165
-     },
-     {
-      "available": 35244,
-      "cell": "b2v2",
-      "holdout": 3524,
-      "letters": 31719,
-      "p_profitable": 1.0,
-      "sampled_net": 1.5171,
-      "value_per_letter": 3.3048
-     },
-     {
-      "available": 24254,
-      "cell": "b3v1",
-      "holdout": 2425,
-      "letters": 21828,
-      "p_profitable": 0.751,
-      "sampled_net": 0.715,
-      "value_per_letter": 1.4078
-     },
-     {
-      "available": 56807,
-      "cell": "b3v2",
-      "holdout": 5681,
-      "letters": 51126,
-      "p_profitable": 1.0,
-      "sampled_net": 3.5718,
-      "value_per_letter": 4.8365
-     },
-     {
-      "available": 28623,
-      "cell": "b4v1",
-      "holdout": 2862,
-      "letters": 25760,
-      "p_profitable": 1.0,
-      "sampled_net": 1.0221,
-      "value_per_letter": 1.4432
-     },
-     {
-      "available": 52439,
-      "cell": "b4v2",
-      "holdout": 5244,
-      "letters": 47195,
-      "p_profitable": 1.0,
-      "sampled_net": 3.9615,
-      "value_per_letter": 4.5737
-     },
-     {
-      "available": 69530,
-      "cell": "b5v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.526,
-      "sampled_net": -0.0236,
-      "value_per_letter": 0.5868
+      "p_profitable": 0.485,
+      "sampled_net": -0.0275,
+      "value_per_letter": 0.5796
      },
      {
-      "available": 11532,
+      "available": 55256,
+      "cell": "b2v2",
+      "holdout": 1507,
+      "letters": 28630,
+      "p_profitable": 1.0,
+      "sampled_net": 2.4053,
+      "value_per_letter": 2.7123
+     },
+     {
+      "available": 30220,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.894,
+      "sampled_net": -0.0548,
+      "value_per_letter": 0.8786
+     },
+     {
+      "available": 56032,
+      "cell": "b3v2",
+      "holdout": 2802,
+      "letters": 53230,
+      "p_profitable": 1.0,
+      "sampled_net": 4.2464,
+      "value_per_letter": 4.9105
+     },
+     {
+      "available": 53409,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.999,
+      "sampled_net": 0.7228,
+      "value_per_letter": 1.3652
+     },
+     {
+      "available": 32843,
+      "cell": "b4v2",
+      "holdout": 1642,
+      "letters": 31200,
+      "p_profitable": 1.0,
+      "sampled_net": 7.7669,
+      "value_per_letter": 8.4568
+     },
+     {
+      "available": 69299,
+      "cell": "b5v1",
+      "holdout": 3465,
+      "letters": 65834,
+      "p_profitable": 1.0,
+      "sampled_net": 5.7129,
+      "value_per_letter": 6.5284
+     },
+     {
+      "available": 16953,
       "cell": "b5v2",
-      "holdout": 1153,
-      "letters": 10378,
-      "p_profitable": 0.969,
-      "sampled_net": 5.4191,
-      "value_per_letter": 3.9999
+      "holdout": 848,
+      "letters": 16105,
+      "p_profitable": 1.0,
+      "sampled_net": 27.3687,
+      "value_per_letter": 28.143
      }
     ],
-    "realised_incremental_value": 352036.76,
+    "realised_incremental_value": 239453.88,
     "round": 6,
-    "spend": 109916.4,
-    "withdrawn": 151
+    "spend": 109857.55,
+    "withdrawn": 258
    },
    {
     "anomalies": [
      {
       "anomaly": "applications_below_expected",
-      "cause": "noise",
-      "correct": true,
-      "owner": "head_of_direct_acquisition",
+      "cause": "model_shift",
+      "correct": false,
+      "owner": "data_science",
       "truth": "noise"
      }
     ],
     "approved": true,
-    "attributed_funded": 776,
+    "attributed_funded": 2098,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -1661,9 +1582,9 @@
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "CARD-1": 0.8333,
+     "CARD-1": 0.0833,
      "FLEXI-A": 0.0833,
-     "FLEXI-B": 0.0833
+     "FLEXI-B": 0.8333
     },
     "directions": [
      {
@@ -1836,155 +1757,121 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
      }
     ],
     "drop_date": "2026-07-13",
-    "eligible": 404340,
+    "eligible": 422880,
     "excluded_sectors": [],
-    "exp_incremental_value": 223961.95,
-    "holdout": 22222,
-    "letters": 199866,
-    "llm_gbp": 0.0432,
-    "llm_tokens_in": 12362,
-    "llm_tokens_out": 2142,
-    "mail_caused_funded": 380,
+    "exp_incremental_value": 290766.33,
+    "holdout": 10529,
+    "letters": 199323,
+    "llm_gbp": 0.0383,
+    "llm_tokens_in": 11581,
+    "llm_tokens_out": 1890,
+    "mail_caused_funded": 427,
     "missed_events": [],
     "paused": false,
-    "person_minutes": 13.0,
-    "person_tasks": 1,
+    "person_minutes": 58.0,
+    "person_tasks": 2,
     "plan_cells": [
      {
-      "available": 26979,
+      "available": 39564,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.082,
-      "sampled_net": -0.2885,
-      "value_per_letter": 0.2665
+      "p_profitable": 0.06,
+      "sampled_net": -0.3078,
+      "value_per_letter": 0.3073
      },
      {
-      "available": 53889,
+      "available": 45012,
       "cell": "b1v2",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.819,
-      "sampled_net": 0.5551,
-      "value_per_letter": 0.847
+      "p_profitable": 1.0,
+      "sampled_net": 1.1685,
+      "value_per_letter": 1.8516
      },
      {
-      "available": 28034,
+      "available": 49322,
       "cell": "b2v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.917,
-      "sampled_net": 0.3367,
-      "value_per_letter": 0.8219
+      "p_profitable": 0.604,
+      "sampled_net": 0.0764,
+      "value_per_letter": 0.6341
      },
      {
-      "available": 52834,
+      "available": 35254,
       "cell": "b2v2",
-      "holdout": 5283,
-      "letters": 47550,
+      "holdout": 1763,
+      "letters": 33491,
       "p_profitable": 1.0,
-      "sampled_net": 2.0797,
-      "value_per_letter": 2.5138
+      "sampled_net": 2.3298,
+      "value_per_letter": 2.9051
      },
      {
-      "available": 41757,
+      "available": 81881,
       "cell": "b3v1",
-      "holdout": 4176,
-      "letters": 37581,
-      "p_profitable": 0.974,
-      "sampled_net": 0.0113,
-      "value_per_letter": 1.3024
-     },
-     {
-      "available": 39111,
-      "cell": "b3v2",
-      "holdout": 3911,
-      "letters": 35199,
-      "p_profitable": 1.0,
-      "sampled_net": 2.3312,
-      "value_per_letter": 3.5851
-     },
-     {
-      "available": 52679,
-      "cell": "b4v1",
-      "holdout": 2774,
-      "letters": 24967,
-      "p_profitable": 1.0,
-      "sampled_net": 0.5013,
-      "value_per_letter": 1.1297
-     },
-     {
-      "available": 28189,
-      "cell": "b4v2",
-      "holdout": 2819,
-      "letters": 25370,
-      "p_profitable": 1.0,
-      "sampled_net": 2.9547,
-      "value_per_letter": 2.9344
-     },
-     {
-      "available": 52721,
-      "cell": "b5v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.588,
-      "sampled_net": -0.5952,
-      "value_per_letter": 0.6993
+      "p_profitable": 0.692,
+      "sampled_net": -0.0899,
+      "value_per_letter": 0.6585
      },
      {
-      "available": 28147,
+      "available": 2695,
+      "cell": "b3v2",
+      "holdout": 135,
+      "letters": 2560,
+      "p_profitable": 1.0,
+      "sampled_net": 4.0919,
+      "value_per_letter": 4.756
+     },
+     {
+      "available": 6456,
+      "cell": "b4v1",
+      "holdout": 284,
+      "letters": 5387,
+      "p_profitable": 1.0,
+      "sampled_net": 2.8983,
+      "value_per_letter": 2.7923
+     },
+     {
+      "available": 78120,
+      "cell": "b4v2",
+      "holdout": 3906,
+      "letters": 74214,
+      "p_profitable": 1.0,
+      "sampled_net": 7.7211,
+      "value_per_letter": 8.3164
+     },
+     {
+      "available": 34217,
+      "cell": "b5v1",
+      "holdout": 1711,
+      "letters": 32506,
+      "p_profitable": 1.0,
+      "sampled_net": 5.7089,
+      "value_per_letter": 6.2128
+     },
+     {
+      "available": 50359,
       "cell": "b5v2",
-      "holdout": 2815,
-      "letters": 25332,
-      "p_profitable": 0.857,
-      "sampled_net": 1.8677,
-      "value_per_letter": 1.8731
+      "holdout": 2518,
+      "letters": 47841,
+      "p_profitable": 1.0,
+      "sampled_net": 27.6138,
+      "value_per_letter": 27.8877
      }
     ],
-    "realised_incremental_value": 234137.61,
+    "realised_incremental_value": 338427.72,
     "round": 7,
-    "spend": 109926.3,
-    "withdrawn": 133
+    "spend": 109627.65,
+    "withdrawn": 676
    },
    {
     "anomalies": [
-     {
-      "anomaly": "applications_below_expected",
-      "cause": "noise",
-      "correct": true,
-      "owner": "head_of_direct_acquisition",
-      "truth": "noise"
-     },
      {
       "anomaly": "score_distribution_moved",
       "cause": "model_shift",
@@ -1994,7 +1881,7 @@
      }
     ],
     "approved": true,
-    "attributed_funded": 1567,
+    "attributed_funded": 854,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -2007,9 +1894,9 @@
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "CARD-1": 0.2164,
-     "FLEXI-A": 0.0909,
-     "FLEXI-B": 0.6927
+     "CARD-1": 0.0833,
+     "FLEXI-A": 0.0833,
+     "FLEXI-B": 0.8333
     },
     "directions": [
      {
@@ -2200,132 +2087,131 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
      }
     ],
     "drop_date": "2026-08-10",
-    "eligible": 366371,
+    "eligible": 393019,
     "excluded_sectors": [],
-    "exp_incremental_value": 212176.18,
+    "exp_incremental_value": 192329.19,
     "holdout": 35293,
-    "letters": 199363,
-    "llm_gbp": 0.041,
-    "llm_tokens_in": 12425,
-    "llm_tokens_out": 1949,
-    "mail_caused_funded": 317,
+    "letters": 199757,
+    "llm_gbp": 0.0379,
+    "llm_tokens_in": 12139,
+    "llm_tokens_out": 1740,
+    "mail_caused_funded": 352,
     "missed_events": [],
     "paused": false,
     "person_minutes": 28.0,
     "person_tasks": 2,
     "plan_cells": [
      {
-      "available": 24617,
+      "available": 24627,
       "cell": "b1v1",
       "holdout": 176,
       "letters": 1000,
-      "p_profitable": 0.073,
-      "sampled_net": -0.2031,
-      "value_per_letter": 0.2584
+      "p_profitable": 0.021,
+      "sampled_net": -0.2617,
+      "value_per_letter": 0.2821
      },
      {
-      "available": 48657,
+      "available": 53977,
       "cell": "b1v2",
-      "holdout": 7298,
-      "letters": 41358,
-      "p_profitable": 0.798,
-      "sampled_net": -0.3447,
-      "value_per_letter": 0.8421
+      "holdout": 2436,
+      "letters": 13803,
+      "p_profitable": 1.0,
+      "sampled_net": 1.5185,
+      "value_per_letter": 1.688
      },
      {
-      "available": 51440,
+      "available": 57445,
       "cell": "b2v1",
       "holdout": 176,
       "letters": 1000,
-      "p_profitable": 0.878,
-      "sampled_net": 0.3139,
-      "value_per_letter": 0.7741
+      "p_profitable": 0.484,
+      "sampled_net": 0.0167,
+      "value_per_letter": 0.5628
      },
      {
-      "available": 21834,
+      "available": 21159,
       "cell": "b2v2",
-      "holdout": 3275,
-      "letters": 18558,
+      "holdout": 3174,
+      "letters": 17985,
       "p_profitable": 1.0,
-      "sampled_net": 1.0915,
-      "value_per_letter": 1.8989
+      "sampled_net": 1.8944,
+      "value_per_letter": 2.3818
      },
      {
-      "available": 38775,
+      "available": 41442,
       "cell": "b3v1",
       "holdout": 176,
       "letters": 1000,
-      "p_profitable": 0.876,
-      "sampled_net": 0.2487,
-      "value_per_letter": 0.8163
+      "p_profitable": 0.743,
+      "sampled_net": 0.0494,
+      "value_per_letter": 0.687
      },
      {
-      "available": 34499,
+      "available": 37161,
       "cell": "b3v2",
-      "holdout": 5175,
-      "letters": 29324,
+      "holdout": 5574,
+      "letters": 31586,
       "p_profitable": 1.0,
-      "sampled_net": 2.0788,
-      "value_per_letter": 2.6175
+      "sampled_net": 3.7817,
+      "value_per_letter": 4.2577
      },
      {
-      "available": 33190,
+      "available": 24426,
       "cell": "b4v1",
-      "holdout": 4978,
-      "letters": 28211,
+      "holdout": 3664,
+      "letters": 20762,
       "p_profitable": 1.0,
-      "sampled_net": 0.5531,
-      "value_per_letter": 1.1206
+      "sampled_net": 1.5556,
+      "value_per_letter": 1.8604
      },
      {
-      "available": 40084,
+      "available": 54178,
       "cell": "b4v2",
-      "holdout": 6013,
-      "letters": 34071,
+      "holdout": 8127,
+      "letters": 46051,
       "p_profitable": 1.0,
-      "sampled_net": 1.7334,
-      "value_per_letter": 2.6753
+      "sampled_net": 7.5311,
+      "value_per_letter": 8.0323
      },
      {
-      "available": 35164,
+      "available": 48570,
       "cell": "b5v1",
-      "holdout": 2309,
-      "letters": 13083,
-      "p_profitable": 0.658,
-      "sampled_net": 1.5034,
-      "value_per_letter": 0.8335
+      "holdout": 7285,
+      "letters": 41284,
+      "p_profitable": 1.0,
+      "sampled_net": 5.214,
+      "value_per_letter": 5.7226
      },
      {
-      "available": 38111,
+      "available": 30034,
       "cell": "b5v2",
-      "holdout": 5717,
-      "letters": 32394,
-      "p_profitable": 0.902,
-      "sampled_net": 2.6448,
-      "value_per_letter": 2.0449
+      "holdout": 4505,
+      "letters": 25528,
+      "p_profitable": 1.0,
+      "sampled_net": 25.2127,
+      "value_per_letter": 25.6352
      }
     ],
-    "realised_incremental_value": 208778.52,
+    "realised_incremental_value": 216217.32,
     "round": 8,
-    "spend": 109649.65,
-    "withdrawn": 636
+    "spend": 109866.35,
+    "withdrawn": 242
    },
    {
-    "anomalies": [],
+    "anomalies": [
+     {
+      "anomaly": "applications_below_expected",
+      "cause": "noise",
+      "correct": true,
+      "owner": "head_of_direct_acquisition",
+      "truth": "noise"
+     }
+    ],
     "approved": true,
-    "attributed_funded": 691,
+    "attributed_funded": 808,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -2338,9 +2224,9 @@
     "budget": 160000.0,
     "checks_passed": true,
     "creative_shares": {
-     "CARD-1": 0.0854,
-     "FLEXI-A": 0.0854,
-     "FLEXI-B": 0.8293
+     "CARD-1": 0.0833,
+     "FLEXI-A": 0.0833,
+     "FLEXI-B": 0.8333
     },
     "directions": [
      {
@@ -2504,127 +2390,118 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
      }
     ],
     "drop_date": "2026-09-07",
-    "eligible": 353208,
+    "eligible": 367553,
     "excluded_sectors": [],
-    "exp_incremental_value": 102853.73,
-    "holdout": 24679,
-    "letters": 221984,
-    "llm_gbp": 0.0339,
-    "llm_tokens_in": 9311,
-    "llm_tokens_out": 1646,
-    "mail_caused_funded": 159,
+    "exp_incremental_value": 84592.73,
+    "holdout": 15291,
+    "letters": 290277,
+    "llm_gbp": 0.0356,
+    "llm_tokens_in": 11348,
+    "llm_tokens_out": 1706,
+    "mail_caused_funded": 171,
     "missed_events": [],
     "paused": false,
     "person_minutes": 10.0,
     "person_tasks": 0,
     "plan_cells": [
      {
-      "available": 53571,
+      "available": 30073,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.324,
-      "sampled_net": -1.4447,
-      "value_per_letter": -0.0183
+      "p_profitable": 0.04,
+      "sampled_net": -0.2508,
+      "value_per_letter": 0.3014
      },
      {
-      "available": 17071,
+      "available": 43438,
       "cell": "b1v2",
-      "holdout": 1707,
-      "letters": 15363,
-      "p_profitable": 0.989,
-      "sampled_net": 1.1335,
-      "value_per_letter": 1.8007
+      "holdout": 2172,
+      "letters": 41266,
+      "p_profitable": 1.0,
+      "sampled_net": 0.4988,
+      "value_per_letter": 1.4487
      },
      {
-      "available": 18250,
+      "available": 33770,
       "cell": "b2v1",
-      "holdout": 1825,
-      "letters": 16425,
-      "p_profitable": 0.938,
-      "sampled_net": 0.5159,
-      "value_per_letter": 0.9397
-     },
-     {
-      "available": 52391,
-      "cell": "b2v2",
-      "holdout": 5239,
-      "letters": 47151,
-      "p_profitable": 0.998,
-      "sampled_net": 0.9553,
-      "value_per_letter": 1.4935
-     },
-     {
-      "available": 22340,
-      "cell": "b3v1",
-      "holdout": 2234,
-      "letters": 20106,
-      "p_profitable": 0.792,
-      "sampled_net": 0.0871,
-      "value_per_letter": 0.6857
-     },
-     {
-      "available": 48302,
-      "cell": "b3v2",
-      "holdout": 4830,
-      "letters": 43471,
-      "p_profitable": 1.0,
-      "sampled_net": 1.1038,
-      "value_per_letter": 2.2867
-     },
-     {
-      "available": 27383,
-      "cell": "b4v1",
-      "holdout": 2738,
-      "letters": 24644,
-      "p_profitable": 0.999,
-      "sampled_net": 0.4255,
-      "value_per_letter": 0.9651
-     },
-     {
-      "available": 43258,
-      "cell": "b4v2",
-      "holdout": 4326,
-      "letters": 38932,
-      "p_profitable": 1.0,
-      "sampled_net": 1.6762,
-      "value_per_letter": 2.2065
-     },
-     {
-      "available": 55060,
-      "cell": "b5v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.407,
-      "sampled_net": 0.5381,
-      "value_per_letter": 0.3532
+      "p_profitable": 0.23,
+      "sampled_net": -0.3385,
+      "value_per_letter": 0.4431
      },
      {
-      "available": 15582,
+      "available": 39740,
+      "cell": "b2v2",
+      "holdout": 1987,
+      "letters": 37753,
+      "p_profitable": 1.0,
+      "sampled_net": 2.2015,
+      "value_per_letter": 2.4304
+     },
+     {
+      "available": 28669,
+      "cell": "b3v1",
+      "holdout": 1433,
+      "letters": 27235,
+      "p_profitable": 0.686,
+      "sampled_net": -0.126,
+      "value_per_letter": 0.6551
+     },
+     {
+      "available": 44842,
+      "cell": "b3v2",
+      "holdout": 2242,
+      "letters": 42599,
+      "p_profitable": 1.0,
+      "sampled_net": 3.7018,
+      "value_per_letter": 4.2568
+     },
+     {
+      "available": 37206,
+      "cell": "b4v1",
+      "holdout": 1860,
+      "letters": 35345,
+      "p_profitable": 1.0,
+      "sampled_net": 0.8563,
+      "value_per_letter": 1.5957
+     },
+     {
+      "available": 36304,
+      "cell": "b4v2",
+      "holdout": 1815,
+      "letters": 34488,
+      "p_profitable": 1.0,
+      "sampled_net": 6.5983,
+      "value_per_letter": 7.3924
+     },
+     {
+      "available": 54059,
+      "cell": "b5v1",
+      "holdout": 2703,
+      "letters": 51356,
+      "p_profitable": 1.0,
+      "sampled_net": 4.8952,
+      "value_per_letter": 5.4028
+     },
+     {
+      "available": 19452,
       "cell": "b5v2",
-      "holdout": 1558,
-      "letters": 14023,
-      "p_profitable": 0.573,
-      "sampled_net": 1.0029,
-      "value_per_letter": 0.7102
+      "holdout": 973,
+      "letters": 18479,
+      "p_profitable": 1.0,
+      "sampled_net": 21.5877,
+      "value_per_letter": 22.0645
      }
     ],
-    "realised_incremental_value": 106264.87,
+    "realised_incremental_value": 92327.23,
     "round": 9,
-    "spend": 122091.2,
-    "withdrawn": 131
+    "spend": 159652.35,
+    "withdrawn": 244
    },
    {
     "anomalies": [
@@ -2637,7 +2514,7 @@
      }
     ],
     "approved": true,
-    "attributed_funded": 802,
+    "attributed_funded": 2158,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -2650,9 +2527,9 @@
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "CARD-1": 0.8302,
-     "FLEXI-A": 0.0849,
-     "FLEXI-B": 0.0849
+     "CARD-1": 0.0833,
+     "FLEXI-A": 0.0833,
+     "FLEXI-B": 0.8333
     },
     "directions": [
      {
@@ -2816,123 +2693,195 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
      }
     ],
     "drop_date": "2026-10-05",
-    "eligible": 327750,
+    "eligible": 265731,
     "excluded_sectors": [],
-    "exp_incremental_value": 225963.37,
-    "holdout": 19389,
-    "letters": 174302,
-    "llm_gbp": 0.0367,
-    "llm_tokens_in": 11327,
-    "llm_tokens_out": 1804,
-    "mail_caused_funded": 352,
+    "exp_incremental_value": 352928.38,
+    "holdout": 10527,
+    "letters": 199210,
+    "llm_gbp": 0.0502,
+    "llm_tokens_in": 13407,
+    "llm_tokens_out": 2525,
+    "mail_caused_funded": 487,
     "missed_events": [],
     "paused": false,
     "person_minutes": 28.0,
     "person_tasks": 2,
     "plan_cells": [
      {
-      "available": 36057,
+      "available": 39524,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.219,
-      "sampled_net": 0.0017,
-      "value_per_letter": -0.1775
+      "p_profitable": 0.056,
+      "sampled_net": -0.2117,
+      "value_per_letter": 0.3202
      },
      {
-      "available": 29493,
+      "available": 13622,
       "cell": "b1v2",
-      "holdout": 2949,
-      "letters": 26543,
-      "p_profitable": 0.879,
-      "sampled_net": 0.6308,
-      "value_per_letter": 0.9543
+      "holdout": 681,
+      "letters": 12940,
+      "p_profitable": 1.0,
+      "sampled_net": 0.7836,
+      "value_per_letter": 1.5407
      },
      {
-      "available": 25572,
+      "available": 32711,
       "cell": "b2v1",
-      "holdout": 2557,
-      "letters": 23014,
-      "p_profitable": 0.633,
-      "sampled_net": -0.4856,
-      "value_per_letter": 0.6336
+      "holdout": 799,
+      "letters": 15181,
+      "p_profitable": 0.604,
+      "sampled_net": 0.1852,
+      "value_per_letter": 0.6167
      },
      {
-      "available": 39978,
+      "available": 20435,
       "cell": "b2v2",
-      "holdout": 3998,
-      "letters": 35980,
-      "p_profitable": 0.972,
-      "sampled_net": 0.8597,
-      "value_per_letter": 1.1278
+      "holdout": 1022,
+      "letters": 19413,
+      "p_profitable": 1.0,
+      "sampled_net": 1.9151,
+      "value_per_letter": 2.3798
      },
      {
-      "available": 29982,
+      "available": 12831,
       "cell": "b3v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.409,
-      "sampled_net": 0.0109,
-      "value_per_letter": 0.5013
+      "holdout": 642,
+      "letters": 12189,
+      "p_profitable": 1.0,
+      "sampled_net": 1.3806,
+      "value_per_letter": 1.6983
      },
      {
-      "available": 35568,
+      "available": 40316,
       "cell": "b3v2",
-      "holdout": 3557,
-      "letters": 32011,
-      "p_profitable": 0.992,
-      "sampled_net": 0.8608,
-      "value_per_letter": 1.4656
+      "holdout": 2016,
+      "letters": 38300,
+      "p_profitable": 1.0,
+      "sampled_net": 3.4644,
+      "value_per_letter": 3.9843
      },
      {
-      "available": 31291,
+      "available": 18560,
       "cell": "b4v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.401,
-      "sampled_net": -0.2623,
-      "value_per_letter": 0.5093
+      "holdout": 928,
+      "letters": 17632,
+      "p_profitable": 1.0,
+      "sampled_net": 1.493,
+      "value_per_letter": 1.6776
      },
      {
-      "available": 34259,
+      "available": 34585,
       "cell": "b4v2",
-      "holdout": 3426,
-      "letters": 30833,
-      "p_profitable": 0.883,
-      "sampled_net": 0.13,
-      "value_per_letter": 1.128
+      "holdout": 1729,
+      "letters": 32855,
+      "p_profitable": 1.0,
+      "sampled_net": 6.7199,
+      "value_per_letter": 7.1635
      },
      {
-      "available": 40973,
+      "available": 29240,
       "cell": "b5v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.294,
-      "sampled_net": 0.2743,
-      "value_per_letter": 0.1471
+      "holdout": 1462,
+      "letters": 27778,
+      "p_profitable": 1.0,
+      "sampled_net": 4.8415,
+      "value_per_letter": 5.3925
      },
      {
-      "available": 24577,
+      "available": 23907,
       "cell": "b5v2",
-      "holdout": 2458,
-      "letters": 22119,
-      "p_profitable": 0.714,
-      "sampled_net": 0.142,
-      "value_per_letter": 1.073
+      "holdout": 1195,
+      "letters": 22711,
+      "p_profitable": 1.0,
+      "sampled_net": 22.4721,
+      "value_per_letter": 22.9553
      }
     ],
-    "realised_incremental_value": 209589.14,
+    "realised_incremental_value": 363518.12,
     "round": 10,
-    "spend": 95866.1,
-    "withdrawn": 198
+    "spend": 109565.5,
+    "withdrawn": 789
    },
    {
     "anomalies": [],
     "approved": true,
-    "attributed_funded": 1753,
+    "attributed_funded": 983,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -2945,9 +2894,9 @@
     "budget": 110000.0,
     "checks_passed": true,
     "creative_shares": {
-     "CARD-1": 0.0845,
-     "FLEXI-A": 0.0845,
-     "FLEXI-B": 0.8309
+     "CARD-1": 0.0909,
+     "FLEXI-A": 0.2361,
+     "FLEXI-B": 0.673
     },
     "directions": [
      {
@@ -3102,125 +3051,152 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
      }
     ],
     "drop_date": "2026-11-02",
-    "eligible": 361027,
+    "eligible": 288500,
     "excluded_sectors": [
      "transport"
     ],
-    "exp_incremental_value": 223361.1,
-    "holdout": 20026,
-    "letters": 179524,
-    "llm_gbp": 0.0316,
-    "llm_tokens_in": 8795,
-    "llm_tokens_out": 1556,
-    "mail_caused_funded": 336,
+    "exp_incremental_value": 225844.92,
+    "holdout": 10528,
+    "letters": 199707,
+    "llm_gbp": 0.0345,
+    "llm_tokens_in": 9575,
+    "llm_tokens_out": 1646,
+    "mail_caused_funded": 362,
     "missed_events": [],
     "paused": false,
     "person_minutes": 10.0,
     "person_tasks": 0,
     "plan_cells": [
      {
-      "available": 21133,
+      "available": 32307,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.333,
-      "sampled_net": 0.2102,
-      "value_per_letter": 0.1182
+      "p_profitable": 0.07,
+      "sampled_net": -0.3199,
+      "value_per_letter": 0.328
      },
      {
-      "available": 46308,
+      "available": 21428,
       "cell": "b1v2",
-      "holdout": 4631,
-      "letters": 41677,
-      "p_profitable": 0.826,
-      "sampled_net": -0.0536,
-      "value_per_letter": 0.8344
+      "holdout": 1071,
+      "letters": 20356,
+      "p_profitable": 1.0,
+      "sampled_net": 0.5524,
+      "value_per_letter": 1.1212
      },
      {
-      "available": 49089,
+      "available": 23852,
       "cell": "b2v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.431,
-      "sampled_net": 0.1648,
-      "value_per_letter": 0.4995
+      "holdout": 57,
+      "letters": 1074,
+      "p_profitable": 0.971,
+      "sampled_net": 0.2847,
+      "value_per_letter": 0.982
      },
      {
-      "available": 17489,
+      "available": 29172,
       "cell": "b2v2",
-      "holdout": 1749,
-      "letters": 15740,
-      "p_profitable": 0.979,
-      "sampled_net": 0.3644,
-      "value_per_letter": 1.0827
+      "holdout": 1459,
+      "letters": 27713,
+      "p_profitable": 1.0,
+      "sampled_net": 1.5618,
+      "value_per_letter": 2.3554
      },
      {
-      "available": 36399,
+      "available": 14598,
       "cell": "b3v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.381,
-      "sampled_net": 0.0148,
-      "value_per_letter": 0.5012
+      "holdout": 730,
+      "letters": 13868,
+      "p_profitable": 1.0,
+      "sampled_net": 0.3155,
+      "value_per_letter": 0.9967
      },
      {
-      "available": 29479,
+      "available": 38155,
       "cell": "b3v2",
-      "holdout": 2948,
-      "letters": 26531,
-      "p_profitable": 0.976,
-      "sampled_net": 0.806,
-      "value_per_letter": 1.2599
+      "holdout": 1908,
+      "letters": 36247,
+      "p_profitable": 1.0,
+      "sampled_net": 4.0278,
+      "value_per_letter": 4.5882
      },
      {
-      "available": 28649,
+      "available": 21335,
       "cell": "b4v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.102,
-      "sampled_net": -0.2623,
-      "value_per_letter": 0.3737
+      "holdout": 1067,
+      "letters": 20268,
+      "p_profitable": 1.0,
+      "sampled_net": 1.0007,
+      "value_per_letter": 1.7175
      },
      {
-      "available": 37016,
+      "available": 31354,
       "cell": "b4v2",
-      "holdout": 3702,
-      "letters": 33314,
-      "p_profitable": 0.824,
-      "sampled_net": 0.1282,
-      "value_per_letter": 0.9838
+      "holdout": 1568,
+      "letters": 29786,
+      "p_profitable": 1.0,
+      "sampled_net": 6.6783,
+      "value_per_letter": 7.3156
      },
      {
-      "available": 30440,
+      "available": 40153,
       "cell": "b5v1",
-      "holdout": 3044,
-      "letters": 27396,
-      "p_profitable": 0.495,
-      "sampled_net": 0.3753,
-      "value_per_letter": 0.5528
+      "holdout": 2008,
+      "letters": 38145,
+      "p_profitable": 1.0,
+      "sampled_net": 4.7621,
+      "value_per_letter": 5.5089
      },
      {
-      "available": 35078,
+      "available": 12150,
       "cell": "b5v2",
-      "holdout": 3508,
-      "letters": 31570,
-      "p_profitable": 0.649,
-      "sampled_net": -0.5472,
-      "value_per_letter": 0.8944
+      "holdout": 607,
+      "letters": 11542,
+      "p_profitable": 1.0,
+      "sampled_net": 22.1762,
+      "value_per_letter": 22.6271
      }
     ],
-    "realised_incremental_value": 218190.95,
+    "realised_incremental_value": 213886.56,
     "round": 11,
-    "spend": 98738.2,
-    "withdrawn": 704
+    "spend": 109838.85,
+    "withdrawn": 292
    },
    {
     "anomalies": [],
     "approved": true,
-    "attributed_funded": 621,
+    "attributed_funded": 821,
     "breaches": {
      "gone_away": 0,
      "mps_director": 0,
@@ -3228,14 +3204,14 @@
      "not_corporate": 0,
      "objected": 0
     },
-    "brief_attempts": 2,
+    "brief_attempts": 1,
     "brief_fallback": false,
     "budget": 80000.0,
     "checks_passed": true,
     "creative_shares": {
-     "CARD-1": 0.0833,
-     "FLEXI-A": 0.0833,
-     "FLEXI-B": 0.8333
+     "CARD-1": 0.8203,
+     "FLEXI-A": 0.0898,
+     "FLEXI-B": 0.0898
     },
     "directions": [
      {
@@ -3336,154 +3312,118 @@
       "model_read_ok": true,
       "route_ok": true,
       "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
-     },
-     {
-      "correct": true,
-      "effect_ok": true,
-      "first_pass_ok": true,
-      "kind": "objection",
-      "model_read_ok": true,
-      "route_ok": true,
-      "stopped": 0
      }
     ],
     "drop_date": "2026-11-30",
-    "eligible": 406304,
+    "eligible": 381821,
     "excluded_sectors": [],
-    "exp_incremental_value": 250574.22,
-    "holdout": 16161,
-    "letters": 145365,
-    "llm_gbp": 0.03,
-    "llm_tokens_in": 10709,
-    "llm_tokens_out": 1360,
-    "mail_caused_funded": 366,
+    "exp_incremental_value": 152021.49,
+    "holdout": 7658,
+    "letters": 145215,
+    "llm_gbp": 0.0226,
+    "llm_tokens_in": 7230,
+    "llm_tokens_out": 1105,
+    "mail_caused_funded": 335,
     "missed_events": [],
     "paused": false,
     "person_minutes": 10.0,
     "person_tasks": 0,
     "plan_cells": [
      {
-      "available": 47284,
+      "available": 31815,
       "cell": "b1v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.429,
-      "sampled_net": -0.4451,
-      "value_per_letter": 0.3873
+      "p_profitable": 0.095,
+      "sampled_net": -0.3639,
+      "value_per_letter": 0.3499
      },
      {
-      "available": 33977,
+      "available": 44549,
       "cell": "b1v2",
-      "holdout": 981,
-      "letters": 8832,
-      "p_profitable": 0.654,
-      "sampled_net": 0.1259,
-      "value_per_letter": 0.6321
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 0.7799,
+      "value_per_letter": 1.3183
      },
      {
-      "available": 32274,
+      "available": 28486,
       "cell": "b2v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.329,
-      "sampled_net": 0.0352,
-      "value_per_letter": 0.4437
+      "p_profitable": 1.0,
+      "sampled_net": 0.6614,
+      "value_per_letter": 0.9906
      },
      {
-      "available": 48987,
+      "available": 47878,
       "cell": "b2v2",
-      "holdout": 4899,
-      "letters": 44088,
-      "p_profitable": 0.989,
-      "sampled_net": 0.7053,
-      "value_per_letter": 1.1598
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 2.0911,
+      "value_per_letter": 2.8044
      },
      {
-      "available": 30811,
+      "available": 32516,
       "cell": "b3v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.448,
-      "sampled_net": 0.0096,
-      "value_per_letter": 0.5209
+      "p_profitable": 1.0,
+      "sampled_net": 1.2438,
+      "value_per_letter": 1.8555
      },
      {
-      "available": 50449,
+      "available": 43849,
       "cell": "b3v2",
-      "holdout": 5045,
-      "letters": 45404,
-      "p_profitable": 0.995,
-      "sampled_net": 0.8931,
-      "value_per_letter": 1.5753
+      "holdout": 1711,
+      "letters": 32508,
+      "p_profitable": 1.0,
+      "sampled_net": 4.4466,
+      "value_per_letter": 5.0419
      },
      {
-      "available": 35560,
+      "available": 40151,
       "cell": "b4v1",
-      "holdout": 111,
+      "holdout": 53,
       "letters": 1000,
-      "p_profitable": 0.181,
-      "sampled_net": -0.1896,
-      "value_per_letter": 0.3956
+      "p_profitable": 1.0,
+      "sampled_net": 2.0324,
+      "value_per_letter": 2.6195
      },
      {
-      "available": 45701,
+      "available": 36212,
       "cell": "b4v2",
-      "holdout": 4570,
-      "letters": 41130,
-      "p_profitable": 0.94,
-      "sampled_net": 1.2447,
-      "value_per_letter": 1.2614
+      "holdout": 1811,
+      "letters": 34401,
+      "p_profitable": 1.0,
+      "sampled_net": 6.0237,
+      "value_per_letter": 6.7933
      },
      {
-      "available": 57223,
+      "available": 57943,
       "cell": "b5v1",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.249,
-      "sampled_net": -0.6331,
-      "value_per_letter": 0.1283
+      "holdout": 2897,
+      "letters": 55045,
+      "p_profitable": 1.0,
+      "sampled_net": 4.9734,
+      "value_per_letter": 5.5438
      },
      {
-      "available": 24038,
+      "available": 18422,
       "cell": "b5v2",
-      "holdout": 111,
-      "letters": 1000,
-      "p_profitable": 0.531,
-      "sampled_net": -0.297,
-      "value_per_letter": 0.5735
+      "holdout": 921,
+      "letters": 17500,
+      "p_profitable": 1.0,
+      "sampled_net": 19.6116,
+      "value_per_letter": 20.1818
      }
     ],
-    "realised_incremental_value": 267291.96,
+    "realised_incremental_value": 176836.63,
     "round": 12,
-    "spend": 79950.75,
-    "withdrawn": 89
+    "spend": 79868.25,
+    "withdrawn": 239
    }
   ],
   "seed": 0
@@ -3492,11 +3432,11 @@
   "agent": {
    "seeds": [
     {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 3,
+     "anomaly_false_alarms": 4,
+     "anomaly_false_dismissed": 2,
      "anomaly_real_detected": 4,
      "anomaly_real_diagnosed": 4,
-     "attributed_funded": 14617,
+     "attributed_funded": 17554,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -3507,68 +3447,34 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 1,
-     "calibration_coverage": 0.9,
+     "calibration_coverage": null,
      "directions_correct": 1.0,
      "directions_stopped": 2,
      "events_missed": 0,
-     "incremental_value": 3113777.26,
+     "incremental_value": 3249685.39,
      "ledger_intact": true,
-     "letters": 2290815,
-     "llm_gbp_per_round": 0.03162500000000001,
-     "mail_caused_funded": 5009,
-     "messages": 194,
-     "model_read_correct": 0.9948453608247423,
-     "person_minutes_per_round": 16.25,
-     "person_tasks_per_round": 0.75,
+     "letters": 2404060,
+     "llm_gbp_per_round": 0.032125,
+     "mail_caused_funded": 5397,
+     "matchback_vs_true": 6.0788026251166825,
+     "measured_vs_true": 1.059153592734126,
+     "messages": 195,
+     "model_read_correct": 0.9948717948717949,
+     "person_minutes_per_round": 23.75,
+     "person_tasks_per_round": 0.9166666666666666,
      "printer_duplicates": 0,
-     "profit": 1853829.0099999998,
-     "realised_incremental_value": 3189364.2600000002,
-     "spend": 1259948.25,
-     "withdrawn_at_print": 4202,
+     "profit": 1927452.3900000001,
+     "realised_incremental_value": 3516618.21,
+     "spend": 1322233.0,
+     "withdrawn_at_print": 4633,
      "wrong_effects": 0
     },
     {
-     "anomaly_false_alarms": 3,
+     "anomaly_false_alarms": 4,
      "anomaly_false_dismissed": 3,
      "anomaly_real_detected": 3,
-     "anomaly_real_diagnosed": 1,
-     "attributed_funded": 14935,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 1,
-     "calibration_coverage": 0.9,
-     "directions_correct": 1.0,
-     "directions_stopped": 4,
-     "events_missed": 1,
-     "incremental_value": 3061430.7199999997,
-     "ledger_intact": true,
-     "letters": 2351147,
-     "llm_gbp_per_round": 0.03240833333333334,
-     "mail_caused_funded": 5006,
-     "messages": 195,
-     "model_read_correct": 0.9897435897435898,
-     "person_minutes_per_round": 16.5,
-     "person_tasks_per_round": 0.6666666666666666,
-     "printer_duplicates": 0,
-     "profit": 1768299.8699999996,
-     "realised_incremental_value": 3208681.67,
-     "spend": 1293130.85,
-     "withdrawn_at_print": 4409,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 3,
-     "anomaly_real_detected": 4,
-     "anomaly_real_diagnosed": 4,
-     "attributed_funded": 15072,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17780,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -3579,32 +3485,72 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 0,
-     "calibration_coverage": 1.0,
+     "calibration_coverage": null,
      "directions_correct": 1.0,
-     "directions_stopped": 5,
-     "events_missed": 0,
-     "incremental_value": 3118063.2,
+     "directions_stopped": 3,
+     "events_missed": 1,
+     "incremental_value": 3198187.0100000002,
      "ledger_intact": true,
-     "letters": 2361421,
-     "llm_gbp_per_round": 0.02845,
-     "mail_caused_funded": 5158,
-     "messages": 212,
-     "model_read_correct": 0.9858490566037735,
-     "person_minutes_per_round": 17.0,
-     "person_tasks_per_round": 1.0,
+     "letters": 2404336,
+     "llm_gbp_per_round": 0.035666666666666666,
+     "mail_caused_funded": 5334,
+     "matchback_vs_true": 6.161804222163051,
+     "measured_vs_true": 0.9982615895803061,
+     "messages": 218,
+     "model_read_correct": 0.9954128440366973,
+     "person_minutes_per_round": 19.0,
+     "person_tasks_per_round": 0.8333333333333334,
      "printer_duplicates": 0,
-     "profit": 1819281.6500000001,
-     "realised_incremental_value": 3295707.83,
-     "spend": 1298781.55,
-     "withdrawn_at_print": 4304,
+     "profit": 1875802.2100000002,
+     "realised_incremental_value": 3379817.1,
+     "spend": 1322384.8,
+     "withdrawn_at_print": 4745,
      "wrong_effects": 0
     },
     {
      "anomaly_false_alarms": 3,
      "anomaly_false_dismissed": 2,
      "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 17479,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 2,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 4,
+     "events_missed": 0,
+     "incremental_value": 3238399.93,
+     "ledger_intact": true,
+     "letters": 2404350,
+     "llm_gbp_per_round": 0.03315833333333333,
+     "mail_caused_funded": 5309,
+     "matchback_vs_true": 6.066315699745517,
+     "measured_vs_true": 1.1251579701152215,
+     "messages": 216,
+     "model_read_correct": 0.9907407407407407,
+     "person_minutes_per_round": 25.5,
+     "person_tasks_per_round": 1.0,
+     "printer_duplicates": 0,
+     "profit": 1916007.4300000002,
+     "realised_incremental_value": 3316813.04,
+     "spend": 1322392.5,
+     "withdrawn_at_print": 4731,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 4,
+     "anomaly_false_dismissed": 4,
+     "anomaly_real_detected": 4,
      "anomaly_real_diagnosed": 4,
-     "attributed_funded": 14438,
+     "attributed_funded": 17320,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -3615,32 +3561,34 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 3,
-     "calibration_coverage": 0.9,
+     "calibration_coverage": null,
      "directions_correct": 1.0,
-     "directions_stopped": 4,
+     "directions_stopped": 2,
      "events_missed": 0,
-     "incremental_value": 2960547.44,
+     "incremental_value": 3055345.09,
      "ledger_intact": true,
-     "letters": 2296390,
-     "llm_gbp_per_round": 0.03109166666666666,
-     "mail_caused_funded": 4897,
-     "messages": 198,
-     "model_read_correct": 0.98989898989899,
-     "person_minutes_per_round": 20.5,
-     "person_tasks_per_round": 1.0,
+     "letters": 2391237,
+     "llm_gbp_per_round": 0.033966666666666666,
+     "mail_caused_funded": 5058,
+     "matchback_vs_true": 6.348810590359142,
+     "measured_vs_true": 1.036284370543472,
+     "messages": 199,
+     "model_read_correct": 0.9949748743718593,
+     "person_minutes_per_round": 16.25,
+     "person_tasks_per_round": 0.75,
      "printer_duplicates": 0,
-     "profit": 1697532.94,
-     "realised_incremental_value": 3056569.57,
-     "spend": 1263014.5,
-     "withdrawn_at_print": 3873,
+     "profit": 1740164.74,
+     "realised_incremental_value": 3180492.78,
+     "spend": 1315180.3499999999,
+     "withdrawn_at_print": 4660,
      "wrong_effects": 0
     },
     {
-     "anomaly_false_alarms": 4,
-     "anomaly_false_dismissed": 4,
-     "anomaly_real_detected": 2,
-     "anomaly_real_diagnosed": 2,
-     "attributed_funded": 15425,
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17589,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -3650,53 +3598,55 @@
       "objected": 0
      },
      "brief_fallbacks": 0,
-     "brief_retries": 0,
-     "calibration_coverage": 0.8,
+     "brief_retries": 3,
+     "calibration_coverage": null,
      "directions_correct": 1.0,
-     "directions_stopped": 7,
-     "events_missed": 2,
-     "incremental_value": 3068137.33,
+     "directions_stopped": 4,
+     "events_missed": 1,
+     "incremental_value": 3145049.89,
      "ledger_intact": true,
-     "letters": 2289185,
-     "llm_gbp_per_round": 0.02759166666666667,
-     "mail_caused_funded": 5160,
-     "messages": 195,
-     "model_read_correct": 0.9794871794871794,
-     "person_minutes_per_round": 14.75,
-     "person_tasks_per_round": 0.9166666666666666,
+     "letters": 2404407,
+     "llm_gbp_per_round": 0.030891666666666668,
+     "mail_caused_funded": 5370,
+     "matchback_vs_true": 6.25298282994667,
+     "measured_vs_true": 1.0148426944735442,
+     "messages": 178,
+     "model_read_correct": 0.9887640449438202,
+     "person_minutes_per_round": 15.25,
+     "person_tasks_per_round": 0.75,
      "printer_duplicates": 0,
-     "profit": 1809085.58,
-     "realised_incremental_value": 3315593.56,
-     "spend": 1259051.75,
-     "withdrawn_at_print": 4292,
+     "profit": 1822626.04,
+     "realised_incremental_value": 3434391.83,
+     "spend": 1322423.85,
+     "withdrawn_at_print": 4674,
      "wrong_effects": 0
     }
    ],
    "summary": {
     "anomaly_false_alarms": {
      "max": 4.0,
-     "mean": 3.2,
+     "mean": 3.6,
      "min": 3.0
     },
     "anomaly_false_dismissed": {
      "max": 4.0,
-     "mean": 3.0,
+     "mean": 2.8,
      "min": 2.0
     },
     "anomaly_real_detected": {
      "max": 4.0,
-     "mean": 3.4,
-     "min": 2.0
+     "mean": 3.6,
+     "min": 3.0
     },
     "anomaly_real_diagnosed": {
      "max": 4.0,
-     "mean": 3.0,
-     "min": 1.0
+     "mean": 3.2,
+     "min": 2.0
     },
     "attributed_funded": {
-     "max": 15425.0,
-     "mean": 14897.4,
-     "min": 14438.0
+     "max": 17780.0,
+     "mean": 17544.4,
+     "min": 17320.0
     },
     "breach_letters": {
      "max": 0.0,
@@ -3717,69 +3667,81 @@
     },
     "brief_retries": {
      "max": 3.0,
-     "mean": 1.0,
+     "mean": 1.8,
      "min": 0.0
     },
-    "calibration_coverage": {
-     "max": 1.0,
-     "mean": 0.9,
-     "min": 0.8
-    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
     "directions_correct": {
      "max": 1.0,
      "mean": 1.0,
      "min": 1.0
     },
     "directions_stopped": {
-     "max": 7.0,
-     "mean": 4.4,
+     "max": 4.0,
+     "mean": 3.0,
      "min": 2.0
     },
     "events_missed": {
-     "max": 2.0,
-     "mean": 0.6,
+     "max": 1.0,
+     "mean": 0.4,
      "min": 0.0
     },
     "incremental_value": {
-     "max": 3118063.2,
-     "mean": 3064391.19,
-     "min": 2960547.44
+     "max": 3249685.39,
+     "mean": 3177333.4620000003,
+     "min": 3055345.09
     },
     "ledger_intact": true,
     "letters": {
-     "max": 2361421.0,
-     "mean": 2317791.6,
-     "min": 2289185.0
+     "max": 2404407.0,
+     "mean": 2401678.0,
+     "min": 2391237.0
     },
     "llm_gbp_per_round": {
-     "max": 0.03240833333333334,
-     "mean": 0.030233333333333334,
-     "min": 0.02759166666666667
+     "max": 0.035666666666666666,
+     "mean": 0.033161666666666666,
+     "min": 0.030891666666666668
     },
     "mail_caused_funded": {
-     "max": 5160.0,
-     "mean": 5046.0,
-     "min": 4897.0
+     "max": 5397.0,
+     "mean": 5293.6,
+     "min": 5058.0
+    },
+    "matchback_vs_true": {
+     "max": 6.348810590359142,
+     "mean": 6.181743193466213,
+     "min": 6.066315699745517
+    },
+    "measured_vs_true": {
+     "max": 1.1251579701152215,
+     "mean": 1.0467400434893341,
+     "min": 0.9982615895803061
     },
     "messages": {
-     "max": 212.0,
-     "mean": 198.8,
-     "min": 194.0
+     "max": 218.0,
+     "mean": 201.2,
+     "min": 178.0
     },
     "model_read_correct": {
-     "max": 0.9948453608247423,
-     "mean": 0.987964835311655,
-     "min": 0.9794871794871794
+     "max": 0.9954128440366973,
+     "mean": 0.9929528597929824,
+     "min": 0.9887640449438202
     },
     "person_minutes_per_round": {
-     "max": 20.5,
-     "mean": 17.0,
-     "min": 14.75
+     "max": 25.5,
+     "mean": 19.95,
+     "min": 15.25
     },
     "person_tasks_per_round": {
      "max": 1.0,
-     "mean": 0.8666666666666666,
-     "min": 0.6666666666666666
+     "mean": 0.85,
+     "min": 0.75
     },
     "printer_duplicates": {
      "max": 0.0,
@@ -3787,24 +3749,24 @@
      "min": 0.0
     },
     "profit": {
-     "max": 1853829.0099999998,
-     "mean": 1789605.8099999998,
-     "min": 1697532.94
+     "max": 1927452.3900000001,
+     "mean": 1856410.5620000004,
+     "min": 1740164.74
     },
     "realised_incremental_value": {
-     "max": 3315593.56,
-     "mean": 3213183.378,
-     "min": 3056569.57
+     "max": 3516618.21,
+     "mean": 3365626.592,
+     "min": 3180492.78
     },
     "spend": {
-     "max": 1298781.55,
-     "mean": 1274785.3800000001,
-     "min": 1259051.75
+     "max": 1322423.85,
+     "mean": 1320922.9,
+     "min": 1315180.3499999999
     },
     "withdrawn_at_print": {
-     "max": 4409.0,
-     "mean": 4216.0,
-     "min": 3873.0
+     "max": 4745.0,
+     "mean": 4688.6,
+     "min": 4633.0
     },
     "wrong_effects": {
      "max": 0.0,
@@ -3813,21 +3775,21 @@
     }
    },
    "vs_today": {
-    "profit_diff_max": 317161.20999999973,
-    "profit_diff_mean": 264702.594,
-    "profit_diff_min": 190891.90000000014,
-    "profit_rel_mean": 0.17341039316436385,
+    "profit_diff_max": 390784.5900000001,
+    "profit_diff_mean": 331507.3460000002,
+    "profit_diff_min": 233523.7000000002,
+    "profit_rel_mean": 0.21726494773949448,
     "seeds_better": 5
    }
   },
-  "agent_matchback": {
+  "agent_cell_holdouts": {
    "seeds": [
     {
-     "anomaly_false_alarms": 4,
-     "anomaly_false_dismissed": 2,
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 1,
      "anomaly_real_detected": 3,
-     "anomaly_real_diagnosed": 3,
-     "attributed_funded": 17102,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 14013,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -3838,140 +3800,72 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 1,
-     "calibration_coverage": null,
+     "calibration_coverage": 0.8,
      "directions_correct": 1.0,
      "directions_stopped": 3,
      "events_missed": 1,
-     "incremental_value": 3092700.18,
+     "incremental_value": 2997731.08,
      "ledger_intact": true,
-     "letters": 2403523,
-     "llm_gbp_per_round": 0.030075000000000005,
-     "mail_caused_funded": 5072,
-     "messages": 204,
-     "model_read_correct": 0.9901960784313726,
-     "person_minutes_per_round": 22.75,
-     "person_tasks_per_round": 0.9166666666666666,
-     "printer_duplicates": 0,
-     "profit": 1770762.5300000003,
-     "realised_incremental_value": 3184736.12,
-     "spend": 1321937.65,
-     "withdrawn_at_print": 5558,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 4,
-     "anomaly_false_dismissed": 3,
-     "anomaly_real_detected": 3,
-     "anomaly_real_diagnosed": 2,
-     "attributed_funded": 17596,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 1,
-     "brief_retries": 2,
-     "calibration_coverage": null,
-     "directions_correct": 1.0,
-     "directions_stopped": 4,
-     "events_missed": 1,
-     "incremental_value": 3176131.67,
-     "ledger_intact": true,
-     "letters": 2403513,
-     "llm_gbp_per_round": 0.033999999999999996,
-     "mail_caused_funded": 5324,
-     "messages": 202,
-     "model_read_correct": 0.9900990099009901,
-     "person_minutes_per_round": 21.5,
-     "person_tasks_per_round": 0.8333333333333334,
-     "printer_duplicates": 0,
-     "profit": 1854199.52,
-     "realised_incremental_value": 3329156.7,
-     "spend": 1321932.15,
-     "withdrawn_at_print": 5568,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 4,
-     "anomaly_false_dismissed": 4,
-     "anomaly_real_detected": 2,
-     "anomaly_real_diagnosed": 1,
-     "attributed_funded": 17538,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 1,
-     "calibration_coverage": null,
-     "directions_correct": 1.0,
-     "directions_stopped": 6,
-     "events_missed": 2,
-     "incremental_value": 3057415.61,
-     "ledger_intact": true,
-     "letters": 2403755,
-     "llm_gbp_per_round": 0.03235833333333333,
-     "mail_caused_funded": 5213,
-     "messages": 224,
-     "model_read_correct": 0.9821428571428571,
-     "person_minutes_per_round": 17.0,
-     "person_tasks_per_round": 0.8333333333333334,
-     "printer_duplicates": 0,
-     "profit": 1735350.3599999999,
-     "realised_incremental_value": 3244549.19,
-     "spend": 1322065.25,
-     "withdrawn_at_print": 5326,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 3,
-     "anomaly_real_detected": 4,
-     "anomaly_real_diagnosed": 4,
-     "attributed_funded": 17827,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 1,
-     "calibration_coverage": null,
-     "directions_correct": 1.0,
-     "directions_stopped": 2,
-     "events_missed": 0,
-     "incremental_value": 3153488.94,
-     "ledger_intact": true,
-     "letters": 2403762,
-     "llm_gbp_per_round": 0.033875,
-     "mail_caused_funded": 5494,
-     "messages": 206,
-     "model_read_correct": 0.9951456310679612,
-     "person_minutes_per_round": 16.25,
+     "letters": 2176029,
+     "llm_gbp_per_round": 0.02825833333333333,
+     "mail_caused_funded": 4882,
+     "matchback_vs_true": 5.069448946553695,
+     "measured_vs_true": 1.1115442268338285,
+     "messages": 169,
+     "model_read_correct": 0.9940828402366864,
+     "person_minutes_per_round": 17.75,
      "person_tasks_per_round": 0.75,
      "printer_duplicates": 0,
-     "profit": 1831419.8399999999,
-     "realised_incremental_value": 3384207.64,
-     "spend": 1322069.1,
-     "withdrawn_at_print": 5319,
+     "profit": 1800915.1300000001,
+     "realised_incremental_value": 3093970.85,
+     "spend": 1196815.95,
+     "withdrawn_at_print": 3068,
      "wrong_effects": 0
     },
     {
-     "anomaly_false_alarms": 4,
-     "anomaly_false_dismissed": 3,
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
      "anomaly_real_detected": 4,
      "anomaly_real_diagnosed": 4,
-     "attributed_funded": 17830,
+     "attributed_funded": 13653,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": 0.7,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 0,
+     "incremental_value": 2958886.2,
+     "ledger_intact": true,
+     "letters": 2217694,
+     "llm_gbp_per_round": 0.03403333333333334,
+     "mail_caused_funded": 4692,
+     "matchback_vs_true": 5.09007164775008,
+     "measured_vs_true": 1.0632024205409807,
+     "messages": 208,
+     "model_read_correct": 0.9951923076923077,
+     "person_minutes_per_round": 16.5,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1739154.5000000002,
+     "realised_incremental_value": 3055340.15,
+     "spend": 1219731.7,
+     "withdrawn_at_print": 2852,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 13450,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -3982,52 +3876,130 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 0,
-     "calibration_coverage": null,
+     "calibration_coverage": 0.6,
      "directions_correct": 1.0,
-     "directions_stopped": 1,
-     "events_missed": 0,
-     "incremental_value": 3209941.47,
+     "directions_stopped": 5,
+     "events_missed": 1,
+     "incremental_value": 2917533.41,
      "ledger_intact": true,
-     "letters": 2403623,
-     "llm_gbp_per_round": 0.03298333333333334,
-     "mail_caused_funded": 5539,
-     "messages": 196,
-     "model_read_correct": 1.0,
-     "person_minutes_per_round": 20.0,
+     "letters": 2057836,
+     "llm_gbp_per_round": 0.026841666666666666,
+     "mail_caused_funded": 4632,
+     "matchback_vs_true": 5.1038068230337,
+     "measured_vs_true": 1.1066135549531888,
+     "messages": 176,
+     "model_read_correct": 0.9829545454545454,
+     "person_minutes_per_round": 15.5,
      "person_tasks_per_round": 0.8333333333333334,
      "printer_duplicates": 0,
-     "profit": 1887948.8200000003,
-     "realised_incremental_value": 3438531.71,
-     "spend": 1321992.65,
-     "withdrawn_at_print": 5458,
+     "profit": 1785723.61,
+     "realised_incremental_value": 3016680.4,
+     "spend": 1131809.8,
+     "withdrawn_at_print": 2940,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 13849,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 1,
+     "brief_retries": 2,
+     "calibration_coverage": 0.6,
+     "directions_correct": 1.0,
+     "directions_stopped": 4,
+     "events_missed": 0,
+     "incremental_value": 3064800.33,
+     "ledger_intact": true,
+     "letters": 2107402,
+     "llm_gbp_per_round": 0.030358333333333334,
+     "mail_caused_funded": 4929,
+     "matchback_vs_true": 5.133712749339396,
+     "measured_vs_true": 1.0117386216905313,
+     "messages": 179,
+     "model_read_correct": 0.9888268156424581,
+     "person_minutes_per_round": 16.5,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1905729.23,
+     "realised_incremental_value": 3241278.97,
+     "spend": 1159071.1,
+     "withdrawn_at_print": 2876,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 13979,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 2,
+     "calibration_coverage": 0.8,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 1,
+     "incremental_value": 3046843.6,
+     "ledger_intact": true,
+     "letters": 2085791,
+     "llm_gbp_per_round": 0.02485,
+     "mail_caused_funded": 5022,
+     "matchback_vs_true": 5.139140159319411,
+     "measured_vs_true": 1.0393585192904105,
+     "messages": 162,
+     "model_read_correct": 0.9876543209876543,
+     "person_minutes_per_round": 15.25,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1899658.55,
+     "realised_incremental_value": 3355345.0300000003,
+     "spend": 1147185.05,
+     "withdrawn_at_print": 2855,
      "wrong_effects": 0
     }
    ],
    "summary": {
     "anomaly_false_alarms": {
-     "max": 4.0,
-     "mean": 3.8,
-     "min": 3.0
-    },
-    "anomaly_false_dismissed": {
-     "max": 4.0,
-     "mean": 3.0,
+     "max": 3.0,
+     "mean": 2.2,
      "min": 2.0
     },
+    "anomaly_false_dismissed": {
+     "max": 3.0,
+     "mean": 2.0,
+     "min": 1.0
+    },
     "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 3.4,
+     "min": 3.0
+    },
+    "anomaly_real_diagnosed": {
      "max": 4.0,
      "mean": 3.2,
      "min": 2.0
     },
-    "anomaly_real_diagnosed": {
-     "max": 4.0,
-     "mean": 2.8,
-     "min": 1.0
-    },
     "attributed_funded": {
-     "max": 17830.0,
-     "mean": 17578.6,
-     "min": 17102.0
+     "max": 14013.0,
+     "mean": 13788.8,
+     "min": 13450.0
     },
     "breach_letters": {
      "max": 0.0,
@@ -4048,70 +4020,78 @@
     },
     "brief_retries": {
      "max": 2.0,
-     "mean": 1.0,
+     "mean": 1.2,
      "min": 0.0
     },
-    "calibration_coverage": [
-     null,
-     null,
-     null,
-     null,
-     null
-    ],
+    "calibration_coverage": {
+     "max": 0.8,
+     "mean": 0.7,
+     "min": 0.6
+    },
     "directions_correct": {
      "max": 1.0,
      "mean": 1.0,
      "min": 1.0
     },
     "directions_stopped": {
-     "max": 6.0,
-     "mean": 3.2,
-     "min": 1.0
+     "max": 5.0,
+     "mean": 3.6,
+     "min": 3.0
     },
     "events_missed": {
-     "max": 2.0,
-     "mean": 0.8,
+     "max": 1.0,
+     "mean": 0.6,
      "min": 0.0
     },
     "incremental_value": {
-     "max": 3209941.47,
-     "mean": 3137935.574,
-     "min": 3057415.61
+     "max": 3064800.33,
+     "mean": 2997158.924,
+     "min": 2917533.41
     },
     "ledger_intact": true,
     "letters": {
-     "max": 2403762.0,
-     "mean": 2403635.2,
-     "min": 2403513.0
+     "max": 2217694.0,
+     "mean": 2128950.4,
+     "min": 2057836.0
     },
     "llm_gbp_per_round": {
-     "max": 0.033999999999999996,
-     "mean": 0.03265833333333333,
-     "min": 0.030075000000000005
+     "max": 0.03403333333333334,
+     "mean": 0.028868333333333336,
+     "min": 0.02485
     },
     "mail_caused_funded": {
-     "max": 5539.0,
-     "mean": 5328.4,
-     "min": 5072.0
+     "max": 5022.0,
+     "mean": 4831.4,
+     "min": 4632.0
+    },
+    "matchback_vs_true": {
+     "max": 5.139140159319411,
+     "mean": 5.107236065199256,
+     "min": 5.069448946553695
+    },
+    "measured_vs_true": {
+     "max": 1.1115442268338285,
+     "mean": 1.0664914686617881,
+     "min": 1.0117386216905313
     },
     "messages": {
-     "max": 224.0,
-     "mean": 206.4,
-     "min": 196.0
+     "max": 208.0,
+     "mean": 178.8,
+     "min": 162.0
     },
     "model_read_correct": {
-     "max": 1.0,
-     "mean": 0.9915167153086362,
-     "min": 0.9821428571428571
+     "max": 0.9951923076923077,
+     "mean": 0.9897421660027304,
+     "min": 0.9829545454545454
     },
     "person_minutes_per_round": {
-     "max": 22.75,
-     "mean": 19.5,
-     "min": 16.25
+     "max": 17.75,
+     "mean": 16.3,
+     "min": 15.25
     },
     "person_tasks_per_round": {
-     "max": 0.9166666666666666,
-     "mean": 0.8333333333333334,
+     "max": 0.8333333333333334,
+     "mean": 0.8,
      "min": 0.75
     },
     "printer_duplicates": {
@@ -4120,24 +4100,24 @@
      "min": 0.0
     },
     "profit": {
-     "max": 1887948.8200000003,
-     "mean": 1815936.2140000002,
-     "min": 1735350.3599999999
+     "max": 1905729.23,
+     "mean": 1826236.2040000004,
+     "min": 1739154.5000000002
     },
     "realised_incremental_value": {
-     "max": 3438531.71,
-     "mean": 3316236.272,
-     "min": 3184736.12
+     "max": 3355345.0300000003,
+     "mean": 3152523.0800000005,
+     "min": 3016680.4
     },
     "spend": {
-     "max": 1322069.1,
-     "mean": 1321999.36,
-     "min": 1321932.15
+     "max": 1219731.7,
+     "mean": 1170922.7200000002,
+     "min": 1131809.8
     },
     "withdrawn_at_print": {
-     "max": 5568.0,
-     "mean": 5445.8,
-     "min": 5319.0
+     "max": 3068.0,
+     "mean": 2918.2,
+     "min": 2852.0
     },
     "wrong_effects": {
      "max": 0.0,
@@ -4146,10 +4126,10 @@
     }
    },
    "vs_today": {
-    "profit_diff_max": 349344.9000000004,
-    "profit_diff_mean": 291032.99800000014,
-    "profit_diff_min": 210027.30999999982,
-    "profit_rel_mean": 0.19094111213405518,
+    "profit_diff_max": 399088.1900000002,
+    "profit_diff_mean": 301332.9880000002,
+    "profit_diff_min": 221874.23000000045,
+    "profit_rel_mean": 0.19769218790477575,
     "seeds_better": 5
    }
   },
@@ -4157,10 +4137,10 @@
    "seeds": [
     {
      "anomaly_false_alarms": 4,
-     "anomaly_false_dismissed": 3,
+     "anomaly_false_dismissed": 2,
      "anomaly_real_detected": 4,
      "anomaly_real_diagnosed": 4,
-     "attributed_funded": 13741,
+     "attributed_funded": 17361,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -4173,66 +4153,108 @@
      "brief_retries": 1,
      "calibration_coverage": null,
      "directions_correct": 1.0,
-     "directions_stopped": 3,
+     "directions_stopped": 2,
      "events_missed": 0,
-     "incremental_value": 2999835.95,
+     "incremental_value": 3184705.45,
      "ledger_intact": true,
-     "letters": 2202508,
-     "llm_gbp_per_round": 0.0299,
-     "mail_caused_funded": 4800,
-     "messages": 202,
-     "model_read_correct": 0.9900990099009901,
-     "person_minutes_per_round": 20.25,
+     "letters": 2378495,
+     "llm_gbp_per_round": 0.0347,
+     "mail_caused_funded": 5240,
+     "matchback_vs_true": 6.196847788665476,
+     "measured_vs_true": 1.0349064590398271,
+     "messages": 214,
+     "model_read_correct": 0.9953271028037384,
+     "person_minutes_per_round": 23.75,
      "person_tasks_per_round": 0.9166666666666666,
      "printer_duplicates": 0,
-     "profit": 1788456.5500000003,
-     "realised_incremental_value": 3077433.05,
-     "spend": 1211379.4,
-     "withdrawn_at_print": 3828,
+     "profit": 1876533.2000000002,
+     "realised_incremental_value": 3387092.16,
+     "spend": 1308172.25,
+     "withdrawn_at_print": 4646,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 4,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17509,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 2,
+     "events_missed": 1,
+     "incremental_value": 3211099.28,
+     "ledger_intact": true,
+     "letters": 2383895,
+     "llm_gbp_per_round": 0.03506666666666666,
+     "mail_caused_funded": 5210,
+     "matchback_vs_true": 6.176753018643843,
+     "measured_vs_true": 0.9762090811809804,
+     "messages": 213,
+     "model_read_correct": 0.9953051643192489,
+     "person_minutes_per_round": 18.75,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1899957.0299999998,
+     "realised_incremental_value": 3279272.19,
+     "spend": 1311142.25,
+     "withdrawn_at_print": 4750,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17223,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 1,
+     "brief_retries": 3,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 4,
+     "events_missed": 0,
+     "incremental_value": 3168926.75,
+     "ledger_intact": true,
+     "letters": 2390498,
+     "llm_gbp_per_round": 0.032966666666666665,
+     "mail_caused_funded": 5221,
+     "matchback_vs_true": 6.213201234722594,
+     "measured_vs_true": 1.1477780735430358,
+     "messages": 222,
+     "model_read_correct": 0.990990990990991,
+     "person_minutes_per_round": 23.0,
+     "person_tasks_per_round": 1.0,
+     "printer_duplicates": 0,
+     "profit": 1854152.85,
+     "realised_incremental_value": 3261953.17,
+     "spend": 1314773.9,
+     "withdrawn_at_print": 4689,
      "wrong_effects": 0
     },
     {
      "anomaly_false_alarms": 4,
      "anomaly_false_dismissed": 4,
-     "anomaly_real_detected": 3,
-     "anomaly_real_diagnosed": 1,
-     "attributed_funded": 15335,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 0,
-     "calibration_coverage": null,
-     "directions_correct": 1.0,
-     "directions_stopped": 6,
-     "events_missed": 1,
-     "incremental_value": 3011974.09,
-     "ledger_intact": true,
-     "letters": 2246461,
-     "llm_gbp_per_round": 0.03319166666666667,
-     "mail_caused_funded": 5032,
-     "messages": 201,
-     "model_read_correct": 0.9850746268656716,
-     "person_minutes_per_round": 16.75,
-     "person_tasks_per_round": 0.75,
-     "printer_duplicates": 0,
-     "profit": 1776420.5399999998,
-     "realised_incremental_value": 3202746.79,
-     "spend": 1235553.55,
-     "withdrawn_at_print": 4497,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 4,
-     "anomaly_false_dismissed": 3,
      "anomaly_real_detected": 4,
-     "anomaly_real_diagnosed": 3,
-     "attributed_funded": 15170,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 17429,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -4243,96 +4265,64 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 1,
+     "events_missed": 0,
+     "incremental_value": 3096079.6,
+     "ledger_intact": true,
+     "letters": 2393964,
+     "llm_gbp_per_round": 0.03335833333333333,
+     "mail_caused_funded": 5207,
+     "matchback_vs_true": 6.272896470050403,
+     "measured_vs_true": 1.0590540457234496,
+     "messages": 197,
+     "model_read_correct": 1.0,
+     "person_minutes_per_round": 16.25,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1779399.4000000001,
+     "realised_incremental_value": 3345474.7,
+     "spend": 1316680.2,
+     "withdrawn_at_print": 4668,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17393,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 3,
      "calibration_coverage": null,
      "directions_correct": 1.0,
      "directions_stopped": 4,
      "events_missed": 0,
-     "incremental_value": 2937233.73,
+     "incremental_value": 3134501.43,
      "ledger_intact": true,
-     "letters": 2289412,
-     "llm_gbp_per_round": 0.029708333333333326,
-     "mail_caused_funded": 4892,
-     "messages": 209,
-     "model_read_correct": 0.9856459330143541,
-     "person_minutes_per_round": 19.25,
-     "person_tasks_per_round": 0.9166666666666666,
-     "printer_duplicates": 0,
-     "profit": 1678057.13,
-     "realised_incremental_value": 3139256.43,
-     "spend": 1259176.6,
-     "withdrawn_at_print": 4340,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 3,
-     "anomaly_real_detected": 4,
-     "anomaly_real_diagnosed": 4,
-     "attributed_funded": 13939,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 1,
-     "calibration_coverage": null,
-     "directions_correct": 1.0,
-     "directions_stopped": 3,
-     "events_missed": 0,
-     "incremental_value": 2847596.42,
-     "ledger_intact": true,
-     "letters": 2228274,
-     "llm_gbp_per_round": 0.03264166666666667,
-     "mail_caused_funded": 4727,
-     "messages": 194,
-     "model_read_correct": 0.9948453608247423,
-     "person_minutes_per_round": 16.5,
+     "letters": 2404423,
+     "llm_gbp_per_round": 0.03345833333333333,
+     "mail_caused_funded": 5310,
+     "matchback_vs_true": 6.29385348317652,
+     "measured_vs_true": 0.9877805654613481,
+     "messages": 195,
+     "model_read_correct": 0.9897435897435898,
+     "person_minutes_per_round": 19.0,
      "person_tasks_per_round": 0.8333333333333334,
      "printer_duplicates": 0,
-     "profit": 1622045.72,
-     "realised_incremental_value": 2966287.38,
-     "spend": 1225550.7,
-     "withdrawn_at_print": 3803,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 1,
-     "anomaly_real_detected": 2,
-     "anomaly_real_diagnosed": 1,
-     "attributed_funded": 15078,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 0,
-     "calibration_coverage": null,
-     "directions_correct": 1.0,
-     "directions_stopped": 6,
-     "events_missed": 2,
-     "incremental_value": 3072451.08,
-     "ledger_intact": true,
-     "letters": 2283483,
-     "llm_gbp_per_round": 0.031716666666666664,
-     "mail_caused_funded": 5119,
-     "messages": 190,
-     "model_read_correct": 0.9842105263157894,
-     "person_minutes_per_round": 20.5,
-     "person_tasks_per_round": 0.8333333333333334,
-     "printer_duplicates": 0,
-     "profit": 1816535.4300000002,
-     "realised_incremental_value": 3191801.99,
-     "spend": 1255915.65,
-     "withdrawn_at_print": 4312,
+     "profit": 1812068.7800000003,
+     "realised_incremental_value": 3411760.99,
+     "spend": 1322432.65,
+     "withdrawn_at_print": 4658,
      "wrong_effects": 0
     }
    ],
@@ -4345,22 +4335,375 @@
     "anomaly_false_dismissed": {
      "max": 4.0,
      "mean": 2.8,
-     "min": 1.0
+     "min": 2.0
     },
     "anomaly_real_detected": {
      "max": 4.0,
-     "mean": 3.4,
-     "min": 2.0
+     "mean": 3.8,
+     "min": 3.0
     },
     "anomaly_real_diagnosed": {
+     "max": 4.0,
+     "mean": 3.4,
+     "min": 3.0
+    },
+    "attributed_funded": {
+     "max": 17509.0,
+     "mean": 17383.0,
+     "min": 17223.0
+    },
+    "breach_letters": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "breaches_by_type": {
+     "gone_away": 0.0,
+     "mps_director": 0.0,
+     "not_active": 0.0,
+     "not_corporate": 0.0,
+     "objected": 0.0
+    },
+    "brief_fallbacks": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "brief_retries": {
+     "max": 3.0,
+     "mean": 1.8,
+     "min": 1.0
+    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "directions_correct": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0
+    },
+    "directions_stopped": {
      "max": 4.0,
      "mean": 2.6,
      "min": 1.0
     },
+    "events_missed": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "incremental_value": {
+     "max": 3211099.28,
+     "mean": 3159062.502,
+     "min": 3096079.6
+    },
+    "ledger_intact": true,
+    "letters": {
+     "max": 2404423.0,
+     "mean": 2390255.0,
+     "min": 2378495.0
+    },
+    "llm_gbp_per_round": {
+     "max": 0.03506666666666666,
+     "mean": 0.03391,
+     "min": 0.032966666666666665
+    },
+    "mail_caused_funded": {
+     "max": 5310.0,
+     "mean": 5237.6,
+     "min": 5207.0
+    },
+    "matchback_vs_true": {
+     "max": 6.29385348317652,
+     "mean": 6.230710399051768,
+     "min": 6.176753018643843
+    },
+    "measured_vs_true": {
+     "max": 1.1477780735430358,
+     "mean": 1.041145644989728,
+     "min": 0.9762090811809804
+    },
+    "messages": {
+     "max": 222.0,
+     "mean": 208.2,
+     "min": 195.0
+    },
+    "model_read_correct": {
+     "max": 1.0,
+     "mean": 0.9942733695715136,
+     "min": 0.9897435897435898
+    },
+    "person_minutes_per_round": {
+     "max": 23.75,
+     "mean": 20.15,
+     "min": 16.25
+    },
+    "person_tasks_per_round": {
+     "max": 1.0,
+     "mean": 0.85,
+     "min": 0.75
+    },
+    "printer_duplicates": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "profit": {
+     "max": 1899957.0299999998,
+     "mean": 1844422.2520000003,
+     "min": 1779399.4000000001
+    },
+    "realised_incremental_value": {
+     "max": 3411760.99,
+     "mean": 3337110.642,
+     "min": 3261953.17
+    },
+    "spend": {
+     "max": 1322432.65,
+     "mean": 1314640.25,
+     "min": 1308172.25
+    },
+    "withdrawn_at_print": {
+     "max": 4750.0,
+     "mean": 4682.2,
+     "min": 4646.0
+    },
+    "wrong_effects": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    }
+   },
+   "vs_today": {
+    "profit_diff_max": 382676.76,
+    "profit_diff_mean": 319519.0360000002,
+    "profit_diff_min": 272758.36000000034,
+    "profit_rel_mean": 0.20954724350454276,
+    "seeds_better": 5
+   }
+  },
+  "agent_no_holdout": {
+   "seeds": [
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 18141,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 2,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 1,
+     "incremental_value": 3300395.35,
+     "ledger_intact": true,
+     "letters": 2404136,
+     "llm_gbp_per_round": 0.032225,
+     "mail_caused_funded": 5425,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 214,
+     "model_read_correct": 0.9906542056074766,
+     "person_minutes_per_round": 26.5,
+     "person_tasks_per_round": 1.0,
+     "printer_duplicates": 0,
+     "profit": 1978120.55,
+     "realised_incremental_value": 3357489.9,
+     "spend": 1322274.8,
+     "withdrawn_at_print": 4945,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 18254,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 2,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 2,
+     "events_missed": 0,
+     "incremental_value": 3163071.5300000003,
+     "ledger_intact": true,
+     "letters": 2404069,
+     "llm_gbp_per_round": 0.03495833333333334,
+     "mail_caused_funded": 5244,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 211,
+     "model_read_correct": 0.995260663507109,
+     "person_minutes_per_round": 25.0,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1840833.5800000003,
+     "realised_incremental_value": 3328214.19,
+     "spend": 1322237.95,
+     "withdrawn_at_print": 5012,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 18009,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 5,
+     "events_missed": 1,
+     "incremental_value": 3284356.95,
+     "ledger_intact": true,
+     "letters": 2404101,
+     "llm_gbp_per_round": 0.03195,
+     "mail_caused_funded": 5369,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 219,
+     "model_read_correct": 0.9863013698630136,
+     "person_minutes_per_round": 15.5,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1962101.4000000001,
+     "realised_incremental_value": 3351708.89,
+     "spend": 1322255.55,
+     "withdrawn_at_print": 4980,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 17971,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 4,
+     "events_missed": 0,
+     "incremental_value": 3120625.62,
+     "ledger_intact": true,
+     "letters": 2404124,
+     "llm_gbp_per_round": 0.034374999999999996,
+     "mail_caused_funded": 5036,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 228,
+     "model_read_correct": 0.9912280701754386,
+     "person_minutes_per_round": 16.75,
+     "person_tasks_per_round": 0.9166666666666666,
+     "printer_duplicates": 0,
+     "profit": 1798357.4200000002,
+     "realised_incremental_value": 3196792.14,
+     "spend": 1322268.2,
+     "withdrawn_at_print": 4957,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 18364,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 2,
+     "events_missed": 1,
+     "incremental_value": 3305024.77,
+     "ledger_intact": true,
+     "letters": 2404066,
+     "llm_gbp_per_round": 0.031166666666666665,
+     "mail_caused_funded": 5498,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 186,
+     "model_read_correct": 0.9946236559139785,
+     "person_minutes_per_round": 15.0,
+     "person_tasks_per_round": 0.6666666666666666,
+     "printer_duplicates": 0,
+     "profit": 1982788.47,
+     "realised_incremental_value": 3540754.01,
+     "spend": 1322236.3,
+     "withdrawn_at_print": 5015,
+     "wrong_effects": 0
+    }
+   ],
+   "summary": {
+    "anomaly_false_alarms": {
+     "max": 3.0,
+     "mean": 3.0,
+     "min": 3.0
+    },
+    "anomaly_false_dismissed": {
+     "max": 3.0,
+     "mean": 2.2,
+     "min": 0.0
+    },
+    "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 3.4,
+     "min": 3.0
+    },
+    "anomaly_real_diagnosed": {
+     "max": 4.0,
+     "mean": 3.0,
+     "min": 2.0
+    },
     "attributed_funded": {
-     "max": 15335.0,
-     "mean": 14652.6,
-     "min": 13741.0
+     "max": 18364.0,
+     "mean": 18147.8,
+     "min": 17971.0
     },
     "breach_letters": {
      "max": 0.0,
@@ -4380,8 +4723,8 @@
      "min": 0.0
     },
     "brief_retries": {
-     "max": 1.0,
-     "mean": 0.6,
+     "max": 2.0,
+     "mean": 1.0,
      "min": 0.0
     },
     "calibration_coverage": [
@@ -4397,55 +4740,69 @@
      "min": 1.0
     },
     "directions_stopped": {
-     "max": 6.0,
-     "mean": 4.4,
-     "min": 3.0
+     "max": 5.0,
+     "mean": 3.2,
+     "min": 2.0
     },
     "events_missed": {
-     "max": 2.0,
+     "max": 1.0,
      "mean": 0.6,
      "min": 0.0
     },
     "incremental_value": {
-     "max": 3072451.08,
-     "mean": 2973818.2539999997,
-     "min": 2847596.42
+     "max": 3305024.77,
+     "mean": 3234694.8440000005,
+     "min": 3120625.62
     },
     "ledger_intact": true,
     "letters": {
-     "max": 2289412.0,
-     "mean": 2250027.6,
-     "min": 2202508.0
+     "max": 2404136.0,
+     "mean": 2404099.2,
+     "min": 2404066.0
     },
     "llm_gbp_per_round": {
-     "max": 0.03319166666666667,
-     "mean": 0.03143166666666667,
-     "min": 0.029708333333333326
+     "max": 0.03495833333333334,
+     "mean": 0.032935000000000006,
+     "min": 0.031166666666666665
     },
     "mail_caused_funded": {
-     "max": 5119.0,
-     "mean": 4914.0,
-     "min": 4727.0
+     "max": 5498.0,
+     "mean": 5314.4,
+     "min": 5036.0
     },
+    "matchback_vs_true": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "measured_vs_true": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
     "messages": {
-     "max": 209.0,
-     "mean": 199.2,
-     "min": 190.0
+     "max": 228.0,
+     "mean": 211.6,
+     "min": 186.0
     },
     "model_read_correct": {
-     "max": 0.9948453608247423,
-     "mean": 0.9879750913843095,
-     "min": 0.9842105263157894
+     "max": 0.995260663507109,
+     "mean": 0.9916135930134032,
+     "min": 0.9863013698630136
     },
     "person_minutes_per_round": {
-     "max": 20.5,
-     "mean": 18.65,
-     "min": 16.5
+     "max": 26.5,
+     "mean": 19.75,
+     "min": 15.0
     },
     "person_tasks_per_round": {
-     "max": 0.9166666666666666,
+     "max": 1.0,
      "mean": 0.85,
-     "min": 0.75
+     "min": 0.6666666666666666
     },
     "printer_duplicates": {
      "max": 0.0,
@@ -4453,24 +4810,24 @@
      "min": 0.0
     },
     "profit": {
-     "max": 1816535.4300000002,
-     "mean": 1736303.0739999998,
-     "min": 1622045.72
+     "max": 1982788.47,
+     "mean": 1912440.284,
+     "min": 1798357.4200000002
     },
     "realised_incremental_value": {
-     "max": 3202746.79,
-     "mean": 3115505.1279999996,
-     "min": 2966287.38
+     "max": 3540754.01,
+     "mean": 3354991.8260000004,
+     "min": 3196792.14
     },
     "spend": {
-     "max": 1259176.6,
-     "mean": 1237515.1800000002,
-     "min": 1211379.4
+     "max": 1322274.8,
+     "mean": 1322254.56,
+     "min": 1322236.3
     },
     "withdrawn_at_print": {
-     "max": 4497.0,
-     "mean": 4156.0,
-     "min": 3803.0
+     "max": 5015.0,
+     "mean": 4981.8,
+     "min": 4945.0
     },
     "wrong_effects": {
      "max": 0.0,
@@ -4479,21 +4836,21 @@
     }
    },
    "vs_today": {
-    "profit_diff_max": 277931.51000000024,
-    "profit_diff_mean": 211399.8580000001,
-    "profit_diff_min": 115404.68000000017,
-    "profit_rel_mean": 0.1384029448702416,
+    "profit_diff_max": 444184.55000000005,
+    "profit_diff_mean": 387537.0680000002,
+    "profit_diff_min": 291716.38000000035,
+    "profit_rel_mean": 0.25383795731526565,
     "seeds_better": 5
    }
   },
   "for_loop": {
    "seeds": [
     {
-     "anomaly_false_alarms": 3,
+     "anomaly_false_alarms": 4,
      "anomaly_false_dismissed": 0,
      "anomaly_real_detected": 4,
      "anomaly_real_diagnosed": 0,
-     "attributed_funded": 14617,
+     "attributed_funded": 17554,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -4504,24 +4861,140 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 0,
-     "calibration_coverage": 0.9,
+     "calibration_coverage": null,
      "directions_correct": 1.0,
      "directions_stopped": 0,
      "events_missed": 0,
-     "incremental_value": 3113777.26,
+     "incremental_value": 3249685.39,
      "ledger_intact": true,
-     "letters": 2290815,
+     "letters": 2404060,
      "llm_gbp_per_round": 0.0,
-     "mail_caused_funded": 5009,
-     "messages": 194,
+     "mail_caused_funded": 5397,
+     "matchback_vs_true": 6.0788026251166825,
+     "measured_vs_true": 1.059153592734126,
+     "messages": 195,
      "model_read_correct": null,
-     "person_minutes_per_round": 136.66666666666666,
+     "person_minutes_per_round": 140.83333333333334,
+     "person_tasks_per_round": 0.6666666666666666,
+     "printer_duplicates": 0,
+     "profit": 1927452.3900000001,
+     "realised_incremental_value": 3516618.21,
+     "spend": 1322233.0,
+     "withdrawn_at_print": 4633,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 4,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17780,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 1,
+     "incremental_value": 3198187.0100000002,
+     "ledger_intact": true,
+     "letters": 2404336,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5334,
+     "matchback_vs_true": 6.161804222163051,
+     "measured_vs_true": 0.9982615895803061,
+     "messages": 218,
+     "model_read_correct": null,
+     "person_minutes_per_round": 146.66666666666666,
      "person_tasks_per_round": 0.5833333333333334,
      "printer_duplicates": 0,
-     "profit": 1853829.0099999998,
-     "realised_incremental_value": 3189364.2600000002,
-     "spend": 1259948.25,
-     "withdrawn_at_print": 4202,
+     "profit": 1875802.2100000002,
+     "realised_incremental_value": 3379817.1,
+     "spend": 1322384.8,
+     "withdrawn_at_print": 4745,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17479,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3238399.93,
+     "ledger_intact": true,
+     "letters": 2404350,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5309,
+     "matchback_vs_true": 6.066315699745517,
+     "measured_vs_true": 1.1251579701152215,
+     "messages": 216,
+     "model_read_correct": null,
+     "person_minutes_per_round": 145.83333333333334,
+     "person_tasks_per_round": 0.5833333333333334,
+     "printer_duplicates": 0,
+     "profit": 1916007.4300000002,
+     "realised_incremental_value": 3316813.04,
+     "spend": 1322392.5,
+     "withdrawn_at_print": 4731,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 4,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17320,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3055345.09,
+     "ledger_intact": true,
+     "letters": 2391237,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5058,
+     "matchback_vs_true": 6.348810590359142,
+     "measured_vs_true": 1.036284370543472,
+     "messages": 199,
+     "model_read_correct": null,
+     "person_minutes_per_round": 142.5,
+     "person_tasks_per_round": 0.6666666666666666,
+     "printer_duplicates": 0,
+     "profit": 1740164.74,
+     "realised_incremental_value": 3180492.78,
+     "spend": 1315180.3499999999,
+     "withdrawn_at_print": 4660,
      "wrong_effects": 0
     },
     {
@@ -4529,7 +5002,7 @@
      "anomaly_false_dismissed": 0,
      "anomaly_real_detected": 3,
      "anomaly_real_diagnosed": 0,
-     "attributed_funded": 14935,
+     "attributed_funded": 17589,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -4540,139 +5013,33 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 0,
-     "calibration_coverage": 0.9,
+     "calibration_coverage": null,
      "directions_correct": 1.0,
      "directions_stopped": 0,
      "events_missed": 1,
-     "incremental_value": 3061430.7199999997,
+     "incremental_value": 3145049.89,
      "ledger_intact": true,
-     "letters": 2351147,
+     "letters": 2404407,
      "llm_gbp_per_round": 0.0,
-     "mail_caused_funded": 5006,
-     "messages": 195,
+     "mail_caused_funded": 5370,
+     "matchback_vs_true": 6.25298282994667,
+     "measured_vs_true": 1.0148426944735442,
+     "messages": 178,
      "model_read_correct": null,
-     "person_minutes_per_round": 133.33333333333334,
+     "person_minutes_per_round": 126.25,
      "person_tasks_per_round": 0.5,
      "printer_duplicates": 0,
-     "profit": 1768299.8699999996,
-     "realised_incremental_value": 3208681.67,
-     "spend": 1293130.85,
-     "withdrawn_at_print": 4409,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 0,
-     "anomaly_real_detected": 4,
-     "anomaly_real_diagnosed": 0,
-     "attributed_funded": 15072,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 0,
-     "calibration_coverage": 1.0,
-     "directions_correct": 1.0,
-     "directions_stopped": 0,
-     "events_missed": 0,
-     "incremental_value": 3118063.2,
-     "ledger_intact": true,
-     "letters": 2361421,
-     "llm_gbp_per_round": 0.0,
-     "mail_caused_funded": 5158,
-     "messages": 212,
-     "model_read_correct": null,
-     "person_minutes_per_round": 144.16666666666666,
-     "person_tasks_per_round": 0.5833333333333334,
-     "printer_duplicates": 0,
-     "profit": 1819281.6500000001,
-     "realised_incremental_value": 3295707.83,
-     "spend": 1298781.55,
-     "withdrawn_at_print": 4304,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 0,
-     "anomaly_real_detected": 4,
-     "anomaly_real_diagnosed": 0,
-     "attributed_funded": 14438,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 0,
-     "calibration_coverage": 0.9,
-     "directions_correct": 1.0,
-     "directions_stopped": 0,
-     "events_missed": 0,
-     "incremental_value": 2960547.44,
-     "ledger_intact": true,
-     "letters": 2296390,
-     "llm_gbp_per_round": 0.0,
-     "mail_caused_funded": 4897,
-     "messages": 198,
-     "model_read_correct": null,
-     "person_minutes_per_round": 138.33333333333334,
-     "person_tasks_per_round": 0.5833333333333334,
-     "printer_duplicates": 0,
-     "profit": 1697532.94,
-     "realised_incremental_value": 3056569.57,
-     "spend": 1263014.5,
-     "withdrawn_at_print": 3873,
-     "wrong_effects": 0
-    },
-    {
-     "anomaly_false_alarms": 4,
-     "anomaly_false_dismissed": 0,
-     "anomaly_real_detected": 2,
-     "anomaly_real_diagnosed": 0,
-     "attributed_funded": 15425,
-     "breach_letters": 0,
-     "breaches_by_type": {
-      "gone_away": 0,
-      "mps_director": 0,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 0
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 0,
-     "calibration_coverage": 0.8,
-     "directions_correct": 1.0,
-     "directions_stopped": 0,
-     "events_missed": 2,
-     "incremental_value": 3068137.33,
-     "ledger_intact": true,
-     "letters": 2289185,
-     "llm_gbp_per_round": 0.0,
-     "mail_caused_funded": 5160,
-     "messages": 195,
-     "model_read_correct": null,
-     "person_minutes_per_round": 133.33333333333334,
-     "person_tasks_per_round": 0.5,
-     "printer_duplicates": 0,
-     "profit": 1809085.58,
-     "realised_incremental_value": 3315593.56,
-     "spend": 1259051.75,
-     "withdrawn_at_print": 4292,
+     "profit": 1822626.04,
+     "realised_incremental_value": 3434391.83,
+     "spend": 1322423.85,
+     "withdrawn_at_print": 4674,
      "wrong_effects": 0
     }
    ],
    "summary": {
     "anomaly_false_alarms": {
      "max": 4.0,
-     "mean": 3.2,
+     "mean": 3.6,
      "min": 3.0
     },
     "anomaly_false_dismissed": {
@@ -4682,8 +5049,8 @@
     },
     "anomaly_real_detected": {
      "max": 4.0,
-     "mean": 3.4,
-     "min": 2.0
+     "mean": 3.6,
+     "min": 3.0
     },
     "anomaly_real_diagnosed": {
      "max": 0.0,
@@ -4691,9 +5058,9 @@
      "min": 0.0
     },
     "attributed_funded": {
-     "max": 15425.0,
-     "mean": 14897.4,
-     "min": 14438.0
+     "max": 17780.0,
+     "mean": 17544.4,
+     "min": 17320.0
     },
     "breach_letters": {
      "max": 0.0,
@@ -4717,11 +5084,13 @@
      "mean": 0.0,
      "min": 0.0
     },
-    "calibration_coverage": {
-     "max": 1.0,
-     "mean": 0.9,
-     "min": 0.8
-    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
     "directions_correct": {
      "max": 1.0,
      "mean": 1.0,
@@ -4733,20 +5102,20 @@
      "min": 0.0
     },
     "events_missed": {
-     "max": 2.0,
-     "mean": 0.6,
+     "max": 1.0,
+     "mean": 0.4,
      "min": 0.0
     },
     "incremental_value": {
-     "max": 3118063.2,
-     "mean": 3064391.19,
-     "min": 2960547.44
+     "max": 3249685.39,
+     "mean": 3177333.4620000003,
+     "min": 3055345.09
     },
     "ledger_intact": true,
     "letters": {
-     "max": 2361421.0,
-     "mean": 2317791.6,
-     "min": 2289185.0
+     "max": 2404407.0,
+     "mean": 2401678.0,
+     "min": 2391237.0
     },
     "llm_gbp_per_round": {
      "max": 0.0,
@@ -4754,14 +5123,24 @@
      "min": 0.0
     },
     "mail_caused_funded": {
-     "max": 5160.0,
-     "mean": 5046.0,
-     "min": 4897.0
+     "max": 5397.0,
+     "mean": 5293.6,
+     "min": 5058.0
+    },
+    "matchback_vs_true": {
+     "max": 6.348810590359142,
+     "mean": 6.181743193466213,
+     "min": 6.066315699745517
+    },
+    "measured_vs_true": {
+     "max": 1.1251579701152215,
+     "mean": 1.0467400434893341,
+     "min": 0.9982615895803061
     },
     "messages": {
-     "max": 212.0,
-     "mean": 198.8,
-     "min": 194.0
+     "max": 218.0,
+     "mean": 201.2,
+     "min": 178.0
     },
     "model_read_correct": [
      null,
@@ -4771,13 +5150,13 @@
      null
     ],
     "person_minutes_per_round": {
-     "max": 144.16666666666666,
-     "mean": 137.16666666666669,
-     "min": 133.33333333333334
+     "max": 146.66666666666666,
+     "mean": 140.41666666666669,
+     "min": 126.25
     },
     "person_tasks_per_round": {
-     "max": 0.5833333333333334,
-     "mean": 0.55,
+     "max": 0.6666666666666666,
+     "mean": 0.6,
      "min": 0.5
     },
     "printer_duplicates": {
@@ -4786,24 +5165,24 @@
      "min": 0.0
     },
     "profit": {
-     "max": 1853829.0099999998,
-     "mean": 1789605.8099999998,
-     "min": 1697532.94
+     "max": 1927452.3900000001,
+     "mean": 1856410.5620000004,
+     "min": 1740164.74
     },
     "realised_incremental_value": {
-     "max": 3315593.56,
-     "mean": 3213183.378,
-     "min": 3056569.57
+     "max": 3516618.21,
+     "mean": 3365626.592,
+     "min": 3180492.78
     },
     "spend": {
-     "max": 1298781.55,
-     "mean": 1274785.3800000001,
-     "min": 1259051.75
+     "max": 1322423.85,
+     "mean": 1320922.9,
+     "min": 1315180.3499999999
     },
     "withdrawn_at_print": {
-     "max": 4409.0,
-     "mean": 4216.0,
-     "min": 3873.0
+     "max": 4745.0,
+     "mean": 4688.6,
+     "min": 4633.0
     },
     "wrong_effects": {
      "max": 0.0,
@@ -4812,10 +5191,10 @@
     }
    },
    "vs_today": {
-    "profit_diff_max": 317161.20999999973,
-    "profit_diff_mean": 264702.594,
-    "profit_diff_min": 190891.90000000014,
-    "profit_rel_mean": 0.17341039316436385,
+    "profit_diff_max": 390784.5900000001,
+    "profit_diff_mean": 331507.3460000002,
+    "profit_diff_min": 233523.7000000002,
+    "profit_rel_mean": 0.21726494773949448,
     "seeds_better": 5
    }
   },
@@ -4846,6 +5225,8 @@
      "letters": 2404301,
      "llm_gbp_per_round": 0.0,
      "mail_caused_funded": 4900,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
      "messages": 188,
      "model_read_correct": null,
      "person_minutes_per_round": 381.6666666666667,
@@ -4882,6 +5263,8 @@
      "letters": 2404166,
      "llm_gbp_per_round": 0.0,
      "mail_caused_funded": 4983,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
      "messages": 225,
      "model_read_correct": null,
      "person_minutes_per_round": 393.3333333333333,
@@ -4918,6 +5301,8 @@
      "letters": 2404209,
      "llm_gbp_per_round": 0.0,
      "mail_caused_funded": 4903,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
      "messages": 216,
      "model_read_correct": null,
      "person_minutes_per_round": 389.5833333333333,
@@ -4954,6 +5339,8 @@
      "letters": 2404261,
      "llm_gbp_per_round": 0.0,
      "mail_caused_funded": 4958,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
      "messages": 215,
      "model_read_correct": null,
      "person_minutes_per_round": 389.1666666666667,
@@ -4990,6 +5377,8 @@
      "letters": 2404330,
      "llm_gbp_per_round": 0.0,
      "mail_caused_funded": 5128,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
      "messages": 217,
      "model_read_correct": null,
      "person_minutes_per_round": 390.0,
@@ -5093,6 +5482,20 @@
      "mean": 4974.4,
      "min": 4900.0
     },
+    "matchback_vs_true": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "measured_vs_true": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
     "messages": {
      "max": 225.0,
      "mean": 212.2,
@@ -5157,11 +5560,11 @@
   "unguarded_llm": {
    "seeds": [
     {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 3,
-     "anomaly_real_detected": 4,
-     "anomaly_real_diagnosed": 4,
-     "attributed_funded": 13391,
+     "anomaly_false_alarms": 4,
+     "anomaly_false_dismissed": 4,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 17635,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -5172,68 +5575,110 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 0,
-     "calibration_coverage": 0.6,
-     "directions_correct": 0.976878612716763,
-     "directions_stopped": 0,
-     "events_missed": 0,
-     "incremental_value": 2892714.87,
-     "ledger_intact": true,
-     "letters": 2216103,
-     "llm_gbp_per_round": 0.028933333333333335,
-     "mail_caused_funded": 4868,
-     "messages": 173,
-     "model_read_correct": 0.9826589595375722,
-     "person_minutes_per_round": 15.75,
-     "person_tasks_per_round": 0.5833333333333334,
-     "printer_duplicates": 0,
-     "profit": 1673858.2200000002,
-     "realised_incremental_value": 3043516.11,
-     "spend": 1218856.65,
-     "withdrawn_at_print": 0,
-     "wrong_effects": 4
-    },
-    {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 3,
-     "anomaly_real_detected": 3,
-     "anomaly_real_diagnosed": 3,
-     "attributed_funded": 15949,
-     "breach_letters": 15124,
-     "breaches_by_type": {
-      "gone_away": 4630,
-      "mps_director": 9284,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 1210
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 3,
-     "calibration_coverage": 0.9,
-     "directions_correct": 0.9802955665024631,
+     "calibration_coverage": null,
+     "directions_correct": 0.9953703703703703,
      "directions_stopped": 0,
      "events_missed": 1,
-     "incremental_value": 3150319.06,
+     "incremental_value": 3293041.06,
      "ledger_intact": true,
-     "letters": 2428763,
-     "llm_gbp_per_round": 0.03381666666666667,
-     "mail_caused_funded": 5396,
-     "messages": 203,
-     "model_read_correct": 0.9852216748768473,
-     "person_minutes_per_round": 14.25,
-     "person_tasks_per_round": 0.4166666666666667,
+     "letters": 2417896,
+     "llm_gbp_per_round": 0.034391666666666675,
+     "mail_caused_funded": 5478,
+     "matchback_vs_true": 5.962845660605524,
+     "measured_vs_true": 1.0499989872472237,
+     "messages": 216,
+     "model_read_correct": 1.0,
+     "person_minutes_per_round": 13.5,
+     "person_tasks_per_round": 0.5,
      "printer_duplicates": 0,
-     "profit": 1814499.4100000001,
-     "realised_incremental_value": 3388160.32,
-     "spend": 1335819.65,
+     "profit": 1963198.26,
+     "realised_incremental_value": 3522259.13,
+     "spend": 1329842.8,
+     "withdrawn_at_print": 0,
+     "wrong_effects": 1
+    },
+    {
+     "anomaly_false_alarms": 5,
+     "anomaly_false_dismissed": 5,
+     "anomaly_real_detected": 2,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 17856,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 1,
+     "brief_retries": 2,
+     "calibration_coverage": null,
+     "directions_correct": 0.9909502262443439,
+     "directions_stopped": 0,
+     "events_missed": 2,
+     "incremental_value": 3288628.72,
+     "ledger_intact": true,
+     "letters": 2418907,
+     "llm_gbp_per_round": 0.03626666666666666,
+     "mail_caused_funded": 5655,
+     "matchback_vs_true": 5.967498038347531,
+     "measured_vs_true": 1.0021635722336453,
+     "messages": 221,
+     "model_read_correct": 0.995475113122172,
+     "person_minutes_per_round": 13.5,
+     "person_tasks_per_round": 0.5,
+     "printer_duplicates": 0,
+     "profit": 1958229.87,
+     "realised_incremental_value": 3549468.5500000003,
+     "spend": 1330398.85,
+     "withdrawn_at_print": 0,
+     "wrong_effects": 2
+    },
+    {
+     "anomaly_false_alarms": 6,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 21169,
+     "breach_letters": 30087,
+     "breaches_by_type": {
+      "gone_away": 9115,
+      "mps_director": 18193,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 2779
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 0.979253112033195,
+     "directions_stopped": 0,
+     "events_missed": 1,
+     "incremental_value": 3454484.94,
+     "ledger_intact": true,
+     "letters": 2682824,
+     "llm_gbp_per_round": 0.0389,
+     "mail_caused_funded": 5772,
+     "matchback_vs_true": 6.95669408968819,
+     "measured_vs_true": 1.0329747593327325,
+     "messages": 241,
+     "model_read_correct": 0.9875518672199171,
+     "person_minutes_per_round": 27.5,
+     "person_tasks_per_round": 0.5,
+     "printer_duplicates": 0,
+     "profit": 1978931.74,
+     "realised_incremental_value": 3656961.85,
+     "spend": 1475553.2,
      "withdrawn_at_print": 0,
      "wrong_effects": 4
     },
     {
      "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 3,
+     "anomaly_false_dismissed": 2,
      "anomaly_real_detected": 4,
      "anomaly_real_diagnosed": 3,
-     "attributed_funded": 15107,
+     "attributed_funded": 17750,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -5243,33 +5688,35 @@
       "objected": 0
      },
      "brief_fallbacks": 0,
-     "brief_retries": 0,
-     "calibration_coverage": 0.8,
-     "directions_correct": 0.9852941176470589,
+     "brief_retries": 2,
+     "calibration_coverage": null,
+     "directions_correct": 0.9904306220095693,
      "directions_stopped": 0,
      "events_missed": 0,
-     "incremental_value": 3054247.09,
+     "incremental_value": 3208782.4,
      "ledger_intact": true,
-     "letters": 2370310,
-     "llm_gbp_per_round": 0.033008333333333334,
-     "mail_caused_funded": 5054,
-     "messages": 204,
-     "model_read_correct": 0.9901960784313726,
-     "person_minutes_per_round": 18.5,
+     "letters": 2451549,
+     "llm_gbp_per_round": 0.034741666666666664,
+     "mail_caused_funded": 5410,
+     "matchback_vs_true": 6.071354923182132,
+     "measured_vs_true": 0.9983635839994727,
+     "messages": 209,
+     "model_read_correct": 0.9952153110047847,
+     "person_minutes_per_round": 22.0,
      "person_tasks_per_round": 0.6666666666666666,
      "printer_duplicates": 0,
-     "profit": 1750576.5899999999,
-     "realised_incremental_value": 3147079.67,
-     "spend": 1303670.5,
+     "profit": 1860430.45,
+     "realised_incremental_value": 3382937.64,
+     "spend": 1348351.95,
      "withdrawn_at_print": 0,
-     "wrong_effects": 3
+     "wrong_effects": 2
     },
     {
      "anomaly_false_alarms": 3,
      "anomaly_false_dismissed": 3,
      "anomaly_real_detected": 3,
      "anomaly_real_diagnosed": 3,
-     "attributed_funded": 14545,
+     "attributed_funded": 17692,
      "breach_letters": 0,
      "breaches_by_type": {
       "gone_away": 0,
@@ -5280,120 +5727,88 @@
      },
      "brief_fallbacks": 0,
      "brief_retries": 1,
-     "calibration_coverage": 0.9,
-     "directions_correct": 0.9797979797979798,
+     "calibration_coverage": null,
+     "directions_correct": 0.9851485148514851,
      "directions_stopped": 0,
      "events_missed": 1,
-     "incremental_value": 3028659.88,
+     "incremental_value": 3174903.64,
      "ledger_intact": true,
-     "letters": 2278892,
-     "llm_gbp_per_round": 0.03281666666666667,
-     "mail_caused_funded": 5121,
-     "messages": 198,
-     "model_read_correct": 0.9848484848484849,
-     "person_minutes_per_round": 14.5,
-     "person_tasks_per_round": 0.5,
+     "letters": 2480964,
+     "llm_gbp_per_round": 0.033558333333333336,
+     "mail_caused_funded": 5492,
+     "matchback_vs_true": 6.144951176131893,
+     "measured_vs_true": 1.0733076989421158,
+     "messages": 202,
+     "model_read_correct": 0.995049504950495,
+     "person_minutes_per_round": 14.25,
+     "person_tasks_per_round": 0.4166666666666667,
      "printer_duplicates": 0,
-     "profit": 1775269.2799999998,
-     "realised_incremental_value": 3203661.95,
-     "spend": 1253390.6,
+     "profit": 1810373.4400000002,
+     "realised_incremental_value": 3456567.39,
+     "spend": 1364530.2,
      "withdrawn_at_print": 0,
-     "wrong_effects": 4
-    },
-    {
-     "anomaly_false_alarms": 3,
-     "anomaly_false_dismissed": 1,
-     "anomaly_real_detected": 3,
-     "anomaly_real_diagnosed": 2,
-     "attributed_funded": 15362,
-     "breach_letters": 14906,
-     "breaches_by_type": {
-      "gone_away": 4477,
-      "mps_director": 9126,
-      "not_active": 0,
-      "not_corporate": 0,
-      "objected": 1303
-     },
-     "brief_fallbacks": 0,
-     "brief_retries": 0,
-     "calibration_coverage": 0.7,
-     "directions_correct": 0.9782608695652174,
-     "directions_stopped": 0,
-     "events_missed": 1,
-     "incremental_value": 3086959.0,
-     "ledger_intact": true,
-     "letters": 2317483,
-     "llm_gbp_per_round": 0.031058333333333337,
-     "mail_caused_funded": 5164,
-     "messages": 184,
-     "model_read_correct": 0.9836956521739131,
-     "person_minutes_per_round": 24.5,
-     "person_tasks_per_round": 0.6666666666666666,
-     "printer_duplicates": 0,
-     "profit": 1812343.35,
-     "realised_incremental_value": 3241550.06,
-     "spend": 1274615.65,
-     "withdrawn_at_print": 0,
-     "wrong_effects": 4
+     "wrong_effects": 2
     }
    ],
    "summary": {
     "anomaly_false_alarms": {
-     "max": 3.0,
-     "mean": 3.0,
+     "max": 6.0,
+     "mean": 4.2,
      "min": 3.0
     },
     "anomaly_false_dismissed": {
-     "max": 3.0,
-     "mean": 2.6,
-     "min": 1.0
+     "max": 5.0,
+     "mean": 3.4,
+     "min": 2.0
     },
     "anomaly_real_detected": {
-     "max": 4.0,
-     "mean": 3.4,
-     "min": 3.0
-    },
-    "anomaly_real_diagnosed": {
      "max": 4.0,
      "mean": 3.0,
      "min": 2.0
     },
+    "anomaly_real_diagnosed": {
+     "max": 3.0,
+     "mean": 2.4,
+     "min": 2.0
+    },
     "attributed_funded": {
-     "max": 15949.0,
-     "mean": 14870.8,
-     "min": 13391.0
+     "max": 21169.0,
+     "mean": 18420.4,
+     "min": 17635.0
     },
     "breach_letters": {
-     "max": 15124.0,
-     "mean": 6006.0,
+     "max": 30087.0,
+     "mean": 6017.4,
      "min": 0.0
     },
     "breaches_by_type": {
-     "gone_away": 1821.4,
-     "mps_director": 3682.0,
+     "gone_away": 1823.0,
+     "mps_director": 3638.6,
      "not_active": 0.0,
      "not_corporate": 0.0,
-     "objected": 502.6
+     "objected": 555.8
     },
     "brief_fallbacks": {
-     "max": 0.0,
-     "mean": 0.0,
+     "max": 1.0,
+     "mean": 0.2,
      "min": 0.0
     },
     "brief_retries": {
-     "max": 3.0,
-     "mean": 0.8,
+     "max": 2.0,
+     "mean": 1.2,
      "min": 0.0
     },
-    "calibration_coverage": {
-     "max": 0.9,
-     "mean": 0.7799999999999999,
-     "min": 0.6
-    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
     "directions_correct": {
-     "max": 0.9852941176470589,
-     "mean": 0.9801054292458964,
-     "min": 0.976878612716763
+     "max": 0.9953703703703703,
+     "mean": 0.9882305691017926,
+     "min": 0.979253112033195
     },
     "directions_stopped": {
      "max": 0.0,
@@ -5401,49 +5816,59 @@
      "min": 0.0
     },
     "events_missed": {
-     "max": 1.0,
-     "mean": 0.6,
+     "max": 2.0,
+     "mean": 1.0,
      "min": 0.0
     },
     "incremental_value": {
-     "max": 3150319.06,
-     "mean": 3042579.9799999995,
-     "min": 2892714.87
+     "max": 3454484.94,
+     "mean": 3283968.1520000002,
+     "min": 3174903.64
     },
     "ledger_intact": true,
     "letters": {
-     "max": 2428763.0,
-     "mean": 2322310.2,
-     "min": 2216103.0
+     "max": 2682824.0,
+     "mean": 2490428.0,
+     "min": 2417896.0
     },
     "llm_gbp_per_round": {
-     "max": 0.03381666666666667,
-     "mean": 0.031926666666666666,
-     "min": 0.028933333333333335
+     "max": 0.0389,
+     "mean": 0.03557166666666667,
+     "min": 0.033558333333333336
     },
     "mail_caused_funded": {
-     "max": 5396.0,
-     "mean": 5120.6,
-     "min": 4868.0
+     "max": 5772.0,
+     "mean": 5561.4,
+     "min": 5410.0
+    },
+    "matchback_vs_true": {
+     "max": 6.95669408968819,
+     "mean": 6.220668777591054,
+     "min": 5.962845660605524
+    },
+    "measured_vs_true": {
+     "max": 1.0733076989421158,
+     "mean": 1.031361720351038,
+     "min": 0.9983635839994727
     },
     "messages": {
-     "max": 204.0,
-     "mean": 192.4,
-     "min": 173.0
+     "max": 241.0,
+     "mean": 217.8,
+     "min": 202.0
     },
     "model_read_correct": {
-     "max": 0.9901960784313726,
-     "mean": 0.9853241699736379,
-     "min": 0.9826589595375722
+     "max": 1.0,
+     "mean": 0.9946583592594738,
+     "min": 0.9875518672199171
     },
     "person_minutes_per_round": {
-     "max": 24.5,
-     "mean": 17.5,
-     "min": 14.25
+     "max": 27.5,
+     "mean": 18.15,
+     "min": 13.5
     },
     "person_tasks_per_round": {
      "max": 0.6666666666666666,
-     "mean": 0.5666666666666667,
+     "mean": 0.5166666666666666,
      "min": 0.4166666666666667
     },
     "printer_duplicates": {
@@ -5452,19 +5877,19 @@
      "min": 0.0
     },
     "profit": {
-     "max": 1814499.4100000001,
-     "mean": 1765309.3699999999,
-     "min": 1673858.2200000002
+     "max": 1978931.74,
+     "mean": 1914232.7519999999,
+     "min": 1810373.4400000002
     },
     "realised_incremental_value": {
-     "max": 3388160.32,
-     "mean": 3204793.6220000004,
-     "min": 3043516.11
+     "max": 3656961.85,
+     "mean": 3513638.9119999995,
+     "min": 3382937.64
     },
     "spend": {
-     "max": 1335819.65,
-     "mean": 1277270.61,
-     "min": 1218856.65
+     "max": 1475553.2,
+     "mean": 1369735.4000000001,
+     "min": 1329842.8
     },
     "withdrawn_at_print": {
      "max": 0.0,
@@ -5473,15 +5898,15 @@
     },
     "wrong_effects": {
      "max": 4.0,
-     "mean": 3.8,
-     "min": 3.0
+     "mean": 2.2,
+     "min": 1.0
     }
    },
    "vs_today": {
-    "profit_diff_max": 297219.14000000036,
-    "profit_diff_mean": 240406.1540000001,
-    "profit_diff_min": 137190.42000000016,
-    "profit_rel_mean": 0.1578107018391478,
+    "profit_diff_max": 453608.68999999994,
+    "profit_diff_mean": 389329.53600000014,
+    "profit_diff_min": 271769.52000000025,
+    "profit_rel_mean": 0.2554051974350684,
     "seeds_better": 5
    }
   }

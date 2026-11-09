@@ -154,9 +154,15 @@ def check(
             detail="file totals equal the plan",
         ),
     ]
+    min_cell = settings.agent()["cells"]["min_cell_letters"]
+    explore = settings.agent()["cells"]["explore_holdout_share"]
     held = [(c.holdout, c.letters) for c in plan.cells if c.letters > 0]
     ok = all(
-        lim["min_holdout_share"] - 0.005 <= h / (h + m) <= lim["max_holdout_share"] + 0.005 for h, m in held if h + m
+        lim["min_holdout_share"] - 0.005
+        <= h / (h + m)
+        <= (explore if m <= min_cell else lim["max_holdout_share"]) + 0.005
+        for h, m in held
+        if h + m
     )
     checks.append(
         Check(

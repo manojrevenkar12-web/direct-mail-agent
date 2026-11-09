@@ -23,8 +23,9 @@ POLICIES = {
     "today": Mode(name="today", selection="top_score", learner="none", reader=False, holdout=False),
     "for_loop": Mode(name="for_loop", reader=False),
     "agent": Mode(name="agent"),
-    "agent_no_delay": Mode(name="agent_no_delay", learner="no_delay"),
-    "agent_matchback": Mode(name="agent_matchback", learner="matchback", holdout=False),
+    "agent_no_delay": Mode(name="agent_no_delay", learner="response_no_delay"),
+    "agent_no_holdout": Mode(name="agent_no_holdout", holdout=False),
+    "agent_cell_holdouts": Mode(name="agent_cell_holdouts", learner="incremental", holdout_share=0.10),
     "unguarded_llm": Mode(name="unguarded_llm", guarded=False),
 }
 HEAD = Person("sam.head", "head_of_direct_acquisition")
@@ -39,6 +40,7 @@ class RunResult:
     calibration: dict
     ledger_intact: bool
     printer_duplicates: int
+    measurement: dict
 
 
 def _effects(dirs: list[dict], mid: str) -> set[tuple]:
@@ -250,10 +252,37 @@ def run(policy: str, scenario: str = "dev", seed_offset: int = 0, size: int | No
                 "plan_cells": [c.model_dump() for c in out.plan.cells],
             }
         )
-    calib = _calibration(agent, market) if mode.learner == "holdout" else {}
+    calib = _calibration(agent, market) if mode.learner == "incremental" else {}
+    measured = _measurement(market) if mode.holdout else {}
     ok, _ = agent.ledger.verify()
     shas = [s["sha256"] for s in world.submissions]
-    return RunResult(policy, scenario, seed_offset, rounds, calib, ok, len(shas) - len(set(shas)))
+    return RunResult(policy, scenario, seed_offset, rounds, calib, ok, len(shas) - len(set(shas)), measured)
+
+
+def _measurement(market: Market) -> dict:
+    """What mail was worth, three ways, over the complete rounds: the truth, the holdout estimate, matchback."""
+    last = max(market.files)
+    as_of = settings.iso(settings.drop_date(last) + __import__("datetime").timedelta(days=61))
+    rows = market.snapshot(as_of, lookback_days=10_000)["rows"]
+    est, attributed = 0.0, 0
+    cells: dict[tuple[int, str], list[int]] = {}
+    for x in rows:
+        c = cells.setdefault((x["round"], x["cell"]), [0, 0, 0, 0])
+        i = 0 if x["arm"] == "mail" else 2
+        c[i] += x["n"]
+        c[i + 1] += x["apps"]
+    for n_m, a_m, n_h, a_h in cells.values():
+        attributed += a_m
+        if n_m and n_h:
+            est += a_m - n_m * a_h / n_h  # the mailed arm against its own random holdout
+    truth = sum(inc for cells in market.cell_inc.values() for inc, _ in cells.values())
+    return {
+        "true_incremental_apps": truth,
+        "holdout_estimate": est,
+        "matchback_apps": attributed,
+        "holdout_ratio": est / truth if truth else None,
+        "matchback_ratio": attributed / truth if truth else None,
+    }
 
 
 def _matches(row: dict, event: str) -> bool:

@@ -46,13 +46,15 @@ def allocate(
     budget: float,
     holdout_share: float,
     rng: np.random.Generator,
+    priors: dict[str, dict] | None = None,
+    explore_holdout: bool = False,
 ) -> list[CellPlan]:
     lim, cost = settings.agent()["limits"], settings.agent()["economics"]["cost_per_letter"]
     min_cell = settings.agent()["cells"]["min_cell_letters"]
     capacity = int(min(budget / cost, lim["max_letters"]))
     draws = {}
     for c in available:
-        post = posts.get(c) or learning.prior_cell()
+        post = posts.get(c) or (priors or {}).get(c) or learning.prior_cell()
         draws[c] = (
             float(learning.sample_value(post, rng)),
             float((learning.sample_value(post, rng, 2000) > cost).mean()),
@@ -75,7 +77,13 @@ def allocate(
             left -= max(extra, 0)
         if letters < MIN_LETTERS:
             letters = 0  # too few to print or to learn from
-        hold = round(letters * holdout_share / (1 - holdout_share)) if holdout_share > 0 else 0
+        share = holdout_share
+        if explore_holdout and holdout_share > 0 and 0 < letters <= min_cell:
+            share = settings.agent()["cells"]["explore_holdout_share"]  # kept for learning: learn properly
+            letters = min(letters, int(available[c] * (1 - share)))
+            letters = letters if letters >= MIN_LETTERS else 0
+        hold = round(letters * share / (1 - share)) if share > 0 else 0
+        hold = min(hold, available[c] - letters)
         plans.append(
             CellPlan(
                 cell=c,

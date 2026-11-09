@@ -1,0 +1,6302 @@
+{
+ "agent_seed0": {
+  "calibration": {},
+  "ledger_intact": true,
+  "measurement": {
+   "holdout_estimate": 8751.294922513474,
+   "holdout_ratio": 0.8857393256928182,
+   "matchback_apps": 58856,
+   "matchback_ratio": 5.956955423689898,
+   "true_incremental_apps": 9880.214944355419
+  },
+  "policy": "agent",
+  "printer_duplicates": 0,
+  "rounds": [
+   {
+    "anomalies": [],
+    "approved": true,
+    "attributed_funded": 2887,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "FLEXI-A": 0.4875,
+     "FLEXI-B": 0.5125
+    },
+    "directions": [],
+    "drop_date": "2026-01-26",
+    "eligible": 843344,
+    "excluded_sectors": [],
+    "exp_incremental_value": 409074.45,
+    "holdout": 10529,
+    "letters": 199999,
+    "llm_gbp": 0.0076,
+    "llm_tokens_in": 4294,
+    "llm_tokens_out": 103,
+    "mail_caused_funded": 586,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 10.0,
+    "person_tasks": 0,
+    "plan_cells": [
+     {
+      "available": 75402,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.086,
+      "sampled_net": -0.3994,
+      "value_per_letter": 0.1095
+     },
+     {
+      "available": 93267,
+      "cell": "b1v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.357,
+      "sampled_net": -1.2426,
+      "value_per_letter": 0.5243
+     },
+     {
+      "available": 81578,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.233,
+      "sampled_net": -0.3543,
+      "value_per_letter": 0.2741
+     },
+     {
+      "available": 87091,
+      "cell": "b2v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.533,
+      "sampled_net": -0.1789,
+      "value_per_letter": 1.3536
+     },
+     {
+      "available": 84535,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.39,
+      "sampled_net": -0.8965,
+      "value_per_letter": 0.5137
+     },
+     {
+      "available": 84133,
+      "cell": "b3v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.689,
+      "sampled_net": 3.1525,
+      "value_per_letter": 2.5487
+     },
+     {
+      "available": 87605,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.601,
+      "sampled_net": -1.3684,
+      "value_per_letter": 1.0021
+     },
+     {
+      "available": 81064,
+      "cell": "b4v2",
+      "holdout": 4053,
+      "letters": 77010,
+      "p_profitable": 0.84,
+      "sampled_net": -0.9574,
+      "value_per_letter": 4.9678
+     },
+     {
+      "available": 92552,
+      "cell": "b5v1",
+      "holdout": 2299,
+      "letters": 43678,
+      "p_profitable": 0.99,
+      "sampled_net": -0.0476,
+      "value_per_letter": 4.5604
+     },
+     {
+      "available": 76117,
+      "cell": "b5v2",
+      "holdout": 3806,
+      "letters": 72311,
+      "p_profitable": 0.993,
+      "sampled_net": 30.4353,
+      "value_per_letter": 21.8203
+     }
+    ],
+    "realised_incremental_value": 421347.94,
+    "round": 1,
+    "spend": 109999.45,
+    "withdrawn": 0
+   },
+   {
+    "anomalies": [],
+    "approved": true,
+    "attributed_funded": 1271,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "FLEXI-A": 0.7788,
+     "FLEXI-B": 0.2213
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "sector_pause",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-02-23",
+    "eligible": 632811,
+    "excluded_sectors": [
+     "wholesale"
+    ],
+    "exp_incremental_value": 355750.19,
+    "holdout": 10528,
+    "letters": 199679,
+    "llm_gbp": 0.0265,
+    "llm_tokens_in": 8011,
+    "llm_tokens_out": 1286,
+    "mail_caused_funded": 620,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 10.0,
+    "person_tasks": 0,
+    "plan_cells": [
+     {
+      "available": 43152,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.154,
+      "sampled_net": -0.141,
+      "value_per_letter": 0.3217
+     },
+     {
+      "available": 74209,
+      "cell": "b1v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.296,
+      "sampled_net": -0.1644,
+      "value_per_letter": 0.4734
+     },
+     {
+      "available": 46891,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.731,
+      "sampled_net": 0.5837,
+      "value_per_letter": 0.8856
+     },
+     {
+      "available": 70053,
+      "cell": "b2v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.997,
+      "sampled_net": 0.869,
+      "value_per_letter": 4.6881
+     },
+     {
+      "available": 48757,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.853,
+      "sampled_net": 0.3435,
+      "value_per_letter": 1.135
+     },
+     {
+      "available": 67864,
+      "cell": "b3v2",
+      "holdout": 3393,
+      "letters": 64470,
+      "p_profitable": 1.0,
+      "sampled_net": 5.8538,
+      "value_per_letter": 5.9925
+     },
+     {
+      "available": 52555,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.923,
+      "sampled_net": 1.8154,
+      "value_per_letter": 1.3488
+     },
+     {
+      "available": 63900,
+      "cell": "b4v2",
+      "holdout": 3195,
+      "letters": 60705,
+      "p_profitable": 1.0,
+      "sampled_net": 9.3549,
+      "value_per_letter": 9.3525
+     },
+     {
+      "available": 99928,
+      "cell": "b5v1",
+      "holdout": 2814,
+      "letters": 53470,
+      "p_profitable": 0.999,
+      "sampled_net": 3.8037,
+      "value_per_letter": 5.0541
+     },
+     {
+      "available": 16163,
+      "cell": "b5v2",
+      "holdout": 808,
+      "letters": 15354,
+      "p_profitable": 1.0,
+      "sampled_net": 13.2504,
+      "value_per_letter": 11.3774
+     }
+    ],
+    "realised_incremental_value": 400166.29,
+    "round": 2,
+    "spend": 109823.45,
+    "withdrawn": 320
+   },
+   {
+    "anomalies": [
+     {
+      "anomaly": "feed_rows_missing",
+      "cause": "noise",
+      "correct": false,
+      "owner": "head_of_direct_acquisition",
+      "truth": "feed_incomplete"
+     }
+    ],
+    "approved": true,
+    "attributed_funded": 881,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 85000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "FLEXI-A": 0.7755,
+     "FLEXI-B": 0.2245
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "budget",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-03-23",
+    "eligible": 422177,
+    "excluded_sectors": [],
+    "exp_incremental_value": 201293.36,
+    "holdout": 8137,
+    "letters": 154301,
+    "llm_gbp": 0.0472,
+    "llm_tokens_in": 13122,
+    "llm_tokens_out": 2334,
+    "mail_caused_funded": 379,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 10.0,
+    "person_tasks": 0,
+    "plan_cells": [
+     {
+      "available": 24352,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.147,
+      "sampled_net": -0.3634,
+      "value_per_letter": 0.3217
+     },
+     {
+      "available": 60084,
+      "cell": "b1v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.28,
+      "sampled_net": -0.1422,
+      "value_per_letter": 0.4734
+     },
+     {
+      "available": 26687,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.748,
+      "sampled_net": -0.278,
+      "value_per_letter": 0.8856
+     },
+     {
+      "available": 57748,
+      "cell": "b2v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.997,
+      "sampled_net": 3.2492,
+      "value_per_letter": 4.6881
+     },
+     {
+      "available": 29943,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.879,
+      "sampled_net": 0.5765,
+      "value_per_letter": 1.135
+     },
+     {
+      "available": 54492,
+      "cell": "b3v2",
+      "holdout": 2725,
+      "letters": 51767,
+      "p_profitable": 1.0,
+      "sampled_net": 6.4208,
+      "value_per_letter": 5.9925
+     },
+     {
+      "available": 63002,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.929,
+      "sampled_net": 0.6739,
+      "value_per_letter": 1.3488
+     },
+     {
+      "available": 21433,
+      "cell": "b4v2",
+      "holdout": 1072,
+      "letters": 20361,
+      "p_profitable": 1.0,
+      "sampled_net": 10.5519,
+      "value_per_letter": 9.3525
+     },
+     {
+      "available": 67105,
+      "cell": "b5v1",
+      "holdout": 3155,
+      "letters": 59953,
+      "p_profitable": 0.999,
+      "sampled_net": 2.5349,
+      "value_per_letter": 5.0541
+     },
+     {
+      "available": 17331,
+      "cell": "b5v2",
+      "holdout": 867,
+      "letters": 16464,
+      "p_profitable": 1.0,
+      "sampled_net": 10.2403,
+      "value_per_letter": 11.3774
+     }
+    ],
+    "realised_incremental_value": 191784.48,
+    "round": 3,
+    "spend": 84865.55,
+    "withdrawn": 244
+   },
+   {
+    "anomalies": [],
+    "approved": true,
+    "attributed_funded": 2816,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "FLEXI-A": 0.0909,
+     "FLEXI-B": 0.9091
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "agency_volume",
+      "model_read_ok": false,
+      "route_ok": true,
+      "stopped": 2
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-04-20",
+    "eligible": 457214,
+    "excluded_sectors": [],
+    "exp_incremental_value": 409925.89,
+    "holdout": 10528,
+    "letters": 198915,
+    "llm_gbp": 0.04,
+    "llm_tokens_in": 9872,
+    "llm_tokens_out": 2053,
+    "mail_caused_funded": 566,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 16.0,
+    "person_tasks": 2,
+    "plan_cells": [
+     {
+      "available": 42004,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.005,
+      "sampled_net": -0.4987,
+      "value_per_letter": 0.1376
+     },
+     {
+      "available": 49439,
+      "cell": "b1v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.614,
+      "sampled_net": -0.1748,
+      "value_per_letter": 0.8407
+     },
+     {
+      "available": 52808,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.916,
+      "sampled_net": 0.0664,
+      "value_per_letter": 0.9908
+     },
+     {
+      "available": 38635,
+      "cell": "b2v2",
+      "holdout": 572,
+      "letters": 10861,
+      "p_profitable": 0.997,
+      "sampled_net": 1.2493,
+      "value_per_letter": 2.5264
+     },
+     {
+      "available": 79443,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.999,
+      "sampled_net": 0.9374,
+      "value_per_letter": 1.5759
+     },
+     {
+      "available": 11999,
+      "cell": "b3v2",
+      "holdout": 600,
+      "letters": 11399,
+      "p_profitable": 1.0,
+      "sampled_net": 3.5462,
+      "value_per_letter": 4.2578
+     },
+     {
+      "available": 15302,
+      "cell": "b4v1",
+      "holdout": 765,
+      "letters": 14536,
+      "p_profitable": 1.0,
+      "sampled_net": 2.5138,
+      "value_per_letter": 2.7549
+     },
+     {
+      "available": 76141,
+      "cell": "b4v2",
+      "holdout": 3807,
+      "letters": 72333,
+      "p_profitable": 1.0,
+      "sampled_net": 7.0525,
+      "value_per_letter": 7.6139
+     },
+     {
+      "available": 39050,
+      "cell": "b5v1",
+      "holdout": 1952,
+      "letters": 37097,
+      "p_profitable": 1.0,
+      "sampled_net": 5.6536,
+      "value_per_letter": 6.3038
+     },
+     {
+      "available": 52393,
+      "cell": "b5v2",
+      "holdout": 2620,
+      "letters": 49773,
+      "p_profitable": 1.0,
+      "sampled_net": 28.4129,
+      "value_per_letter": 29.1332
+     }
+    ],
+    "realised_incremental_value": 410744.44,
+    "round": 4,
+    "spend": 109403.25,
+    "withdrawn": 1084
+   },
+   {
+    "anomalies": [],
+    "approved": true,
+    "attributed_funded": 1149,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "CARD-1": 0.3,
+     "FLEXI-A": 0.0637,
+     "FLEXI-B": 0.6363
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "creative_push",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "spoofed_budget",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-05-18",
+    "eligible": 452560,
+    "excluded_sectors": [],
+    "exp_incremental_value": 342376.56,
+    "holdout": 10529,
+    "letters": 199712,
+    "llm_gbp": 0.0379,
+    "llm_tokens_in": 10095,
+    "llm_tokens_out": 1827,
+    "mail_caused_funded": 515,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 13.0,
+    "person_tasks": 1,
+    "plan_cells": [
+     {
+      "available": 34583,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.023,
+      "sampled_net": -0.4395,
+      "value_per_letter": 0.236
+     },
+     {
+      "available": 55929,
+      "cell": "b1v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.793,
+      "sampled_net": 0.1306,
+      "value_per_letter": 1.0298
+     },
+     {
+      "available": 55895,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.728,
+      "sampled_net": 0.4626,
+      "value_per_letter": 0.7167
+     },
+     {
+      "available": 34617,
+      "cell": "b2v2",
+      "holdout": 381,
+      "letters": 7232,
+      "p_profitable": 1.0,
+      "sampled_net": 2.813,
+      "value_per_letter": 3.6294
+     },
+     {
+      "available": 38720,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 1.6312,
+      "value_per_letter": 1.5784
+     },
+     {
+      "available": 51792,
+      "cell": "b3v2",
+      "holdout": 2590,
+      "letters": 49202,
+      "p_profitable": 1.0,
+      "sampled_net": 3.7002,
+      "value_per_letter": 4.2313
+     },
+     {
+      "available": 35165,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 2.5031,
+      "value_per_letter": 2.61
+     },
+     {
+      "available": 55347,
+      "cell": "b4v2",
+      "holdout": 2767,
+      "letters": 52579,
+      "p_profitable": 1.0,
+      "sampled_net": 7.6304,
+      "value_per_letter": 8.2165
+     },
+     {
+      "available": 61917,
+      "cell": "b5v1",
+      "holdout": 3096,
+      "letters": 58821,
+      "p_profitable": 1.0,
+      "sampled_net": 6.1597,
+      "value_per_letter": 6.4822
+     },
+     {
+      "available": 28595,
+      "cell": "b5v2",
+      "holdout": 1430,
+      "letters": 27165,
+      "p_profitable": 1.0,
+      "sampled_net": 27.6253,
+      "value_per_letter": 28.2863
+     }
+    ],
+    "realised_incremental_value": 317786.76,
+    "round": 5,
+    "spend": 109841.6,
+    "withdrawn": 287
+   },
+   {
+    "anomalies": [
+     {
+      "anomaly": "applications_below_expected",
+      "cause": "noise",
+      "correct": true,
+      "owner": "head_of_direct_acquisition",
+      "truth": "noise"
+     },
+     {
+      "anomaly": "score_distribution_moved",
+      "cause": "model_shift",
+      "correct": true,
+      "owner": "data_science",
+      "truth": "model_shift"
+     }
+    ],
+    "approved": true,
+    "attributed_funded": 584,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "CARD-1": 0.0833,
+     "FLEXI-A": 0.0833,
+     "FLEXI-B": 0.8333
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "sales_ask",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-06-15",
+    "eligible": 404200,
+    "excluded_sectors": [],
+    "exp_incremental_value": 51542.7,
+    "holdout": 35293,
+    "letters": 199762,
+    "llm_gbp": 0.0426,
+    "llm_tokens_in": 11867,
+    "llm_tokens_out": 2190,
+    "mail_caused_funded": 109,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 28.0,
+    "person_tasks": 2,
+    "plan_cells": [
+     {
+      "available": 23773,
+      "cell": "b1v1",
+      "holdout": 176,
+      "letters": 1000,
+      "p_profitable": 0.019,
+      "sampled_net": -0.4353,
+      "value_per_letter": 0.241
+     },
+     {
+      "available": 57067,
+      "cell": "b1v2",
+      "holdout": 176,
+      "letters": 1000,
+      "p_profitable": 0.851,
+      "sampled_net": 0.556,
+      "value_per_letter": 1.0688
+     },
+     {
+      "available": 29970,
+      "cell": "b2v1",
+      "holdout": 176,
+      "letters": 1000,
+      "p_profitable": 0.394,
+      "sampled_net": -0.1488,
+      "value_per_letter": 0.5265
+     },
+     {
+      "available": 50870,
+      "cell": "b2v2",
+      "holdout": 3292,
+      "letters": 18654,
+      "p_profitable": 1.0,
+      "sampled_net": 3.1215,
+      "value_per_letter": 3.8126
+     },
+     {
+      "available": 33876,
+      "cell": "b3v1",
+      "holdout": 176,
+      "letters": 1000,
+      "p_profitable": 0.999,
+      "sampled_net": 1.154,
+      "value_per_letter": 1.333
+     },
+     {
+      "available": 46964,
+      "cell": "b3v2",
+      "holdout": 7045,
+      "letters": 39919,
+      "p_profitable": 1.0,
+      "sampled_net": 3.7855,
+      "value_per_letter": 4.274
+     },
+     {
+      "available": 53745,
+      "cell": "b4v1",
+      "holdout": 8062,
+      "letters": 45683,
+      "p_profitable": 1.0,
+      "sampled_net": 2.6812,
+      "value_per_letter": 3.9384
+     },
+     {
+      "available": 27095,
+      "cell": "b4v2",
+      "holdout": 4064,
+      "letters": 23030,
+      "p_profitable": 1.0,
+      "sampled_net": 7.2907,
+      "value_per_letter": 7.9965
+     },
+     {
+      "available": 60736,
+      "cell": "b5v1",
+      "holdout": 9110,
+      "letters": 51625,
+      "p_profitable": 1.0,
+      "sampled_net": 6.0684,
+      "value_per_letter": 6.5245
+     },
+     {
+      "available": 20104,
+      "cell": "b5v2",
+      "holdout": 3016,
+      "letters": 17088,
+      "p_profitable": 1.0,
+      "sampled_net": 27.0374,
+      "value_per_letter": 27.8064
+     }
+    ],
+    "realised_incremental_value": 47733.14,
+    "round": 6,
+    "spend": 109869.1,
+    "withdrawn": 237
+   },
+   {
+    "anomalies": [
+     {
+      "anomaly": "applications_below_expected",
+      "cause": "feed_incomplete",
+      "correct": false,
+      "owner": "data_platform",
+      "truth": "response_drop"
+     }
+    ],
+    "approved": true,
+    "attributed_funded": 2328,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 165000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "CARD-1": 0.0833,
+     "FLEXI-A": 0.0833,
+     "FLEXI-B": 0.8333
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "finance_budget",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-07-13",
+    "eligible": 370443,
+    "excluded_sectors": [],
+    "exp_incremental_value": 371640.59,
+    "holdout": 15791,
+    "letters": 299226,
+    "llm_gbp": 0.032,
+    "llm_tokens_in": 11086,
+    "llm_tokens_out": 1455,
+    "mail_caused_funded": 560,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 55.0,
+    "person_tasks": 1,
+    "plan_cells": [
+     {
+      "available": 38137,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.067,
+      "sampled_net": -0.3052,
+      "value_per_letter": 0.3027
+     },
+     {
+      "available": 35952,
+      "cell": "b1v2",
+      "holdout": 1798,
+      "letters": 34154,
+      "p_profitable": 0.926,
+      "sampled_net": 0.1548,
+      "value_per_letter": 1.3229
+     },
+     {
+      "available": 45291,
+      "cell": "b2v1",
+      "holdout": 1386,
+      "letters": 26338,
+      "p_profitable": 0.585,
+      "sampled_net": 0.2837,
+      "value_per_letter": 0.6121
+     },
+     {
+      "available": 28797,
+      "cell": "b2v2",
+      "holdout": 1440,
+      "letters": 27357,
+      "p_profitable": 1.0,
+      "sampled_net": 2.6782,
+      "value_per_letter": 3.495
+     },
+     {
+      "available": 41492,
+      "cell": "b3v1",
+      "holdout": 2075,
+      "letters": 39417,
+      "p_profitable": 0.999,
+      "sampled_net": 0.3569,
+      "value_per_letter": 1.2241
+     },
+     {
+      "available": 32597,
+      "cell": "b3v2",
+      "holdout": 1630,
+      "letters": 30967,
+      "p_profitable": 1.0,
+      "sampled_net": 3.3524,
+      "value_per_letter": 3.8733
+     },
+     {
+      "available": 23549,
+      "cell": "b4v1",
+      "holdout": 1177,
+      "letters": 22371,
+      "p_profitable": 1.0,
+      "sampled_net": 2.154,
+      "value_per_letter": 2.7003
+     },
+     {
+      "available": 50539,
+      "cell": "b4v2",
+      "holdout": 2527,
+      "letters": 48012,
+      "p_profitable": 1.0,
+      "sampled_net": 7.2339,
+      "value_per_letter": 7.6946
+     },
+     {
+      "available": 36753,
+      "cell": "b5v1",
+      "holdout": 1838,
+      "letters": 34915,
+      "p_profitable": 1.0,
+      "sampled_net": 5.7741,
+      "value_per_letter": 6.351
+     },
+     {
+      "available": 37336,
+      "cell": "b5v2",
+      "holdout": 1867,
+      "letters": 35469,
+      "p_profitable": 1.0,
+      "sampled_net": 27.6856,
+      "value_per_letter": 27.1419
+     }
+    ],
+    "realised_incremental_value": 381315.81,
+    "round": 7,
+    "spend": 164574.3,
+    "withdrawn": 774
+   },
+   {
+    "anomalies": [],
+    "approved": true,
+    "attributed_funded": 877,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "CARD-1": 0.0909,
+     "FLEXI-A": 0.1264,
+     "FLEXI-B": 0.7827
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "budget_over_cap",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 1
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "search_fyi",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-08-10",
+    "eligible": 264426,
+    "excluded_sectors": [],
+    "exp_incremental_value": 219711.83,
+    "holdout": 10528,
+    "letters": 199715,
+    "llm_gbp": 0.0617,
+    "llm_tokens_in": 13746,
+    "llm_tokens_out": 3102,
+    "mail_caused_funded": 335,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 13.0,
+    "person_tasks": 1,
+    "plan_cells": [
+     {
+      "available": 41146,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.029,
+      "sampled_net": -0.2207,
+      "value_per_letter": 0.2742
+     },
+     {
+      "available": 11739,
+      "cell": "b1v2",
+      "holdout": 459,
+      "letters": 8718,
+      "p_profitable": 0.992,
+      "sampled_net": 0.8964,
+      "value_per_letter": 1.3253
+     },
+     {
+      "available": 12293,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.72,
+      "sampled_net": 0.0403,
+      "value_per_letter": 0.6777
+     },
+     {
+      "available": 40592,
+      "cell": "b2v2",
+      "holdout": 2030,
+      "letters": 38562,
+      "p_profitable": 1.0,
+      "sampled_net": 2.4401,
+      "value_per_letter": 3.1717
+     },
+     {
+      "available": 6142,
+      "cell": "b3v1",
+      "holdout": 307,
+      "letters": 5834,
+      "p_profitable": 1.0,
+      "sampled_net": 1.3253,
+      "value_per_letter": 1.8875
+     },
+     {
+      "available": 46744,
+      "cell": "b3v2",
+      "holdout": 2337,
+      "letters": 44406,
+      "p_profitable": 1.0,
+      "sampled_net": 3.1771,
+      "value_per_letter": 3.9792
+     },
+     {
+      "available": 22531,
+      "cell": "b4v1",
+      "holdout": 1127,
+      "letters": 21404,
+      "p_profitable": 1.0,
+      "sampled_net": 1.4981,
+      "value_per_letter": 2.0314
+     },
+     {
+      "available": 30353,
+      "cell": "b4v2",
+      "holdout": 1518,
+      "letters": 28835,
+      "p_profitable": 1.0,
+      "sampled_net": 6.8756,
+      "value_per_letter": 7.5618
+     },
+     {
+      "available": 50101,
+      "cell": "b5v1",
+      "holdout": 2505,
+      "letters": 47595,
+      "p_profitable": 1.0,
+      "sampled_net": 5.4817,
+      "value_per_letter": 6.044
+     },
+     {
+      "available": 2785,
+      "cell": "b5v2",
+      "holdout": 139,
+      "letters": 2645,
+      "p_profitable": 1.0,
+      "sampled_net": 24.7542,
+      "value_per_letter": 25.0885
+     }
+    ],
+    "realised_incremental_value": 217358.82,
+    "round": 8,
+    "spend": 109843.25,
+    "withdrawn": 284
+   },
+   {
+    "anomalies": [
+     {
+      "anomaly": "mail_code_share_fell",
+      "cause": "tracking_break",
+      "correct": true,
+      "owner": "acquisition_tech",
+      "truth": "tracking_break"
+     }
+    ],
+    "approved": true,
+    "attributed_funded": 903,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "CARD-1": 0.0833,
+     "FLEXI-A": 0.0833,
+     "FLEXI-B": 0.8333
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "sector_pause",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-09-07",
+    "eligible": 289143,
+    "excluded_sectors": [
+     "health_care"
+    ],
+    "exp_incremental_value": 167588.18,
+    "holdout": 10528,
+    "letters": 199785,
+    "llm_gbp": 0.052,
+    "llm_tokens_in": 13688,
+    "llm_tokens_out": 2623,
+    "mail_caused_funded": 384,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 25.0,
+    "person_tasks": 1,
+    "plan_cells": [
+     {
+      "available": 23626,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.003,
+      "sampled_net": -0.4236,
+      "value_per_letter": 0.2078
+     },
+     {
+      "available": 24927,
+      "cell": "b1v2",
+      "holdout": 656,
+      "letters": 12463,
+      "p_profitable": 1.0,
+      "sampled_net": 0.5727,
+      "value_per_letter": 1.3992
+     },
+     {
+      "available": 5519,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.95,
+      "sampled_net": 0.091,
+      "value_per_letter": 0.7095
+     },
+     {
+      "available": 43691,
+      "cell": "b2v2",
+      "holdout": 2185,
+      "letters": 41506,
+      "p_profitable": 1.0,
+      "sampled_net": 2.5791,
+      "value_per_letter": 3.1324
+     },
+     {
+      "available": 24836,
+      "cell": "b3v1",
+      "holdout": 1242,
+      "letters": 23594,
+      "p_profitable": 1.0,
+      "sampled_net": 0.9965,
+      "value_per_letter": 1.4203
+     },
+     {
+      "available": 25114,
+      "cell": "b3v2",
+      "holdout": 1256,
+      "letters": 23858,
+      "p_profitable": 1.0,
+      "sampled_net": 3.5125,
+      "value_per_letter": 4.1734
+     },
+     {
+      "available": 33849,
+      "cell": "b4v1",
+      "holdout": 1692,
+      "letters": 32156,
+      "p_profitable": 1.0,
+      "sampled_net": 1.8824,
+      "value_per_letter": 2.4473
+     },
+     {
+      "available": 16675,
+      "cell": "b4v2",
+      "holdout": 834,
+      "letters": 15841,
+      "p_profitable": 1.0,
+      "sampled_net": 6.4861,
+      "value_per_letter": 7.0975
+     },
+     {
+      "available": 36758,
+      "cell": "b5v1",
+      "holdout": 1838,
+      "letters": 34920,
+      "p_profitable": 1.0,
+      "sampled_net": 5.3514,
+      "value_per_letter": 5.8055
+     },
+     {
+      "available": 14381,
+      "cell": "b5v2",
+      "holdout": 719,
+      "letters": 13661,
+      "p_profitable": 1.0,
+      "sampled_net": 21.8528,
+      "value_per_letter": 22.2997
+     }
+    ],
+    "realised_incremental_value": 174620.0,
+    "round": 9,
+    "spend": 109881.75,
+    "withdrawn": 214
+   },
+   {
+    "anomalies": [],
+    "approved": true,
+    "attributed_funded": 2255,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "CARD-1": 0.0833,
+     "FLEXI-A": 0.0833,
+     "FLEXI-B": 0.8333
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "agency_volume",
+      "model_read_ok": false,
+      "route_ok": true,
+      "stopped": 2
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-10-05",
+    "eligible": 386540,
+    "excluded_sectors": [],
+    "exp_incremental_value": 359340.93,
+    "holdout": 10527,
+    "letters": 199182,
+    "llm_gbp": 0.0316,
+    "llm_tokens_in": 8576,
+    "llm_tokens_out": 1603,
+    "mail_caused_funded": 520,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 16.0,
+    "person_tasks": 2,
+    "plan_cells": [
+     {
+      "available": 34917,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.022,
+      "sampled_net": -0.2722,
+      "value_per_letter": 0.2703
+     },
+     {
+      "available": 42391,
+      "cell": "b1v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 1.2474,
+      "value_per_letter": 1.8569
+     },
+     {
+      "available": 46483,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.96,
+      "sampled_net": 0.4067,
+      "value_per_letter": 0.7425
+     },
+     {
+      "available": 30825,
+      "cell": "b2v2",
+      "holdout": 1541,
+      "letters": 29283,
+      "p_profitable": 1.0,
+      "sampled_net": 2.6471,
+      "value_per_letter": 3.4568
+     },
+     {
+      "available": 49201,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 1.4525,
+      "value_per_letter": 1.8343
+     },
+     {
+      "available": 28107,
+      "cell": "b3v2",
+      "holdout": 1405,
+      "letters": 26701,
+      "p_profitable": 1.0,
+      "sampled_net": 3.9789,
+      "value_per_letter": 4.6038
+     },
+     {
+      "available": 24106,
+      "cell": "b4v1",
+      "holdout": 844,
+      "letters": 16033,
+      "p_profitable": 1.0,
+      "sampled_net": 2.2888,
+      "value_per_letter": 2.8471
+     },
+     {
+      "available": 53202,
+      "cell": "b4v2",
+      "holdout": 2660,
+      "letters": 50541,
+      "p_profitable": 1.0,
+      "sampled_net": 6.912,
+      "value_per_letter": 7.5113
+     },
+     {
+      "available": 38563,
+      "cell": "b5v1",
+      "holdout": 1928,
+      "letters": 36634,
+      "p_profitable": 1.0,
+      "sampled_net": 5.5386,
+      "value_per_letter": 6.1216
+     },
+     {
+      "available": 38745,
+      "cell": "b5v2",
+      "holdout": 1937,
+      "letters": 36807,
+      "p_profitable": 1.0,
+      "sampled_net": 24.4786,
+      "value_per_letter": 24.94
+     }
+    ],
+    "realised_incremental_value": 390083.61,
+    "round": 10,
+    "spend": 109550.1,
+    "withdrawn": 817
+   },
+   {
+    "anomalies": [],
+    "approved": true,
+    "attributed_funded": 810,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 70000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "CARD-1": 0.0834,
+     "FLEXI-A": 0.0834,
+     "FLEXI-B": 0.8333
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "budget",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-11-02",
+    "eligible": 384609,
+    "excluded_sectors": [],
+    "exp_incremental_value": 155165.16,
+    "holdout": 6701,
+    "letters": 127031,
+    "llm_gbp": 0.0333,
+    "llm_tokens_in": 9050,
+    "llm_tokens_out": 1645,
+    "mail_caused_funded": 286,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 10.0,
+    "person_tasks": 0,
+    "plan_cells": [
+     {
+      "available": 29593,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.019,
+      "sampled_net": -0.37,
+      "value_per_letter": 0.2519
+     },
+     {
+      "available": 47329,
+      "cell": "b1v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 1.0688,
+      "value_per_letter": 1.5991
+     },
+     {
+      "available": 56074,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.914,
+      "sampled_net": 0.139,
+      "value_per_letter": 0.6925
+     },
+     {
+      "available": 20848,
+      "cell": "b2v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 2.5287,
+      "value_per_letter": 3.047
+     },
+     {
+      "available": 23644,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 0.9403,
+      "value_per_letter": 1.533
+     },
+     {
+      "available": 53277,
+      "cell": "b3v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 4.2438,
+      "value_per_letter": 4.9323
+     },
+     {
+      "available": 21380,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 2.2421,
+      "value_per_letter": 2.701
+     },
+     {
+      "available": 55542,
+      "cell": "b4v2",
+      "holdout": 2777,
+      "letters": 52764,
+      "p_profitable": 1.0,
+      "sampled_net": 7.3848,
+      "value_per_letter": 8.1193
+     },
+     {
+      "available": 61614,
+      "cell": "b5v1",
+      "holdout": 2788,
+      "letters": 52966,
+      "p_profitable": 1.0,
+      "sampled_net": 6.097,
+      "value_per_letter": 6.6158
+     },
+     {
+      "available": 15308,
+      "cell": "b5v2",
+      "holdout": 765,
+      "letters": 14542,
+      "p_profitable": 1.0,
+      "sampled_net": 24.8286,
+      "value_per_letter": 25.4542
+     }
+    ],
+    "realised_incremental_value": 160556.39,
+    "round": 11,
+    "spend": 69867.05,
+    "withdrawn": 241
+   },
+   {
+    "anomalies": [
+     {
+      "anomaly": "applications_below_expected",
+      "cause": "noise",
+      "correct": true,
+      "owner": "head_of_direct_acquisition",
+      "truth": "noise"
+     }
+    ],
+    "approved": true,
+    "attributed_funded": 1057,
+    "breaches": {
+     "gone_away": 0,
+     "mps_director": 0,
+     "not_active": 0,
+     "not_corporate": 0,
+     "objected": 0
+    },
+    "brief_attempts": 1,
+    "brief_fallback": false,
+    "budget": 110000.0,
+    "checks_passed": true,
+    "creative_shares": {
+     "CARD-1": 0.4,
+     "FLEXI-A": 0.0551,
+     "FLEXI-B": 0.5449
+    },
+    "directions": [
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "creative_push",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     },
+     {
+      "correct": true,
+      "effect_ok": true,
+      "first_pass_ok": true,
+      "kind": "objection",
+      "model_read_ok": true,
+      "route_ok": true,
+      "stopped": 0
+     }
+    ],
+    "drop_date": "2026-11-30",
+    "eligible": 459517,
+    "excluded_sectors": [],
+    "exp_incremental_value": 250331.39,
+    "holdout": 10529,
+    "letters": 199757,
+    "llm_gbp": 0.03,
+    "llm_tokens_in": 10313,
+    "llm_tokens_out": 1437,
+    "mail_caused_funded": 474,
+    "missed_events": [],
+    "paused": false,
+    "person_minutes": 10.0,
+    "person_tasks": 0,
+    "plan_cells": [
+     {
+      "available": 30685,
+      "cell": "b1v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.001,
+      "sampled_net": -0.4681,
+      "value_per_letter": 0.1673
+     },
+     {
+      "available": 61219,
+      "cell": "b1v2",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 1.1268,
+      "value_per_letter": 1.623
+     },
+     {
+      "available": 43115,
+      "cell": "b2v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 0.915,
+      "sampled_net": 0.1605,
+      "value_per_letter": 0.6958
+     },
+     {
+      "available": 48788,
+      "cell": "b2v2",
+      "holdout": 630,
+      "letters": 11971,
+      "p_profitable": 1.0,
+      "sampled_net": 2.5324,
+      "value_per_letter": 2.9963
+     },
+     {
+      "available": 35172,
+      "cell": "b3v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 0.9263,
+      "value_per_letter": 1.4991
+     },
+     {
+      "available": 56731,
+      "cell": "b3v2",
+      "holdout": 2837,
+      "letters": 53894,
+      "p_profitable": 1.0,
+      "sampled_net": 4.4531,
+      "value_per_letter": 4.9424
+     },
+     {
+      "available": 47875,
+      "cell": "b4v1",
+      "holdout": 53,
+      "letters": 1000,
+      "p_profitable": 1.0,
+      "sampled_net": 2.0151,
+      "value_per_letter": 2.5659
+     },
+     {
+      "available": 44028,
+      "cell": "b4v2",
+      "holdout": 2201,
+      "letters": 41826,
+      "p_profitable": 1.0,
+      "sampled_net": 7.1474,
+      "value_per_letter": 7.4521
+     },
+     {
+      "available": 72912,
+      "cell": "b5v1",
+      "holdout": 3646,
+      "letters": 69266,
+      "p_profitable": 1.0,
+      "sampled_net": 5.6265,
+      "value_per_letter": 6.1846
+     },
+     {
+      "available": 18992,
+      "cell": "b5v2",
+      "holdout": 950,
+      "letters": 18042,
+      "p_profitable": 1.0,
+      "sampled_net": 20.863,
+      "value_per_letter": 21.523
+     }
+    ],
+    "realised_incremental_value": 288569.0,
+    "round": 12,
+    "spend": 109866.35,
+    "withdrawn": 242
+   }
+  ],
+  "seed": 0
+ },
+ "policies": {
+  "agent": {
+   "seeds": [
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 17818,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 5,
+     "events_missed": 0,
+     "incremental_value": 3293741.23,
+     "ledger_intact": true,
+     "letters": 2377064,
+     "llm_gbp_per_round": 0.036866666666666666,
+     "mail_caused_funded": 5334,
+     "matchback_vs_true": 5.956955423689898,
+     "measured_vs_true": 0.8857393256928182,
+     "messages": 230,
+     "model_read_correct": 0.991304347826087,
+     "person_minutes_per_round": 18.0,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1986356.03,
+     "realised_incremental_value": 3402066.68,
+     "spend": 1307385.2,
+     "withdrawn_at_print": 4744,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17626,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 0,
+     "incremental_value": 3157652.35,
+     "ledger_intact": true,
+     "letters": 2377059,
+     "llm_gbp_per_round": 0.03195833333333333,
+     "mail_caused_funded": 5279,
+     "matchback_vs_true": 6.114177994635683,
+     "measured_vs_true": 0.7905499238089787,
+     "messages": 210,
+     "model_read_correct": 0.9904761904761905,
+     "person_minutes_per_round": 15.25,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1850269.9000000001,
+     "realised_incremental_value": 3277955.59,
+     "spend": 1307382.45,
+     "withdrawn_at_print": 4749,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 17314,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 2,
+     "events_missed": 0,
+     "incremental_value": 3115025.13,
+     "ledger_intact": true,
+     "letters": 2339228,
+     "llm_gbp_per_round": 0.03495,
+     "mail_caused_funded": 5233,
+     "matchback_vs_true": 6.1613519889400346,
+     "measured_vs_true": 0.8203010288360989,
+     "messages": 217,
+     "model_read_correct": 0.9953917050691244,
+     "person_minutes_per_round": 20.0,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1828449.73,
+     "realised_incremental_value": 3301617.79,
+     "spend": 1286575.4,
+     "withdrawn_at_print": 4768,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17558,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 5,
+     "events_missed": 1,
+     "incremental_value": 3159167.3,
+     "ledger_intact": true,
+     "letters": 2349313,
+     "llm_gbp_per_round": 0.026166666666666668,
+     "mail_caused_funded": 5282,
+     "matchback_vs_true": 6.179733585723801,
+     "measured_vs_true": 1.10864806710114,
+     "messages": 172,
+     "model_read_correct": 0.9825581395348837,
+     "person_minutes_per_round": 19.25,
+     "person_tasks_per_round": 0.9166666666666666,
+     "printer_duplicates": 0,
+     "profit": 1867045.15,
+     "realised_incremental_value": 3266234.4699999997,
+     "spend": 1292122.15,
+     "withdrawn_at_print": 4910,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 1,
+     "attributed_funded": 17305,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 2,
+     "events_missed": 0,
+     "incremental_value": 3146564.99,
+     "ledger_intact": true,
+     "letters": 2377068,
+     "llm_gbp_per_round": 0.034,
+     "mail_caused_funded": 5196,
+     "matchback_vs_true": 6.108667563848159,
+     "measured_vs_true": 0.9778631651827896,
+     "messages": 212,
+     "model_read_correct": 0.9952830188679245,
+     "person_minutes_per_round": 27.5,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1839177.5900000003,
+     "realised_incremental_value": 3204975.92,
+     "spend": 1307387.4,
+     "withdrawn_at_print": 4740,
+     "wrong_effects": 0
+    }
+   ],
+   "summary": {
+    "anomaly_false_alarms": {
+     "max": 3.0,
+     "mean": 2.0,
+     "min": 1.0
+    },
+    "anomaly_false_dismissed": {
+     "max": 2.0,
+     "mean": 1.4,
+     "min": 1.0
+    },
+    "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 3.8,
+     "min": 3.0
+    },
+    "anomaly_real_diagnosed": {
+     "max": 4.0,
+     "mean": 2.6,
+     "min": 1.0
+    },
+    "attributed_funded": {
+     "max": 17818.0,
+     "mean": 17524.2,
+     "min": 17305.0
+    },
+    "breach_letters": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "breaches_by_type": {
+     "gone_away": 0.0,
+     "mps_director": 0.0,
+     "not_active": 0.0,
+     "not_corporate": 0.0,
+     "objected": 0.0
+    },
+    "brief_fallbacks": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "brief_retries": {
+     "max": 1.0,
+     "mean": 0.4,
+     "min": 0.0
+    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "directions_correct": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0
+    },
+    "directions_stopped": {
+     "max": 5.0,
+     "mean": 3.4,
+     "min": 2.0
+    },
+    "events_missed": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "incremental_value": {
+     "max": 3293741.23,
+     "mean": 3174430.2,
+     "min": 3115025.13
+    },
+    "ledger_intact": true,
+    "letters": {
+     "max": 2377068.0,
+     "mean": 2363946.4,
+     "min": 2339228.0
+    },
+    "llm_gbp_per_round": {
+     "max": 0.036866666666666666,
+     "mean": 0.032788333333333336,
+     "min": 0.026166666666666668
+    },
+    "mail_caused_funded": {
+     "max": 5334.0,
+     "mean": 5264.8,
+     "min": 5196.0
+    },
+    "matchback_vs_true": {
+     "max": 6.179733585723801,
+     "mean": 6.104177311367515,
+     "min": 5.956955423689898
+    },
+    "measured_vs_true": {
+     "max": 1.10864806710114,
+     "mean": 0.916620302124365,
+     "min": 0.7905499238089787
+    },
+    "messages": {
+     "max": 230.0,
+     "mean": 208.2,
+     "min": 172.0
+    },
+    "model_read_correct": {
+     "max": 0.9953917050691244,
+     "mean": 0.9910026803548421,
+     "min": 0.9825581395348837
+    },
+    "person_minutes_per_round": {
+     "max": 27.5,
+     "mean": 20.0,
+     "min": 15.25
+    },
+    "person_tasks_per_round": {
+     "max": 0.9166666666666666,
+     "mean": 0.8333333333333334,
+     "min": 0.75
+    },
+    "printer_duplicates": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "profit": {
+     "max": 1986356.03,
+     "mean": 1874259.6800000002,
+     "min": 1828449.73
+    },
+    "realised_incremental_value": {
+     "max": 3402066.68,
+     "mean": 3290570.0899999994,
+     "min": 3204975.92
+    },
+    "spend": {
+     "max": 1307387.4,
+     "mean": 1300170.52,
+     "min": 1286575.4
+    },
+    "withdrawn_at_print": {
+     "max": 4910.0,
+     "mean": 4782.2,
+     "min": 4740.0
+    },
+    "wrong_effects": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    }
+   },
+   "vs_today": {
+    "profit_diff_max": 376244.03,
+    "profit_diff_mean": 261907.64999999997,
+    "profit_diff_min": 214913.88999999966,
+    "profit_rel_mean": 0.16249203511990093,
+    "seeds_better": 5
+   }
+  },
+  "agent_cell_holdouts": {
+   "seeds": [
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 14173,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": 0.7,
+     "directions_correct": 1.0,
+     "directions_stopped": 1,
+     "events_missed": 0,
+     "incremental_value": 3119639.53,
+     "ledger_intact": true,
+     "letters": 2145664,
+     "llm_gbp_per_round": 0.030483333333333335,
+     "mail_caused_funded": 4975,
+     "matchback_vs_true": 5.05661631404887,
+     "measured_vs_true": 1.0521367393507504,
+     "messages": 181,
+     "model_read_correct": 1.0,
+     "person_minutes_per_round": 18.75,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1939524.3299999998,
+     "realised_incremental_value": 3299984.19,
+     "spend": 1180115.2,
+     "withdrawn_at_print": 2761,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 11921,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 2,
+     "calibration_coverage": 0.8,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 0,
+     "incremental_value": 2893952.77,
+     "ledger_intact": true,
+     "letters": 2048470,
+     "llm_gbp_per_round": 0.030333333333333337,
+     "mail_caused_funded": 4720,
+     "matchback_vs_true": 4.509542924101663,
+     "measured_vs_true": 0.9125046438790388,
+     "messages": 191,
+     "model_read_correct": 0.9895287958115183,
+     "person_minutes_per_round": 17.75,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1767294.27,
+     "realised_incremental_value": 3088601.89,
+     "spend": 1126658.5,
+     "withdrawn_at_print": 2191,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 13064,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": 0.7,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 0,
+     "incremental_value": 3103584.62,
+     "ledger_intact": true,
+     "letters": 2143592,
+     "llm_gbp_per_round": 0.028866666666666665,
+     "mail_caused_funded": 5055,
+     "matchback_vs_true": 4.61127777949031,
+     "measured_vs_true": 0.8902087852363498,
+     "messages": 170,
+     "model_read_correct": 0.9941176470588236,
+     "person_minutes_per_round": 17.75,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1924609.02,
+     "realised_incremental_value": 3423893.89,
+     "spend": 1178975.6,
+     "withdrawn_at_print": 2671,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 0,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 14588,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": 0.7,
+     "directions_correct": 1.0,
+     "directions_stopped": 4,
+     "events_missed": 0,
+     "incremental_value": 2963172.74,
+     "ledger_intact": true,
+     "letters": 2059100,
+     "llm_gbp_per_round": 0.0256,
+     "mail_caused_funded": 4662,
+     "matchback_vs_true": 5.623099133797707,
+     "measured_vs_true": 1.0734520832664107,
+     "messages": 151,
+     "model_read_correct": 0.9867549668874173,
+     "person_minutes_per_round": 16.5,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1830667.7400000002,
+     "realised_incremental_value": 3146216.96,
+     "spend": 1132505.0,
+     "withdrawn_at_print": 3403,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 14554,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": 0.8,
+     "directions_correct": 1.0,
+     "directions_stopped": 4,
+     "events_missed": 0,
+     "incremental_value": 3047108.59,
+     "ledger_intact": true,
+     "letters": 2181283,
+     "llm_gbp_per_round": 0.032841666666666665,
+     "mail_caused_funded": 4783,
+     "matchback_vs_true": 5.478559166235031,
+     "measured_vs_true": 1.0783607734225868,
+     "messages": 205,
+     "model_read_correct": 0.9902439024390244,
+     "person_minutes_per_round": 16.5,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1847402.94,
+     "realised_incremental_value": 3188737.47,
+     "spend": 1199705.65,
+     "withdrawn_at_print": 3416,
+     "wrong_effects": 0
+    }
+   ],
+   "summary": {
+    "anomaly_false_alarms": {
+     "max": 3.0,
+     "mean": 1.4,
+     "min": 0.0
+    },
+    "anomaly_false_dismissed": {
+     "max": 3.0,
+     "mean": 1.4,
+     "min": 0.0
+    },
+    "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 4.0,
+     "min": 4.0
+    },
+    "anomaly_real_diagnosed": {
+     "max": 4.0,
+     "mean": 3.0,
+     "min": 2.0
+    },
+    "attributed_funded": {
+     "max": 14588.0,
+     "mean": 13660.0,
+     "min": 11921.0
+    },
+    "breach_letters": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "breaches_by_type": {
+     "gone_away": 0.0,
+     "mps_director": 0.0,
+     "not_active": 0.0,
+     "not_corporate": 0.0,
+     "objected": 0.0
+    },
+    "brief_fallbacks": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "brief_retries": {
+     "max": 2.0,
+     "mean": 1.2,
+     "min": 1.0
+    },
+    "calibration_coverage": {
+     "max": 0.8,
+     "mean": 0.74,
+     "min": 0.7
+    },
+    "directions_correct": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0
+    },
+    "directions_stopped": {
+     "max": 4.0,
+     "mean": 3.0,
+     "min": 1.0
+    },
+    "events_missed": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "incremental_value": {
+     "max": 3119639.53,
+     "mean": 3025491.65,
+     "min": 2893952.77
+    },
+    "ledger_intact": true,
+    "letters": {
+     "max": 2181283.0,
+     "mean": 2115621.8,
+     "min": 2048470.0
+    },
+    "llm_gbp_per_round": {
+     "max": 0.032841666666666665,
+     "mean": 0.029625000000000002,
+     "min": 0.0256
+    },
+    "mail_caused_funded": {
+     "max": 5055.0,
+     "mean": 4839.0,
+     "min": 4662.0
+    },
+    "matchback_vs_true": {
+     "max": 5.623099133797707,
+     "mean": 5.055819063534716,
+     "min": 4.509542924101663
+    },
+    "measured_vs_true": {
+     "max": 1.0783607734225868,
+     "mean": 1.0013326050310272,
+     "min": 0.8902087852363498
+    },
+    "messages": {
+     "max": 205.0,
+     "mean": 179.6,
+     "min": 151.0
+    },
+    "model_read_correct": {
+     "max": 1.0,
+     "mean": 0.9921290624393567,
+     "min": 0.9867549668874173
+    },
+    "person_minutes_per_round": {
+     "max": 18.75,
+     "mean": 17.45,
+     "min": 16.5
+    },
+    "person_tasks_per_round": {
+     "max": 0.8333333333333334,
+     "mean": 0.7833333333333334,
+     "min": 0.75
+    },
+    "printer_duplicates": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "profit": {
+     "max": 1939524.3299999998,
+     "mean": 1861899.6599999997,
+     "min": 1767294.27
+    },
+    "realised_incremental_value": {
+     "max": 3423893.89,
+     "mean": 3229486.88,
+     "min": 3088601.89
+    },
+    "spend": {
+     "max": 1199705.65,
+     "mean": 1163591.9900000002,
+     "min": 1126658.5
+    },
+    "withdrawn_at_print": {
+     "max": 3416.0,
+     "mean": 2888.4,
+     "min": 2191.0
+    },
+    "wrong_effects": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    }
+   },
+   "vs_today": {
+    "profit_diff_max": 329412.32999999984,
+    "profit_diff_mean": 249547.6299999999,
+    "profit_diff_min": 149449.15999999992,
+    "profit_rel_mean": 0.15481572992676293,
+    "seeds_better": 5
+   }
+  },
+  "agent_no_delay": {
+   "seeds": [
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 17608,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 2,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 0,
+     "incremental_value": 3293704.04,
+     "ledger_intact": true,
+     "letters": 2377181,
+     "llm_gbp_per_round": 0.03568333333333334,
+     "mail_caused_funded": 5393,
+     "matchback_vs_true": 5.859169068867362,
+     "measured_vs_true": 0.9952042992303997,
+     "messages": 217,
+     "model_read_correct": 0.9953917050691244,
+     "person_minutes_per_round": 17.75,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1986254.49,
+     "realised_incremental_value": 3427932.93,
+     "spend": 1307449.55,
+     "withdrawn_at_print": 4627,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17736,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 4,
+     "events_missed": 0,
+     "incremental_value": 3243791.9899999998,
+     "ledger_intact": true,
+     "letters": 2377055,
+     "llm_gbp_per_round": 0.03000833333333333,
+     "mail_caused_funded": 5481,
+     "matchback_vs_true": 6.02072428398732,
+     "measured_vs_true": 0.8212225647800628,
+     "messages": 216,
+     "model_read_correct": 0.9861111111111112,
+     "person_minutes_per_round": 15.5,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1936411.7399999998,
+     "realised_incremental_value": 3413397.71,
+     "spend": 1307380.25,
+     "withdrawn_at_print": 4753,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 17436,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 2,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 0,
+     "incremental_value": 3156861.43,
+     "ledger_intact": true,
+     "letters": 2377029,
+     "llm_gbp_per_round": 0.034666666666666665,
+     "mail_caused_funded": 5411,
+     "matchback_vs_true": 6.10560444774668,
+     "measured_vs_true": 0.825718640734018,
+     "messages": 214,
+     "model_read_correct": 0.9953271028037384,
+     "person_minutes_per_round": 16.5,
+     "person_tasks_per_round": 0.8333333333333334,
+     "printer_duplicates": 0,
+     "profit": 1849495.4800000002,
+     "realised_incremental_value": 3460444.72,
+     "spend": 1307365.95,
+     "withdrawn_at_print": 4779,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 17252,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 1,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 2,
+     "events_missed": 1,
+     "incremental_value": 3139256.25,
+     "ledger_intact": true,
+     "letters": 2333168,
+     "llm_gbp_per_round": 0.027200000000000002,
+     "mail_caused_funded": 5227,
+     "matchback_vs_true": 6.104855286890532,
+     "measured_vs_true": 1.1766605375900734,
+     "messages": 181,
+     "model_read_correct": 0.994475138121547,
+     "person_minutes_per_round": 17.75,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1856013.85,
+     "realised_incremental_value": 3278682.61,
+     "spend": 1283242.4,
+     "withdrawn_at_print": 4640,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17428,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 3,
+     "events_missed": 0,
+     "incremental_value": 3182131.26,
+     "ledger_intact": true,
+     "letters": 2347397,
+     "llm_gbp_per_round": 0.030400000000000007,
+     "mail_caused_funded": 5244,
+     "matchback_vs_true": 6.061467434350784,
+     "measured_vs_true": 0.9598478495173556,
+     "messages": 214,
+     "model_read_correct": 0.9906542056074766,
+     "person_minutes_per_round": 22.75,
+     "person_tasks_per_round": 0.9166666666666666,
+     "printer_duplicates": 0,
+     "profit": 1891062.9099999997,
+     "realised_incremental_value": 3199549.0300000003,
+     "spend": 1291068.35,
+     "withdrawn_at_print": 4760,
+     "wrong_effects": 0
+    }
+   ],
+   "summary": {
+    "anomaly_false_alarms": {
+     "max": 3.0,
+     "mean": 2.0,
+     "min": 1.0
+    },
+    "anomaly_false_dismissed": {
+     "max": 3.0,
+     "mean": 1.8,
+     "min": 0.0
+    },
+    "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 3.8,
+     "min": 3.0
+    },
+    "anomaly_real_diagnosed": {
+     "max": 4.0,
+     "mean": 2.8,
+     "min": 2.0
+    },
+    "attributed_funded": {
+     "max": 17736.0,
+     "mean": 17492.0,
+     "min": 17252.0
+    },
+    "breach_letters": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "breaches_by_type": {
+     "gone_away": 0.0,
+     "mps_director": 0.0,
+     "not_active": 0.0,
+     "not_corporate": 0.0,
+     "objected": 0.0
+    },
+    "brief_fallbacks": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "brief_retries": {
+     "max": 2.0,
+     "mean": 1.2,
+     "min": 0.0
+    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "directions_correct": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0
+    },
+    "directions_stopped": {
+     "max": 4.0,
+     "mean": 3.0,
+     "min": 2.0
+    },
+    "events_missed": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "incremental_value": {
+     "max": 3293704.04,
+     "mean": 3203148.994,
+     "min": 3139256.25
+    },
+    "ledger_intact": true,
+    "letters": {
+     "max": 2377181.0,
+     "mean": 2362366.0,
+     "min": 2333168.0
+    },
+    "llm_gbp_per_round": {
+     "max": 0.03568333333333334,
+     "mean": 0.03159166666666667,
+     "min": 0.027200000000000002
+    },
+    "mail_caused_funded": {
+     "max": 5481.0,
+     "mean": 5351.2,
+     "min": 5227.0
+    },
+    "matchback_vs_true": {
+     "max": 6.10560444774668,
+     "mean": 6.0303641043685365,
+     "min": 5.859169068867362
+    },
+    "measured_vs_true": {
+     "max": 1.1766605375900734,
+     "mean": 0.955730778370382,
+     "min": 0.8212225647800628
+    },
+    "messages": {
+     "max": 217.0,
+     "mean": 208.4,
+     "min": 181.0
+    },
+    "model_read_correct": {
+     "max": 0.9953917050691244,
+     "mean": 0.9923918525425997,
+     "min": 0.9861111111111112
+    },
+    "person_minutes_per_round": {
+     "max": 22.75,
+     "mean": 18.05,
+     "min": 15.5
+    },
+    "person_tasks_per_round": {
+     "max": 0.9166666666666666,
+     "mean": 0.8166666666666668,
+     "min": 0.75
+    },
+    "printer_duplicates": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "profit": {
+     "max": 1986254.49,
+     "mean": 1903847.6940000001,
+     "min": 1849495.4800000002
+    },
+    "realised_incremental_value": {
+     "max": 3460444.72,
+     "mean": 3356001.4,
+     "min": 3199549.0300000003
+    },
+    "spend": {
+     "max": 1307449.55,
+     "mean": 1299301.3,
+     "min": 1283242.4
+    },
+    "withdrawn_at_print": {
+     "max": 4779.0,
+     "mean": 4711.8,
+     "min": 4627.0
+    },
+    "wrong_effects": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    }
+   },
+   "vs_today": {
+    "profit_diff_max": 376142.49,
+    "profit_diff_mean": 291495.6639999998,
+    "profit_diff_min": 235959.6399999999,
+    "profit_rel_mean": 0.18077829101418946,
+    "seeds_better": 5
+   }
+  },
+  "agent_no_holdout": {
+   "seeds": [
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 17944,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 7,
+     "events_missed": 0,
+     "incremental_value": 3334786.46,
+     "ledger_intact": true,
+     "letters": 2376950,
+     "llm_gbp_per_round": 0.03524166666666667,
+     "mail_caused_funded": 5435,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 234,
+     "model_read_correct": 0.9829059829059829,
+     "person_minutes_per_round": 24.5,
+     "person_tasks_per_round": 1.1666666666666667,
+     "printer_duplicates": 0,
+     "profit": 2027463.96,
+     "realised_incremental_value": 3496396.7,
+     "spend": 1307322.5,
+     "withdrawn_at_print": 4858,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 18156,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 3,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 5,
+     "events_missed": 0,
+     "incremental_value": 3254747.75,
+     "ledger_intact": true,
+     "letters": 2376735,
+     "llm_gbp_per_round": 0.029549999999999996,
+     "mail_caused_funded": 5491,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 188,
+     "model_read_correct": 0.9840425531914894,
+     "person_minutes_per_round": 16.75,
+     "person_tasks_per_round": 0.9166666666666666,
+     "printer_duplicates": 0,
+     "profit": 1947543.5,
+     "realised_incremental_value": 3468711.01,
+     "spend": 1307204.25,
+     "withdrawn_at_print": 5073,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 18045,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 1,
+     "events_missed": 1,
+     "incremental_value": 3195629.92,
+     "ledger_intact": true,
+     "letters": 2376757,
+     "llm_gbp_per_round": 0.031149999999999997,
+     "mail_caused_funded": 5361,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 191,
+     "model_read_correct": 1.0,
+     "person_minutes_per_round": 15.0,
+     "person_tasks_per_round": 0.6666666666666666,
+     "printer_duplicates": 0,
+     "profit": 1888413.5699999998,
+     "realised_incremental_value": 3347188.08,
+     "spend": 1307216.35,
+     "withdrawn_at_print": 5051,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 18249,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 1,
+     "brief_retries": 4,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 5,
+     "events_missed": 0,
+     "incremental_value": 3185501.53,
+     "ledger_intact": true,
+     "letters": 2376709,
+     "llm_gbp_per_round": 0.0316,
+     "mail_caused_funded": 5276,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 188,
+     "model_read_correct": 0.9840425531914894,
+     "person_minutes_per_round": 16.75,
+     "person_tasks_per_round": 0.9166666666666666,
+     "printer_duplicates": 0,
+     "profit": 1878311.5799999998,
+     "realised_incremental_value": 3346073.41,
+     "spend": 1307189.95,
+     "withdrawn_at_print": 5099,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 17972,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 6,
+     "events_missed": 0,
+     "incremental_value": 3208172.96,
+     "ledger_intact": true,
+     "letters": 2376843,
+     "llm_gbp_per_round": 0.033791666666666664,
+     "mail_caused_funded": 5340,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 212,
+     "model_read_correct": 0.9858490566037735,
+     "person_minutes_per_round": 16.75,
+     "person_tasks_per_round": 0.9166666666666666,
+     "printer_duplicates": 0,
+     "profit": 1900909.31,
+     "realised_incremental_value": 3296359.05,
+     "spend": 1307263.65,
+     "withdrawn_at_print": 4965,
+     "wrong_effects": 0
+    }
+   ],
+   "summary": {
+    "anomaly_false_alarms": {
+     "max": 3.0,
+     "mean": 1.6,
+     "min": 1.0
+    },
+    "anomaly_false_dismissed": {
+     "max": 2.0,
+     "mean": 1.2,
+     "min": 1.0
+    },
+    "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 3.8,
+     "min": 3.0
+    },
+    "anomaly_real_diagnosed": {
+     "max": 4.0,
+     "mean": 3.8,
+     "min": 3.0
+    },
+    "attributed_funded": {
+     "max": 18249.0,
+     "mean": 18073.2,
+     "min": 17944.0
+    },
+    "breach_letters": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "breaches_by_type": {
+     "gone_away": 0.0,
+     "mps_director": 0.0,
+     "not_active": 0.0,
+     "not_corporate": 0.0,
+     "objected": 0.0
+    },
+    "brief_fallbacks": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "brief_retries": {
+     "max": 4.0,
+     "mean": 2.0,
+     "min": 1.0
+    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "directions_correct": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0
+    },
+    "directions_stopped": {
+     "max": 7.0,
+     "mean": 4.8,
+     "min": 1.0
+    },
+    "events_missed": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "incremental_value": {
+     "max": 3334786.46,
+     "mean": 3235767.7239999995,
+     "min": 3185501.53
+    },
+    "ledger_intact": true,
+    "letters": {
+     "max": 2376950.0,
+     "mean": 2376798.8,
+     "min": 2376709.0
+    },
+    "llm_gbp_per_round": {
+     "max": 0.03524166666666667,
+     "mean": 0.032266666666666666,
+     "min": 0.029549999999999996
+    },
+    "mail_caused_funded": {
+     "max": 5491.0,
+     "mean": 5380.6,
+     "min": 5276.0
+    },
+    "matchback_vs_true": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "measured_vs_true": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "messages": {
+     "max": 234.0,
+     "mean": 202.6,
+     "min": 188.0
+    },
+    "model_read_correct": {
+     "max": 1.0,
+     "mean": 0.9873680291785469,
+     "min": 0.9829059829059829
+    },
+    "person_minutes_per_round": {
+     "max": 24.5,
+     "mean": 17.95,
+     "min": 15.0
+    },
+    "person_tasks_per_round": {
+     "max": 1.1666666666666667,
+     "mean": 0.9166666666666666,
+     "min": 0.6666666666666666
+    },
+    "printer_duplicates": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "profit": {
+     "max": 2027463.96,
+     "mean": 1928528.384,
+     "min": 1878311.5799999998
+    },
+    "realised_incremental_value": {
+     "max": 3496396.7,
+     "mean": 3390945.65,
+     "min": 3296359.05
+    },
+    "spend": {
+     "max": 1307322.5,
+     "mean": 1307239.3399999999,
+     "min": 1307189.95
+    },
+    "withdrawn_at_print": {
+     "max": 5099.0,
+     "mean": 5009.2,
+     "min": 4858.0
+    },
+    "wrong_effects": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    }
+   },
+   "vs_today": {
+    "profit_diff_max": 417351.95999999996,
+    "profit_diff_mean": 316176.3539999998,
+    "profit_diff_min": 274877.7299999995,
+    "profit_rel_mean": 0.19609661728647465,
+    "seeds_better": 5
+   }
+  },
+  "for_loop": {
+   "seeds": [
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17818,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3293741.23,
+     "ledger_intact": true,
+     "letters": 2377064,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5334,
+     "matchback_vs_true": 5.956955423689898,
+     "measured_vs_true": 0.8857393256928182,
+     "messages": 230,
+     "model_read_correct": null,
+     "person_minutes_per_round": 147.91666666666666,
+     "person_tasks_per_round": 0.5,
+     "printer_duplicates": 0,
+     "profit": 1986356.03,
+     "realised_incremental_value": 3402066.68,
+     "spend": 1307385.2,
+     "withdrawn_at_print": 4744,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 1,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17626,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3157652.35,
+     "ledger_intact": true,
+     "letters": 2377059,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5279,
+     "matchback_vs_true": 6.114177994635683,
+     "measured_vs_true": 0.7905499238089787,
+     "messages": 210,
+     "model_read_correct": null,
+     "person_minutes_per_round": 135.83333333333334,
+     "person_tasks_per_round": 0.4166666666666667,
+     "printer_duplicates": 0,
+     "profit": 1850269.9000000001,
+     "realised_incremental_value": 3277955.59,
+     "spend": 1307382.45,
+     "withdrawn_at_print": 4749,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17314,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3115025.13,
+     "ledger_intact": true,
+     "letters": 2339228,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5233,
+     "matchback_vs_true": 6.1613519889400346,
+     "measured_vs_true": 0.8203010288360989,
+     "messages": 217,
+     "model_read_correct": null,
+     "person_minutes_per_round": 142.5,
+     "person_tasks_per_round": 0.5,
+     "printer_duplicates": 0,
+     "profit": 1828449.73,
+     "realised_incremental_value": 3301617.79,
+     "spend": 1286575.4,
+     "withdrawn_at_print": 4768,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 3,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17558,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 1,
+     "incremental_value": 3159167.3,
+     "ledger_intact": true,
+     "letters": 2349313,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5282,
+     "matchback_vs_true": 6.179733585723801,
+     "measured_vs_true": 1.10864806710114,
+     "messages": 172,
+     "model_read_correct": null,
+     "person_minutes_per_round": 120.0,
+     "person_tasks_per_round": 0.4166666666666667,
+     "printer_duplicates": 0,
+     "profit": 1867045.15,
+     "realised_incremental_value": 3266234.4699999997,
+     "spend": 1292122.15,
+     "withdrawn_at_print": 4910,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17305,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3146564.99,
+     "ledger_intact": true,
+     "letters": 2377068,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5196,
+     "matchback_vs_true": 6.108667563848159,
+     "measured_vs_true": 0.9778631651827896,
+     "messages": 212,
+     "model_read_correct": null,
+     "person_minutes_per_round": 144.16666666666666,
+     "person_tasks_per_round": 0.5833333333333334,
+     "printer_duplicates": 0,
+     "profit": 1839177.5900000003,
+     "realised_incremental_value": 3204975.92,
+     "spend": 1307387.4,
+     "withdrawn_at_print": 4740,
+     "wrong_effects": 0
+    }
+   ],
+   "summary": {
+    "anomaly_false_alarms": {
+     "max": 3.0,
+     "mean": 2.0,
+     "min": 1.0
+    },
+    "anomaly_false_dismissed": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 3.8,
+     "min": 3.0
+    },
+    "anomaly_real_diagnosed": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "attributed_funded": {
+     "max": 17818.0,
+     "mean": 17524.2,
+     "min": 17305.0
+    },
+    "breach_letters": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "breaches_by_type": {
+     "gone_away": 0.0,
+     "mps_director": 0.0,
+     "not_active": 0.0,
+     "not_corporate": 0.0,
+     "objected": 0.0
+    },
+    "brief_fallbacks": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "brief_retries": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "directions_correct": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0
+    },
+    "directions_stopped": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "events_missed": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "incremental_value": {
+     "max": 3293741.23,
+     "mean": 3174430.2,
+     "min": 3115025.13
+    },
+    "ledger_intact": true,
+    "letters": {
+     "max": 2377068.0,
+     "mean": 2363946.4,
+     "min": 2339228.0
+    },
+    "llm_gbp_per_round": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "mail_caused_funded": {
+     "max": 5334.0,
+     "mean": 5264.8,
+     "min": 5196.0
+    },
+    "matchback_vs_true": {
+     "max": 6.179733585723801,
+     "mean": 6.104177311367515,
+     "min": 5.956955423689898
+    },
+    "measured_vs_true": {
+     "max": 1.10864806710114,
+     "mean": 0.916620302124365,
+     "min": 0.7905499238089787
+    },
+    "messages": {
+     "max": 230.0,
+     "mean": 208.2,
+     "min": 172.0
+    },
+    "model_read_correct": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "person_minutes_per_round": {
+     "max": 147.91666666666666,
+     "mean": 138.08333333333331,
+     "min": 120.0
+    },
+    "person_tasks_per_round": {
+     "max": 0.5833333333333334,
+     "mean": 0.4833333333333334,
+     "min": 0.4166666666666667
+    },
+    "printer_duplicates": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "profit": {
+     "max": 1986356.03,
+     "mean": 1874259.6800000002,
+     "min": 1828449.73
+    },
+    "realised_incremental_value": {
+     "max": 3402066.68,
+     "mean": 3290570.0899999994,
+     "min": 3204975.92
+    },
+    "spend": {
+     "max": 1307387.4,
+     "mean": 1300170.52,
+     "min": 1286575.4
+    },
+    "withdrawn_at_print": {
+     "max": 4910.0,
+     "mean": 4782.2,
+     "min": 4740.0
+    },
+    "wrong_effects": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    }
+   },
+   "vs_today": {
+    "profit_diff_max": 376244.03,
+    "profit_diff_mean": 261907.64999999997,
+    "profit_diff_min": 214913.88999999966,
+    "profit_rel_mean": 0.16249203511990093,
+    "seeds_better": 5
+   }
+  },
+  "today": {
+   "seeds": [
+    {
+     "anomaly_false_alarms": 5,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 18049,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 2917416.9,
+     "ledger_intact": true,
+     "letters": 2376918,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5107,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 212,
+     "model_read_correct": null,
+     "person_minutes_per_round": 391.6666666666667,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1610112.0,
+     "realised_incremental_value": 3116862.96,
+     "spend": 1307304.9,
+     "withdrawn_at_print": 4890,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 5,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 18043,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 2925145.06,
+     "ledger_intact": true,
+     "letters": 2376909,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5145,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 183,
+     "model_read_correct": null,
+     "person_minutes_per_round": 379.5833333333333,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1617845.11,
+     "realised_incremental_value": 3141717.06,
+     "spend": 1307299.95,
+     "withdrawn_at_print": 4899,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 5,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 18080,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 2920810.49,
+     "ledger_intact": true,
+     "letters": 2376863,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5244,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 192,
+     "model_read_correct": null,
+     "person_minutes_per_round": 383.3333333333333,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1613535.8400000003,
+     "realised_incremental_value": 3182477.19,
+     "spend": 1307274.65,
+     "withdrawn_at_print": 4945,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 5,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 18197,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 2910536.1,
+     "ledger_intact": true,
+     "letters": 2376897,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 5103,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 180,
+     "model_read_correct": null,
+     "person_minutes_per_round": 378.3333333333333,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1603242.75,
+     "realised_incremental_value": 3079803.7199999997,
+     "spend": 1307293.35,
+     "withdrawn_at_print": 4911,
+     "wrong_effects": 0
+    },
+    {
+     "anomaly_false_alarms": 5,
+     "anomaly_false_dismissed": 0,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 0,
+     "attributed_funded": 17781,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 1.0,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 2924307.35,
+     "ledger_intact": true,
+     "letters": 2376878,
+     "llm_gbp_per_round": 0.0,
+     "mail_caused_funded": 4940,
+     "matchback_vs_true": null,
+     "measured_vs_true": null,
+     "messages": 203,
+     "model_read_correct": null,
+     "person_minutes_per_round": 387.9166666666667,
+     "person_tasks_per_round": 0.75,
+     "printer_duplicates": 0,
+     "profit": 1617024.4500000002,
+     "realised_incremental_value": 2954048.72,
+     "spend": 1307282.9,
+     "withdrawn_at_print": 4930,
+     "wrong_effects": 0
+    }
+   ],
+   "summary": {
+    "anomaly_false_alarms": {
+     "max": 5.0,
+     "mean": 5.0,
+     "min": 5.0
+    },
+    "anomaly_false_dismissed": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 4.0,
+     "min": 4.0
+    },
+    "anomaly_real_diagnosed": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "attributed_funded": {
+     "max": 18197.0,
+     "mean": 18030.0,
+     "min": 17781.0
+    },
+    "breach_letters": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "breaches_by_type": {
+     "gone_away": 0.0,
+     "mps_director": 0.0,
+     "not_active": 0.0,
+     "not_corporate": 0.0,
+     "objected": 0.0
+    },
+    "brief_fallbacks": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "brief_retries": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "directions_correct": {
+     "max": 1.0,
+     "mean": 1.0,
+     "min": 1.0
+    },
+    "directions_stopped": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "events_missed": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "incremental_value": {
+     "max": 2925145.06,
+     "mean": 2919643.1799999997,
+     "min": 2910536.1
+    },
+    "ledger_intact": true,
+    "letters": {
+     "max": 2376918.0,
+     "mean": 2376893.0,
+     "min": 2376863.0
+    },
+    "llm_gbp_per_round": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "mail_caused_funded": {
+     "max": 5244.0,
+     "mean": 5107.8,
+     "min": 4940.0
+    },
+    "matchback_vs_true": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "measured_vs_true": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "messages": {
+     "max": 212.0,
+     "mean": 194.0,
+     "min": 180.0
+    },
+    "model_read_correct": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "person_minutes_per_round": {
+     "max": 391.6666666666667,
+     "mean": 384.16666666666663,
+     "min": 378.3333333333333
+    },
+    "person_tasks_per_round": {
+     "max": 0.75,
+     "mean": 0.75,
+     "min": 0.75
+    },
+    "printer_duplicates": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "profit": {
+     "max": 1617845.11,
+     "mean": 1612352.0300000003,
+     "min": 1603242.75
+    },
+    "realised_incremental_value": {
+     "max": 3182477.19,
+     "mean": 3094981.93,
+     "min": 2954048.72
+    },
+    "spend": {
+     "max": 1307304.9,
+     "mean": 1307291.15,
+     "min": 1307274.65
+    },
+    "withdrawn_at_print": {
+     "max": 4945.0,
+     "mean": 4915.0,
+     "min": 4890.0
+    },
+    "wrong_effects": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    }
+   },
+   "vs_today": {
+    "profit_diff_max": 0.0,
+    "profit_diff_mean": 0.0,
+    "profit_diff_min": 0.0,
+    "profit_rel_mean": 0.0,
+    "seeds_better": 0
+   }
+  },
+  "unguarded_llm": {
+   "seeds": [
+    {
+     "anomaly_false_alarms": 3,
+     "anomaly_false_dismissed": 3,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 2,
+     "attributed_funded": 18276,
+     "breach_letters": 15074,
+     "breaches_by_type": {
+      "gone_away": 4500,
+      "mps_director": 9107,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 1467
+     },
+     "brief_fallbacks": 1,
+     "brief_retries": 2,
+     "calibration_coverage": null,
+     "directions_correct": 0.9823008849557522,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3402471.3000000003,
+     "ledger_intact": true,
+     "letters": 2547768,
+     "llm_gbp_per_round": 0.036825000000000004,
+     "mail_caused_funded": 5653,
+     "matchback_vs_true": 5.9635065411575425,
+     "measured_vs_true": 0.8956386278139037,
+     "messages": 226,
+     "model_read_correct": 0.9911504424778761,
+     "person_minutes_per_round": 16.5,
+     "person_tasks_per_round": 0.3333333333333333,
+     "printer_duplicates": 0,
+     "profit": 2001198.9000000004,
+     "realised_incremental_value": 3581802.33,
+     "spend": 1401272.4,
+     "withdrawn_at_print": 0,
+     "wrong_effects": 3
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 17978,
+     "breach_letters": 15029,
+     "breaches_by_type": {
+      "gone_away": 4482,
+      "mps_director": 9172,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 1375
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 0.9909502262443439,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3240921.5300000003,
+     "ledger_intact": true,
+     "letters": 2495689,
+     "llm_gbp_per_round": 0.036375,
+     "mail_caused_funded": 5451,
+     "matchback_vs_true": 6.161971375421855,
+     "measured_vs_true": 0.7858031106685768,
+     "messages": 221,
+     "model_read_correct": 0.995475113122172,
+     "person_minutes_per_round": 15.75,
+     "person_tasks_per_round": 0.5833333333333334,
+     "printer_duplicates": 0,
+     "profit": 1868292.5800000003,
+     "realised_incremental_value": 3388650.34,
+     "spend": 1372628.95,
+     "withdrawn_at_print": 0,
+     "wrong_effects": 2
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 1,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 4,
+     "attributed_funded": 18047,
+     "breach_letters": 15184,
+     "breaches_by_type": {
+      "gone_away": 4629,
+      "mps_director": 9034,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 1521
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 0,
+     "calibration_coverage": null,
+     "directions_correct": 0.9801587301587301,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3306812.64,
+     "ledger_intact": true,
+     "letters": 2686251,
+     "llm_gbp_per_round": 0.039599999999999996,
+     "mail_caused_funded": 5667,
+     "matchback_vs_true": 6.014113586781683,
+     "measured_vs_true": 0.9141690468896856,
+     "messages": 252,
+     "model_read_correct": 0.9841269841269841,
+     "person_minutes_per_round": 19.25,
+     "person_tasks_per_round": 0.5833333333333334,
+     "printer_duplicates": 0,
+     "profit": 1829374.59,
+     "realised_incremental_value": 3514304.85,
+     "spend": 1477438.05,
+     "withdrawn_at_print": 0,
+     "wrong_effects": 5
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 1,
+     "attributed_funded": 16787,
+     "breach_letters": 0,
+     "breaches_by_type": {
+      "gone_away": 0,
+      "mps_director": 0,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 0
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 0.9881656804733728,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 2952421.8,
+     "ledger_intact": true,
+     "letters": 2224588,
+     "llm_gbp_per_round": 0.028083333333333335,
+     "mail_caused_funded": 4862,
+     "matchback_vs_true": 6.3222414768615,
+     "measured_vs_true": 1.1370025323664257,
+     "messages": 169,
+     "model_read_correct": 0.9940828402366864,
+     "person_minutes_per_round": 23.5,
+     "person_tasks_per_round": 0.6666666666666666,
+     "printer_duplicates": 0,
+     "profit": 1728898.4,
+     "realised_incremental_value": 3068777.19,
+     "spend": 1223523.4,
+     "withdrawn_at_print": 0,
+     "wrong_effects": 2
+    },
+    {
+     "anomaly_false_alarms": 2,
+     "anomaly_false_dismissed": 2,
+     "anomaly_real_detected": 4,
+     "anomaly_real_diagnosed": 3,
+     "attributed_funded": 17716,
+     "breach_letters": 14992,
+     "breaches_by_type": {
+      "gone_away": 4545,
+      "mps_director": 9023,
+      "not_active": 0,
+      "not_corporate": 0,
+      "objected": 1424
+     },
+     "brief_fallbacks": 0,
+     "brief_retries": 1,
+     "calibration_coverage": null,
+     "directions_correct": 0.9915966386554622,
+     "directions_stopped": 0,
+     "events_missed": 0,
+     "incremental_value": 3234350.03,
+     "ledger_intact": true,
+     "letters": 2499241,
+     "llm_gbp_per_round": 0.037225,
+     "mail_caused_funded": 5398,
+     "matchback_vs_true": 6.154689264049539,
+     "measured_vs_true": 0.8828291307370318,
+     "messages": 238,
+     "model_read_correct": 0.9957983193277311,
+     "person_minutes_per_round": 18.25,
+     "person_tasks_per_round": 0.5833333333333334,
+     "printer_duplicates": 0,
+     "profit": 1859767.4799999997,
+     "realised_incremental_value": 3380715.7800000003,
+     "spend": 1374582.55,
+     "withdrawn_at_print": 0,
+     "wrong_effects": 2
+    }
+   ],
+   "summary": {
+    "anomaly_false_alarms": {
+     "max": 3.0,
+     "mean": 2.2,
+     "min": 2.0
+    },
+    "anomaly_false_dismissed": {
+     "max": 3.0,
+     "mean": 2.0,
+     "min": 1.0
+    },
+    "anomaly_real_detected": {
+     "max": 4.0,
+     "mean": 4.0,
+     "min": 4.0
+    },
+    "anomaly_real_diagnosed": {
+     "max": 4.0,
+     "mean": 2.8,
+     "min": 1.0
+    },
+    "attributed_funded": {
+     "max": 18276.0,
+     "mean": 17760.8,
+     "min": 16787.0
+    },
+    "breach_letters": {
+     "max": 15184.0,
+     "mean": 12055.8,
+     "min": 0.0
+    },
+    "breaches_by_type": {
+     "gone_away": 3631.2,
+     "mps_director": 7267.2,
+     "not_active": 0.0,
+     "not_corporate": 0.0,
+     "objected": 1157.4
+    },
+    "brief_fallbacks": {
+     "max": 1.0,
+     "mean": 0.2,
+     "min": 0.0
+    },
+    "brief_retries": {
+     "max": 2.0,
+     "mean": 0.8,
+     "min": 0.0
+    },
+    "calibration_coverage": [
+     null,
+     null,
+     null,
+     null,
+     null
+    ],
+    "directions_correct": {
+     "max": 0.9915966386554622,
+     "mean": 0.9866344320975322,
+     "min": 0.9801587301587301
+    },
+    "directions_stopped": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "events_missed": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "incremental_value": {
+     "max": 3402471.3000000003,
+     "mean": 3227395.46,
+     "min": 2952421.8
+    },
+    "ledger_intact": true,
+    "letters": {
+     "max": 2686251.0,
+     "mean": 2490707.4,
+     "min": 2224588.0
+    },
+    "llm_gbp_per_round": {
+     "max": 0.039599999999999996,
+     "mean": 0.03562166666666667,
+     "min": 0.028083333333333335
+    },
+    "mail_caused_funded": {
+     "max": 5667.0,
+     "mean": 5406.2,
+     "min": 4862.0
+    },
+    "matchback_vs_true": {
+     "max": 6.3222414768615,
+     "mean": 6.123304448854424,
+     "min": 5.9635065411575425
+    },
+    "measured_vs_true": {
+     "max": 1.1370025323664257,
+     "mean": 0.9230884896951247,
+     "min": 0.7858031106685768
+    },
+    "messages": {
+     "max": 252.0,
+     "mean": 221.2,
+     "min": 169.0
+    },
+    "model_read_correct": {
+     "max": 0.9957983193277311,
+     "mean": 0.9921267398582898,
+     "min": 0.9841269841269841
+    },
+    "person_minutes_per_round": {
+     "max": 23.5,
+     "mean": 18.65,
+     "min": 15.75
+    },
+    "person_tasks_per_round": {
+     "max": 0.6666666666666666,
+     "mean": 0.55,
+     "min": 0.3333333333333333
+    },
+    "printer_duplicates": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "profit": {
+     "max": 2001198.9000000004,
+     "mean": 1857506.3900000001,
+     "min": 1728898.4
+    },
+    "realised_incremental_value": {
+     "max": 3581802.33,
+     "mean": 3386850.0979999998,
+     "min": 3068777.19
+    },
+    "spend": {
+     "max": 1477438.05,
+     "mean": 1369889.0699999998,
+     "min": 1223523.4
+    },
+    "withdrawn_at_print": {
+     "max": 0.0,
+     "mean": 0.0,
+     "min": 0.0
+    },
+    "wrong_effects": {
+     "max": 5.0,
+     "mean": 2.8,
+     "min": 2.0
+    }
+   },
+   "vs_today": {
+    "profit_diff_max": 391086.9000000004,
+    "profit_diff_mean": 245154.35999999996,
+    "profit_diff_min": 125655.6499999999,
+    "profit_rel_mean": 0.15199158799357612,
+    "seeds_better": 5
+   }
+  }
+ },
+ "rounds": 12,
+ "seeds": 5,
+ "split": "heldout2",
+ "today_seed0": [
+  {
+   "attributed_funded": 3290,
+   "exp_incremental_value": 248618.6,
+   "letters": 199999,
+   "round": 1,
+   "spend": 109999.45
+  },
+  {
+   "attributed_funded": 1100,
+   "exp_incremental_value": 388782.67,
+   "letters": 199788,
+   "round": 2,
+   "spend": 109883.4
+  },
+  {
+   "attributed_funded": 756,
+   "exp_incremental_value": 279668.19,
+   "letters": 154454,
+   "round": 3,
+   "spend": 84949.7
+  },
+  {
+   "attributed_funded": 3090,
+   "exp_incremental_value": 245523.96,
+   "letters": 198543,
+   "round": 4,
+   "spend": 109198.65
+  },
+  {
+   "attributed_funded": 1099,
+   "exp_incremental_value": 350665.06,
+   "letters": 199788,
+   "round": 5,
+   "spend": 109883.4
+  },
+  {
+   "attributed_funded": 392,
+   "exp_incremental_value": 67525.08,
+   "letters": 199871,
+   "round": 6,
+   "spend": 109929.05
+  },
+  {
+   "attributed_funded": 2562,
+   "exp_incremental_value": 277103.96,
+   "letters": 298985,
+   "round": 7,
+   "spend": 164441.75
+  },
+  {
+   "attributed_funded": 876,
+   "exp_incremental_value": 212333.02,
+   "letters": 199787,
+   "round": 8,
+   "spend": 109882.85
+  },
+  {
+   "attributed_funded": 747,
+   "exp_incremental_value": 206861.33,
+   "letters": 199874,
+   "round": 9,
+   "spend": 109930.7
+  },
+  {
+   "attributed_funded": 2453,
+   "exp_incremental_value": 215826.11,
+   "letters": 198927,
+   "round": 10,
+   "spend": 109409.85
+  },
+  {
+   "attributed_funded": 705,
+   "exp_incremental_value": 159493.45,
+   "letters": 127106,
+   "round": 11,
+   "spend": 69908.3
+  },
+  {
+   "attributed_funded": 979,
+   "exp_incremental_value": 265015.47,
+   "letters": 199796,
+   "round": 12,
+   "spend": 109887.8
+  }
+ ]
+}

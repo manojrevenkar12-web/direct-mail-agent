@@ -40,8 +40,8 @@ def test_delay_adjustment_removes_the_recent_round_bias():
         rows += rows_for(r, 60, cell="b1v1")
     for r, age in ((4, 47), (5, 19)):  # this cell has only been mailed recently
         rows += rows_for(r, age)
-    adj = learning.posteriors(rows, 6, "holdout")["cells"]["b3v2"]
-    raw = learning.posteriors(rows, 6, "no_delay")["cells"]["b3v2"]
+    adj = learning.posteriors(rows, 6, "incremental")["cells"]["b3v2"]
+    raw = learning.posteriors(rows, 6, "response_no_delay")["cells"]["b3v2"]
     m_adj = adj["mail"][0] / sum(adj["mail"])
     m_raw = raw["mail"][0] / sum(raw["mail"])
     assert abs(m_adj - 0.010) < 0.0012
@@ -52,8 +52,8 @@ def test_matchback_credits_mail_with_applications_that_would_have_happened():
     rows = []
     for r in (1, 2, 3):
         rows += rows_for(r, 60)
-    hold = learning.posteriors(rows, 4, "holdout")["cells"]["b3v2"]
-    mb = learning.posteriors(rows, 4, "matchback")["cells"]["b3v2"]
+    hold = learning.posteriors(rows, 4, "incremental")["cells"]["b3v2"]
+    mb = learning.posteriors(rows, 4, "response")["cells"]["b3v2"]
     assert learning.mean_value(mb) > 1.6 * learning.mean_value(hold)
 
 

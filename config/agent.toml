@@ -8,9 +8,9 @@ cost_per_letter = 0.55            # assumption: print + Advertising Mail postage
 default_budget = 110000           # monthly round budget unless the Head of Direct Acquisition sets another
 hard_budget_cap = 150000          # above this only finance can approve
 max_letters = 300000              # print-house capacity per round
-min_holdout_share = 0.08          # every mailed cell keeps a random holdout of at least this share
+min_holdout_share = 0.05          # every mailed cell keeps a random holdout of at least this share
 max_holdout_share = 0.20
-holdout_share = 0.10
+holdout_share = 0.05              # measures what the round is worth; ranking comes from the mailed arm
 new_model_holdout_share = 0.15    # the first round on a new model version holds out more
 approval_lead_days = 2            # the file is approved at least this long before the print slot
 min_creative_share = 0.10         # every approved creative keeps at least this share while it is being learned
@@ -27,10 +27,16 @@ attribution_window_days = 60
 response_bands = 5                # quantiles of the response model score
 value_tiers = 2                   # split at the median of the value model score
 min_cell_letters = 1000           # keep learning in every cell, even ones that look unprofitable
+explore_holdout_share = 0.5       # incremental learner only: a learning cell holds out half (110 holdouts told us nothing)
 
 [learning]
-prior_mail = [4.0, 400.0]         # Beta prior on the 60-day application rate of a mailed cell (about 1%)
-prior_holdout = [2.0, 400.0]      # and of its holdout (about 0.5%): mail has paid before, by how much is unknown
+prior_mail = [4.0, 400.0]         # Beta prior on a creative's 60-day application rate (about 1%)
+# Cells start from the existing predictive models, not from nothing (v1 started every cell equal and, in round 1,
+# filled the cells the models rank lowest). Mailed rate: the cell's mean response score; holdout rate: that minus
+# the share of applications assumed to be caused by the letter; value: the cell's mean value score.
+prior_weight_mail = 400.0         # pseudo-letters behind the model's prediction for a mailed cell
+prior_weight_holdout = 2000.0     # a few holdout applications are noise: the holdout estimate moves only on evidence
+prior_lift_share = 0.4            # until holdouts say otherwise, 40% of a mailed cell's applications are the letter's
 prior_fund_a = 4.0                # Beta prior on the share of applications that fund
 prior_fund_b = 6.0
 prior_value = 1200.0              # prior mean funded value; pseudo-count below

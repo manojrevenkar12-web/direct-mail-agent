@@ -1,0 +1,794 @@
+{
+ "agent": {
+  "anomaly_false_alarms": 2.0,
+  "anomaly_false_dismissed": 1.4,
+  "anomaly_real_detected": 3.8,
+  "anomaly_real_diagnosed": 2.6,
+  "brief_fallbacks": 0.0,
+  "brief_retries": 0.4,
+  "directions_correct": 1.0,
+  "directions_stopped": 3.4,
+  "events_missed": 0.2,
+  "llm_gbp_per_round": 0.032788333333333336,
+  "matchback_vs_true": 6.104177311367515,
+  "measured_vs_true": 0.916620302124365,
+  "model_read_correct": 0.9910026803548421,
+  "person_tasks_per_round": 0.8333333333333334,
+  "wrong_effects": 0.0
+ },
+ "dev_vs_today": 0.21726494773949448,
+ "policies": [
+  {
+   "breaches": 0.0,
+   "id": "today",
+   "minutes": 384.16666666666663,
+   "name": "Today's process: top of the response score, one house letter, a person builds the file",
+   "profit": 1612352.0300000003,
+   "profit_max": 1617845.11,
+   "profit_min": 1603242.75,
+   "vs_today": 0.0
+  },
+  {
+   "breaches": 0.0,
+   "id": "for_loop",
+   "minutes": 138.08333333333331,
+   "name": "A for-loop: the agent's code without a model (a person types the directions into a form)",
+   "profit": 1874259.6800000002,
+   "profit_max": 1986356.03,
+   "profit_min": 1828449.73,
+   "vs_today": 0.16249203511990093
+  },
+  {
+   "breaches": 0.0,
+   "id": "agent",
+   "minutes": 20.0,
+   "name": "The agent",
+   "profit": 1874259.6800000002,
+   "profit_max": 1986356.03,
+   "profit_min": 1828449.73,
+   "vs_today": 0.16249203511990093
+  },
+  {
+   "breaches": 0.0,
+   "id": "agent_no_delay",
+   "minutes": 18.05,
+   "name": "The agent, counting applications per letter (no delay adjustment)",
+   "profit": 1903847.6940000001,
+   "profit_max": 1986254.49,
+   "profit_min": 1849495.4800000002,
+   "vs_today": 0.18077829101418946
+  },
+  {
+   "breaches": 0.0,
+   "id": "agent_no_holdout",
+   "minutes": 17.95,
+   "name": "The agent without the measurement holdout",
+   "profit": 1928528.384,
+   "profit_max": 2027463.96,
+   "profit_min": 1878311.5799999998,
+   "vs_today": 0.19609661728647465
+  },
+  {
+   "breaches": 0.0,
+   "id": "agent_cell_holdouts",
+   "minutes": 17.45,
+   "name": "The agent ranking cells by holdout-measured lift (10% holdouts)",
+   "profit": 1861899.6599999997,
+   "profit_max": 1939524.3299999998,
+   "profit_min": 1767294.27,
+   "vs_today": 0.15481572992676293
+  },
+  {
+   "breaches": 12055.8,
+   "id": "unguarded_llm",
+   "minutes": 18.65,
+   "name": "The same model with no checks on its directions and no file checks",
+   "profit": 1857506.3900000001,
+   "profit_max": 2001198.9000000004,
+   "profit_min": 1728898.4,
+   "vs_today": 0.15199158799357612
+  }
+ ],
+ "round": {
+  "anomalies": [
+   {
+    "anomaly": "applications_below_expected",
+    "cause": "noise",
+    "correct": true,
+    "owner": "head_of_direct_acquisition",
+    "truth": "noise"
+   }
+  ],
+  "budget": 110000.0,
+  "creative_shares": {
+   "CARD-1": 0.4,
+   "FLEXI-A": 0.0551,
+   "FLEXI-B": 0.5449
+  },
+  "directions": [
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "creative_push",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   },
+   {
+    "correct": true,
+    "effect_ok": true,
+    "first_pass_ok": true,
+    "kind": "objection",
+    "model_read_ok": true,
+    "route_ok": true,
+    "stopped": 0
+   }
+  ],
+  "drop_date": "2026-11-30",
+  "excluded_sectors": [],
+  "exp_incremental_value": 250331.39,
+  "holdout": 10529,
+  "letters": 199757,
+  "plan_cells": [
+   {
+    "available": 30685,
+    "cell": "b1v1",
+    "holdout": 53,
+    "letters": 1000,
+    "p_profitable": 0.001,
+    "sampled_net": -0.4681,
+    "value_per_letter": 0.1673
+   },
+   {
+    "available": 61219,
+    "cell": "b1v2",
+    "holdout": 53,
+    "letters": 1000,
+    "p_profitable": 1.0,
+    "sampled_net": 1.1268,
+    "value_per_letter": 1.623
+   },
+   {
+    "available": 43115,
+    "cell": "b2v1",
+    "holdout": 53,
+    "letters": 1000,
+    "p_profitable": 0.915,
+    "sampled_net": 0.1605,
+    "value_per_letter": 0.6958
+   },
+   {
+    "available": 48788,
+    "cell": "b2v2",
+    "holdout": 630,
+    "letters": 11971,
+    "p_profitable": 1.0,
+    "sampled_net": 2.5324,
+    "value_per_letter": 2.9963
+   },
+   {
+    "available": 35172,
+    "cell": "b3v1",
+    "holdout": 53,
+    "letters": 1000,
+    "p_profitable": 1.0,
+    "sampled_net": 0.9263,
+    "value_per_letter": 1.4991
+   },
+   {
+    "available": 56731,
+    "cell": "b3v2",
+    "holdout": 2837,
+    "letters": 53894,
+    "p_profitable": 1.0,
+    "sampled_net": 4.4531,
+    "value_per_letter": 4.9424
+   },
+   {
+    "available": 47875,
+    "cell": "b4v1",
+    "holdout": 53,
+    "letters": 1000,
+    "p_profitable": 1.0,
+    "sampled_net": 2.0151,
+    "value_per_letter": 2.5659
+   },
+   {
+    "available": 44028,
+    "cell": "b4v2",
+    "holdout": 2201,
+    "letters": 41826,
+    "p_profitable": 1.0,
+    "sampled_net": 7.1474,
+    "value_per_letter": 7.4521
+   },
+   {
+    "available": 72912,
+    "cell": "b5v1",
+    "holdout": 3646,
+    "letters": 69266,
+    "p_profitable": 1.0,
+    "sampled_net": 5.6265,
+    "value_per_letter": 6.1846
+   },
+   {
+    "available": 18992,
+    "cell": "b5v2",
+    "holdout": 950,
+    "letters": 18042,
+    "p_profitable": 1.0,
+    "sampled_net": 20.863,
+    "value_per_letter": 21.523
+   }
+  ],
+  "round": 12,
+  "spend": 109866.35
+ },
+ "rounds": [
+  {
+   "attributed_funded": 2887,
+   "drop_date": "2026-01-26",
+   "exp_incremental_value": 409074.45,
+   "letters": 199999,
+   "mail_caused_funded": 586,
+   "paused": false,
+   "person_minutes": 10.0,
+   "person_tasks": 0,
+   "round": 1,
+   "spend": 109999.45
+  },
+  {
+   "attributed_funded": 1271,
+   "drop_date": "2026-02-23",
+   "exp_incremental_value": 355750.19,
+   "letters": 199679,
+   "mail_caused_funded": 620,
+   "paused": false,
+   "person_minutes": 10.0,
+   "person_tasks": 0,
+   "round": 2,
+   "spend": 109823.45
+  },
+  {
+   "attributed_funded": 881,
+   "drop_date": "2026-03-23",
+   "exp_incremental_value": 201293.36,
+   "letters": 154301,
+   "mail_caused_funded": 379,
+   "paused": false,
+   "person_minutes": 10.0,
+   "person_tasks": 0,
+   "round": 3,
+   "spend": 84865.55
+  },
+  {
+   "attributed_funded": 2816,
+   "drop_date": "2026-04-20",
+   "exp_incremental_value": 409925.89,
+   "letters": 198915,
+   "mail_caused_funded": 566,
+   "paused": false,
+   "person_minutes": 16.0,
+   "person_tasks": 2,
+   "round": 4,
+   "spend": 109403.25
+  },
+  {
+   "attributed_funded": 1149,
+   "drop_date": "2026-05-18",
+   "exp_incremental_value": 342376.56,
+   "letters": 199712,
+   "mail_caused_funded": 515,
+   "paused": false,
+   "person_minutes": 13.0,
+   "person_tasks": 1,
+   "round": 5,
+   "spend": 109841.6
+  },
+  {
+   "attributed_funded": 584,
+   "drop_date": "2026-06-15",
+   "exp_incremental_value": 51542.7,
+   "letters": 199762,
+   "mail_caused_funded": 109,
+   "paused": false,
+   "person_minutes": 28.0,
+   "person_tasks": 2,
+   "round": 6,
+   "spend": 109869.1
+  },
+  {
+   "attributed_funded": 2328,
+   "drop_date": "2026-07-13",
+   "exp_incremental_value": 371640.59,
+   "letters": 299226,
+   "mail_caused_funded": 560,
+   "paused": false,
+   "person_minutes": 55.0,
+   "person_tasks": 1,
+   "round": 7,
+   "spend": 164574.3
+  },
+  {
+   "attributed_funded": 877,
+   "drop_date": "2026-08-10",
+   "exp_incremental_value": 219711.83,
+   "letters": 199715,
+   "mail_caused_funded": 335,
+   "paused": false,
+   "person_minutes": 13.0,
+   "person_tasks": 1,
+   "round": 8,
+   "spend": 109843.25
+  },
+  {
+   "attributed_funded": 903,
+   "drop_date": "2026-09-07",
+   "exp_incremental_value": 167588.18,
+   "letters": 199785,
+   "mail_caused_funded": 384,
+   "paused": false,
+   "person_minutes": 25.0,
+   "person_tasks": 1,
+   "round": 9,
+   "spend": 109881.75
+  },
+  {
+   "attributed_funded": 2255,
+   "drop_date": "2026-10-05",
+   "exp_incremental_value": 359340.93,
+   "letters": 199182,
+   "mail_caused_funded": 520,
+   "paused": false,
+   "person_minutes": 16.0,
+   "person_tasks": 2,
+   "round": 10,
+   "spend": 109550.1
+  },
+  {
+   "attributed_funded": 810,
+   "drop_date": "2026-11-02",
+   "exp_incremental_value": 155165.16,
+   "letters": 127031,
+   "mail_caused_funded": 286,
+   "paused": false,
+   "person_minutes": 10.0,
+   "person_tasks": 0,
+   "round": 11,
+   "spend": 69867.05
+  },
+  {
+   "attributed_funded": 1057,
+   "drop_date": "2026-11-30",
+   "exp_incremental_value": 250331.39,
+   "letters": 199757,
+   "mail_caused_funded": 474,
+   "paused": false,
+   "person_minutes": 10.0,
+   "person_tasks": 0,
+   "round": 12,
+   "spend": 109866.35
+  }
+ ],
+ "sample": {
+  "anomalies": [],
+  "brief": "Round 2 drops on 2026-02-23. The file has 15,879 letters and 837 businesses held out (5.0%) to measure what mail adds.\nIt costs \u00a38,733.45 against a budget of \u00a3110,000, and the expected incremental funded value is \u00a344,045.\n8 of 8 checks passed.\nApplied: exclude sector from sam.head@lender.example.",
+  "checks": [
+   {
+    "check": "suppressions",
+    "detail": "suppressed records in the mailed arm: none",
+    "passed": true
+   },
+   {
+    "check": "budget",
+    "detail": "\u00a38,733.45 against a \u00a3110,000 budget (cap \u00a3150,000)",
+    "passed": true
+   },
+   {
+    "check": "capacity",
+    "detail": "15,879 letters",
+    "passed": true
+   },
+   {
+    "check": "creatives_approved",
+    "detail": "unapproved or expiring before the drop: none",
+    "passed": true
+   },
+   {
+    "check": "excluded_sectors",
+    "detail": "0 letters to excluded sectors",
+    "passed": true
+   },
+   {
+    "check": "no_duplicates",
+    "detail": "0 duplicates",
+    "passed": true
+   },
+   {
+    "check": "matches_plan",
+    "detail": "file totals equal the plan",
+    "passed": true
+   },
+   {
+    "check": "holdout",
+    "detail": "holdout share 5% in every mailed cell",
+    "passed": true
+   }
+  ],
+  "directions": [
+   {
+    "applied": true,
+    "kind": "exclude_sector",
+    "quote": "Please leave restaurants, pubs and cafes out of this round",
+    "sector": "hospitality",
+    "sender": "sam.head@lender.example",
+    "sender_role": "head_of_direct_acquisition",
+    "value": null,
+    "why": "ok"
+   }
+  ],
+  "drop_date": "2026-02-23",
+  "eligible": 18271,
+  "ledger": [
+   {
+    "actor": "agent",
+    "at": "2026-02-14",
+    "hash": "9b16de7973ea72c455e635f436a8c894c6ff4937826e02a714e3c90853d424be",
+    "kind": "direction_applied",
+    "reason": "ok",
+    "seq": 7
+   },
+   {
+    "actor": "planner_code",
+    "at": "2026-02-14",
+    "hash": "d460cb02b7def6fe78ba4b67629eede8085fe419b0f4d053f642d480ba36aebb",
+    "kind": "plan",
+    "reason": "10 cells ranked by expected value per letter, holdout 5%, budget \u00a3110,000",
+    "seq": 8
+   },
+   {
+    "actor": "planner_code",
+    "at": "2026-02-14",
+    "hash": "9a7efbc8efd0fa1a3bb942f59f40579e3ee77817a2c740d6675a06e9869d8af3",
+    "kind": "file_built",
+    "reason": "8 of 8 checks passed",
+    "seq": 9
+   },
+   {
+    "actor": "agent",
+    "at": "2026-02-14",
+    "hash": "7eccd00611f43bf3437cc468bc22461fea129ab5d1c8c2667094bf3f349b6e26",
+    "kind": "approval_requested",
+    "reason": "a person decides before anything leaves the building",
+    "seq": 10
+   }
+  ],
+  "ledger_intact": true,
+  "plan": {
+   "budget": 110000.0,
+   "cells": [
+    {
+     "available": 955,
+     "cell": "b1v1",
+     "holdout": 48,
+     "letters": 907,
+     "p_profitable": 0.024,
+     "sampled_net": -0.368,
+     "value_per_letter": 0.1497
+    },
+    {
+     "available": 2451,
+     "cell": "b1v2",
+     "holdout": 123,
+     "letters": 2328,
+     "p_profitable": 0.785,
+     "sampled_net": 0.0868,
+     "value_per_letter": 1.4715
+    },
+    {
+     "available": 1037,
+     "cell": "b2v1",
+     "holdout": 52,
+     "letters": 985,
+     "p_profitable": 0.655,
+     "sampled_net": 0.3794,
+     "value_per_letter": 0.7743
+    },
+    {
+     "available": 2335,
+     "cell": "b2v2",
+     "holdout": 117,
+     "letters": 2218,
+     "p_profitable": 0.998,
+     "sampled_net": 2.8762,
+     "value_per_letter": 3.9649
+    },
+    {
+     "available": 1637,
+     "cell": "b3v1",
+     "holdout": 82,
+     "letters": 1555,
+     "p_profitable": 0.709,
+     "sampled_net": -0.0245,
+     "value_per_letter": 0.8499
+    },
+    {
+     "available": 1695,
+     "cell": "b3v2",
+     "holdout": 85,
+     "letters": 1610,
+     "p_profitable": 0.999,
+     "sampled_net": 3.8697,
+     "value_per_letter": 4.2151
+    },
+    {
+     "available": 2387,
+     "cell": "b4v1",
+     "holdout": 119,
+     "letters": 2267,
+     "p_profitable": 0.954,
+     "sampled_net": 1.1279,
+     "value_per_letter": 1.3772
+    },
+    {
+     "available": 939,
+     "cell": "b4v2",
+     "holdout": 47,
+     "letters": 892,
+     "p_profitable": 0.999,
+     "sampled_net": 2.8261,
+     "value_per_letter": 3.827
+    },
+    {
+     "available": 2301,
+     "cell": "b5v1",
+     "holdout": 115,
+     "letters": 2185,
+     "p_profitable": 1.0,
+     "sampled_net": 3.5407,
+     "value_per_letter": 3.8588
+    },
+    {
+     "available": 982,
+     "cell": "b5v2",
+     "holdout": 49,
+     "letters": 932,
+     "p_profitable": 1.0,
+     "sampled_net": 10.9382,
+     "value_per_letter": 8.4245
+    }
+   ],
+   "cost": 8733.45,
+   "creative_shares": {
+    "FLEXI-A": 0.277,
+    "FLEXI-B": 0.723
+   },
+   "drop_date": "2026-02-23",
+   "excluded_sectors": [
+    "hospitality"
+   ],
+   "expected_incremental_value": 44045.08,
+   "holdout": 837,
+   "holdout_share": 0.05,
+   "letters": 15879,
+   "model_version": "response-v6",
+   "notes": [],
+   "paused": false,
+   "round": 2,
+   "value_edge": 161.98379126847556
+  },
+  "round": 2,
+  "sha256": "fdcdbf84dcddc1a3ff7f1a9487c5a5d311f367c64dbfe19673af49b5036efe8c",
+  "suppressed": {
+   "contact_gap": 36141,
+   "existing_customer": 4172,
+   "gone_away": 1195,
+   "mps_director": 2421,
+   "not_active": 5565,
+   "not_corporate": 12847,
+   "objected": 332,
+   "open_application": 162,
+   "recent_decline": 154,
+   "recent_holdout": 1902,
+   "too_young": 207,
+   "yearly_cap": 0
+  }
+ },
+ "seeds": 5,
+ "split": "heldout2",
+ "today": [
+  {
+   "attributed_funded": 3290,
+   "exp_incremental_value": 248618.6,
+   "letters": 199999,
+   "round": 1,
+   "spend": 109999.45
+  },
+  {
+   "attributed_funded": 1100,
+   "exp_incremental_value": 388782.67,
+   "letters": 199788,
+   "round": 2,
+   "spend": 109883.4
+  },
+  {
+   "attributed_funded": 756,
+   "exp_incremental_value": 279668.19,
+   "letters": 154454,
+   "round": 3,
+   "spend": 84949.7
+  },
+  {
+   "attributed_funded": 3090,
+   "exp_incremental_value": 245523.96,
+   "letters": 198543,
+   "round": 4,
+   "spend": 109198.65
+  },
+  {
+   "attributed_funded": 1099,
+   "exp_incremental_value": 350665.06,
+   "letters": 199788,
+   "round": 5,
+   "spend": 109883.4
+  },
+  {
+   "attributed_funded": 392,
+   "exp_incremental_value": 67525.08,
+   "letters": 199871,
+   "round": 6,
+   "spend": 109929.05
+  },
+  {
+   "attributed_funded": 2562,
+   "exp_incremental_value": 277103.96,
+   "letters": 298985,
+   "round": 7,
+   "spend": 164441.75
+  },
+  {
+   "attributed_funded": 876,
+   "exp_incremental_value": 212333.02,
+   "letters": 199787,
+   "round": 8,
+   "spend": 109882.85
+  },
+  {
+   "attributed_funded": 747,
+   "exp_incremental_value": 206861.33,
+   "letters": 199874,
+   "round": 9,
+   "spend": 109930.7
+  },
+  {
+   "attributed_funded": 2453,
+   "exp_incremental_value": 215826.11,
+   "letters": 198927,
+   "round": 10,
+   "spend": 109409.85
+  },
+  {
+   "attributed_funded": 705,
+   "exp_incremental_value": 159493.45,
+   "letters": 127106,
+   "round": 11,
+   "spend": 69908.3
+  },
+  {
+   "attributed_funded": 979,
+   "exp_incremental_value": 265015.47,
+   "letters": 199796,
+   "round": 12,
+   "spend": 109887.8
+  }
+ ]
+}

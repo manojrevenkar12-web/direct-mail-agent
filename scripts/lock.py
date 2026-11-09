@@ -1,7 +1,10 @@
-"""Pin everything that decides the held-out result before it runs.
+"""Pin everything that decides a held-out result before it runs.
 
-python scripts/lock.py write    # once, after the development run
-python scripts/lock.py verify   # scripts/evaluate.py heldout refuses to run unless this passes
+python scripts/lock.py write <split>    # once, after the development run
+python scripts/lock.py verify <split>   # scripts/evaluate.py <split> refuses to run unless this passes
+
+A split is spent once it has run. config/heldout.lock pinned v1, which ran on `heldout`; the fixed agent was pinned
+in config/heldout2.lock before it ran on `heldout2`.
 """
 
 from __future__ import annotations
@@ -23,19 +26,23 @@ PINNED = sorted(
         ROOT / "reports" / "dev.json",
     ]
 )
-LOCK = ROOT / "config" / "heldout.lock"
+
+
+def lock_path(split: str) -> Path:
+    return ROOT / "config" / f"{split}.lock"
 
 
 def lines() -> list[str]:
     return [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.relative_to(ROOT)}" for p in PINNED]
 
 
-def main(cmd: str) -> int:
+def main(cmd: str, split: str = "heldout2") -> int:
+    LOCK = lock_path(split)
     if cmd == "write":
         if LOCK.exists():
-            sys.exit("config/heldout.lock exists; the held-out split is spent once it has been pinned")
+            sys.exit(f"{LOCK.name} exists; the {split} split is spent once it has been pinned")
         LOCK.write_text(
-            "# sha256 of every file that decides the held-out result, pinned before the held-out run\n"
+            f"# sha256 of every file that decides the {split} result, pinned before the {split} run\n"
             + "\n".join(lines())
             + "\n"
         )
@@ -44,7 +51,13 @@ def main(cmd: str) -> int:
     if not LOCK.exists():
         print("no lock yet")
         return 1
-    want = [x for x in LOCK.read_text().splitlines() if x and not x.startswith("#")]
+    text = LOCK.read_text().splitlines()
+    want = [x for x in text if x and not x.startswith(("#", "amended "))]
+    # an amendment replaces a pinned hash after the run, with the reason, for changes that cannot move a result
+    # (each one is proven by re-running the split and getting the same report byte for byte)
+    for a in (x for x in text if x.startswith("amended ")):
+        _, old, new, path = a.split()[:4]
+        want = [new + "  " + path if w == old + "  " + path else w for w in want]
     diff = sorted(set(want) ^ set(lines()))
     for d in diff:
         print("changed:", d)
@@ -52,4 +65,4 @@ def main(cmd: str) -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else "verify"))
+    sys.exit(main(sys.argv[1] if len(sys.argv) > 1 else "verify", sys.argv[2] if len(sys.argv) > 2 else "heldout2"))
